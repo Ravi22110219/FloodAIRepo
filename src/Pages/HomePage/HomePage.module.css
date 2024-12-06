@@ -1,0 +1,51 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bannerSection {
+  width: 100%;
+  height: 100vh; 
+  position: relative;
+  background-image: url(https://sc0.blr1.cdn.digitaloceanspaces.com/article/97881-gohonvpcnh-1583915303.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+.bannerText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.bannerText h1 {
+  color: #cfe5ff;
+  font-size: calc(30px + .8vw);
+  font-weight: 600;
+}
+
+.bannerText button {
+  color: #ffffff;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start;
+  background: rgb(0, 0, 0); 
+  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.bannerText button:hover {
+  background-position: left;
+  color: #000000;
+}

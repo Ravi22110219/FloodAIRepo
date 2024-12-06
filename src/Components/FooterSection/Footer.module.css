@@ -1,0 +1,289 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding-left: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.newsletterSection {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.newsletterSection h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.newsletterSection p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #111;
+  color: #fff;
+}
+
+.inputField::placeholder {
+  color: #666;
+}
+
+.checkboxGroup {
+  font-size: 15px;
+}
+
+.checkboxGroup label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.privacyPolicy {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.submitButton {
+  color: #ffffff;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start;
+  background: rgb(0, 0, 0); 
+  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.submitButton:hover {
+  background-position: left;
+  color: #000000;
+}
+
+.moreSection,
+.hqSection {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.moreSection h2,
+.hqSection h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.moreSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.moreSection li {
+  margin-bottom: 8px;
+}
+
+.moreSection li a {
+  color: white;
+  text-underline-offset: var(--offset, 0.2em);
+  text-decoration: underline 0.1em;
+  transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.moreSection li a:hover {
+  --offset: 0.4em;
+  font-size: 17px;
+  text-decoration-color: orange;
+  
+}
+
+.hqSection p {
+  margin: 5px 0;
+}
+
+.footerLogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.footerLogo img {
+  width: 160px;
+  height: 70px;
+  padding: 10px;
+}
+
+.socialUl {
+  display: flex;
+  padding: 10px;
+}
+
+.socialUl li {
+  position: relative;
+  display: block;
+  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.socialUl li a {
+  color: inherit;
+}
+
+.socialUl li i {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.socialUl li:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  border-radius: 5px;
+  transform: scale(0.9);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.socialUl li:nth-child(1):before {
+  background: #0077B5;
+  
+}
+
+.socialUl li:nth-child(2):before {
+  background: #316FF6;
+}
+
+.socialUl li:nth-child(3):before {
+  background: #E1306C;
+}
+
+.socialUl li:nth-child(4):before {
+  background: #ffffff;
+}
+
+.socialUl li:nth-child(5):before {
+  background: #ff0000;
+}
+
+.socialUl li:hover:before {
+  filter: blur(3px);
+  transform: scale(1.2);
+}
+
+.socialUl li:nth-child(1):hover {
+  color: #316FF6;
+  box-shadow: 0 0 15px #316FF6;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+
+.socialUl li:nth-child(2):hover {
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+}
+
+.socialUl li:nth-child(3):hover {
+  color: #e23670;
+  box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C;
+}
+
+.socialUl li:nth-child(4):hover {
+  color: #ffffff;
+  box-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px #ffffff;
+}
+
+.socialUl li:nth-child(5):hover {
+  color: #ff1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+.rightSection{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.copyRights {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ebebec;
+  text-align: center;
+  background-color: #000000;
+  width: 100%;
+  justify-content: center;
+}
+
+.copyRights p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 1px;
+  font-size: 18px;
+  
+ 
+}
+
+.copyRights p a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #cbcbcb;
+  
+}
+
+
+.copyRights p span {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

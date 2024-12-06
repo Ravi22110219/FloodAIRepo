@@ -1,0 +1,133 @@
+.publicationSection{
+  margin-top: 30px;
+  padding: 0;
+  width: 100%;
+
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.publicationBox{
+  width: 100%;
+  background-color: rgb(227, 227, 255);
+  display: block;
+
+}
+
+
+
+
+
+
+
+.publicationHeading h1{
+  color: black;
+   font-size: 35px;
+   font-weight: 600;
+   text-align: center;
+   padding-top: 30px;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: entry 0% cover 40%;
+}
+
+.publicationPapers{
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.paper{
+  width: 30%;
+  padding-top: 20px;
+  padding-left: 30px;
+  min-width: 250px;
+  display: block;
+ 
+}
+
+.paperImg{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  
+}
+.paperImg img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0.5 solid black;
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6a6a6a;
+  overflow: hidden;
+  opacity: .8;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.paperImg:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.paperButton{
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #ffffff;
+   /* border: 0.5px solid white; */
+   font-size: 18px;
+   cursor: pointer;
+   border-bottom: 4px;
+   align-self: flex-start;
+   background: rgb(0, 0, 0); 
+   background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+   background-size: 200%;
+   transition: .3s ease-out;
+   
+}
+
+.paperButton button{
+
+ font-size: 25px;
+}
+
+.paperButton:hover{
+  background-position:left;
+  color: rgb(0, 0, 0);
+}

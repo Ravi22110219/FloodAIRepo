@@ -1,0 +1,110 @@
+.riverineSection{
+   width: 100%;
+}
+
+
+
+.headingBanner{
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+
+.headingBanner h1{
+  color: #ffffff;
+  font-size: calc(60px + .5vw);
+  text-align: center;
+  padding-top: 8vh;
+
+}
+
+
+
+.floodMapSection{
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+
+
+.floodMapPart{
+  width: 60%;
+  display: block;
+  align-items: center;
+  padding: 20px 0 ;
+  border-right: 1px solid black;
+}
+.depthImg{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+
+.depthImg img{
+  width: 200px;
+  height: 100%;
+
+}
+
+
+.mapHeading{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.mapHeading h2{
+  font-size: calc(18px + .5vw);
+
+
+}
+
+.floodVideo{
+  
+  width: 100%;
+  padding: 0 10%;
+}
+
+
+@media screen and (max-width: 700px) {
+  .floodMapSection{
+    width: 100%;
+    background-color: #f4f4f4;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .floodMapPart{
+    width: 100%;
+    display: block;
+    align-items: center;
+    padding: 20px 0 ;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .depthImg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}

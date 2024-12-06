@@ -1,0 +1,104 @@
+.mapSection{
+  width: 100%;
+
+}
+.mapTop{
+  width: 100%;
+}
+.interactiveMap{
+  width: 100%;
+  background-color: rgb(238, 237, 237);
+
+}
+
+.mapHeading{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapHeading h1{
+  padding-top: 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.map{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map img {
+  width: 76%;
+  border: 1px solid black;
+}
+
+.mapText{
+
+  
+  display: inline-block;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 40px;
+
+}
+.mapText h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.mapText p{
+  width: 100%;
+  font-size: 18px;
+ 
+}
+
+.midLine{
+  width: 100%;
+  height: 90px;
+  background-color: rgb(34, 80, 178);
+  margin-top: 90px;
+
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+.Maptwo{
+  width: 100%;
+  background-color: rgb(253, 253, 253);
+  display: block;
+
+
+
+}
+
+.Maptwo img {
+  width: 76%;
+  padding-top: 90px;
+  margin-left: 12%;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+ 
+}
+
+.Maptwo p{
+  
+  padding: 15px 12%;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+}

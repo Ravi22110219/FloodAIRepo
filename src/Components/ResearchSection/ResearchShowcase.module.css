@@ -1,0 +1,62 @@
+.researchShowcaseSection {
+  width: 100%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.researchHeading {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.researchHeading h1 {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.researchImgs {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  padding-left: 10%;
+  gap: 5%;
+  padding-right: 10%;
+}
+
+.Img {
+  width: 30%;
+  min-width: 300px;
+  margin-top: 20px;
+  height: 300px; /* Fixed height for consistency */
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  cursor: pointer;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  transition: background-size 0.3s ease, background-position 0.3s ease;
+}
+
+.Img:hover {
+  background-size: 200%; /* Default zoom on hover */
+  scale: (1.2);
+}

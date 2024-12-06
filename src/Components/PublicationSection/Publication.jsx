@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Publication.module.css"
 
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Img1 from "../../assets/photos/publication1.jpg"
+import Img1 from "../../assets/photos/Publication1.jpg"
 
 const Publication = () => {
 

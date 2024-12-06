@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
+  
+    "builds": [
+      { "src": "src/**/*", "use": "@vercel/static-build" }
+    ],
+  
   "routes": [
     {
       "src": "/[^.]+",

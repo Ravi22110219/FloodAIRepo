@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Publication.module.css"
 
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Img1 from "../../assets/photos/Publication1.jpg"
+import PaperImg from "../../assets/photos/Publication1.jpg"
 
 const Publication = () => {
 
@@ -16,7 +16,7 @@ const Publication = () => {
         <div className={styles.publicationPapers}>
            <div className={styles.paper}>
             <div className={styles.paperImg}>
-              <img src={Img1} alt="" />
+              <img src={PaperImg} alt="" />
               <div className={styles.overlay}>
                   <div className={styles.text}>Highlights</div>
               </div>
@@ -29,7 +29,7 @@ const Publication = () => {
            </div>
            <div className={styles.paper}>
             <div className={styles.paperImg}>
-              <img src={Img1} alt="" />
+              <img src={PaperImg} alt="" />
               <div className={styles.overlay}>
                   <div className={styles.text}>Highlights</div>
               </div>
@@ -42,7 +42,7 @@ const Publication = () => {
            </div>
            <div className={styles.paper}>
             <div className={styles.paperImg}>
-              <img src={Img1} alt="" />
+              <img src={PaperImg} alt="" />
               <div className={styles.overlay}>
                   <div className={styles.text}>Highlights</div>
               </div>

@@ -4,7 +4,7 @@ import NavBar from "./Components/NavbarSection/Navbar";
 import MainPage from "./Components/FirstSection/MainPage";
 import Map from "./Components/MapSection/Map";
 import ResearchShowcase from "./Components/ResearchSection/ResearchShowcase";
-import Publication from "./Components/PublicationSection/Publication";
+import Publication from "./Components/PublicationSection/Publication.jsx";
 import MIRLab from "./Components/MIRLabSection/MIRLab";
 import Footer from "./Components/FooterSection/Footer";
 import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood";

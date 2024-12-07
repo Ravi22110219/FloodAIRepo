@@ -1,4 +1,4 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -25,4 +25,4 @@ body{
 	animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-} */
+} */ 

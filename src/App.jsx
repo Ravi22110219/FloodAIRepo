@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+
 import NavBar from "./Components/NavbarSection/Navbar";
 import MainPage from "./Components/FirstSection/MainPage";
 import Map from "./Components/MapSection/Map";

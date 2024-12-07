@@ -9,8 +9,8 @@ import MIRLab from "./Components/MIRLabSection/MIRLab";
 import Footer from "./Components/FooterSection/Footer";
 import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood";
 
-import MapComponent from "./Components/MapTestingSection/MapTest";
-import HomePage from "./Pages/HomePage/HomePage";
+// import MapComponent from "./Components/MapTestingSection/MapTest";
+// import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <NavBar /> 
       <MainPage />
       <Map />
-      {/* <MapComponent /> */}
+      {/* <MapComponent />  */}
       <RiverineFlood />
       <ResearchShowcase />
       <Publication />

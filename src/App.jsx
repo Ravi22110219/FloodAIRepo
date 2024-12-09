@@ -1,30 +1,32 @@
 import React from "react";
+import "./App.css";
+import NavBar from "./Components/NavbarSection/Navbar";
+import MainPage from "./Components/FirstSection/MainPage";
+import Map from "./Components/MapSection/Map";
+import ResearchShowcase from "./Components/ResearchSection/ResearchShowcase";
+import Publication from "./Components/PublicationSection/Publication.jsx";
+import MIRLab from "./Components/MIRLabSection/MIRLab";
+import Footer from "./Components/FooterSection/Footer";
+import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood";
+import HydroGNN from "./Pages/HydroGNNPage/HydroGNN.jsx";
+import MapTesting from "./Components/MapTestingSection/MapTesting.jsx";
 
-// import NavBar from "./Components/NavbarSection/Navbar";
-import MainPage from "./Components/FirstSection/MainPage.jsx";
-// import Map from "./Components/MapSection/Map";
-// import ResearchShowcase from "./Components/ResearchSection/ResearchShowcase";
-// import Publication from "./Components/PublicationSection/Publication.jsx";
-// import MIRLab from "./Components/MIRLabSection/MIRLab";
-// import Footer from "./Components/FooterSection/Footer";
-// import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood";
-
-// import MapComponent from "./Components/MapTestingSection/MapTest";
 // import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
   return (
     <div className="App">
       {/* <HomePage /> */}
-      {/* <NavBar />  */}
+      <NavBar /> 
       <MainPage />
-      {/* <Map /> */}
-      {/* <MapComponent />  */}
-      {/* <RiverineFlood />
+      <Map />
+      <HydroGNN />
+     <MapTesting />
+      <RiverineFlood />
       <ResearchShowcase />
       <Publication />
       <MIRLab />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

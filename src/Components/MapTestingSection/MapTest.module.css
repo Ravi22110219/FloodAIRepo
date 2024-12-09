@@ -1,0 +1,98 @@
+.kozhikodeSection{
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  margin: auto;
+}
+.kozhikodeMapBox{
+  padding: 30px 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mapColumn{
+  width: 60%;
+  display: block;
+  
+
+}
+
+
+.mapHeading{
+  width: fit-content;
+  border: 2px solid black;
+  padding: 20px;
+
+
+}
+.mapHeading h1{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mapHeading:hover{
+  background-color: black;
+  color: #ffffff;
+}
+.kozhikodeMap{
+  width: 100%;
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.tableColumn{
+  width: 40%;
+}
+
+.impactedAreasTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.impactedAreasTable th,
+.impactedAreasTable td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.impactedAreasTable th {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.impactedAreasTable th[colspan="4"] {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  .kozhikodeMapBox{
+    padding: none;
+    display: block;
+    
+  }
+  .mapColumn{
+    width: 100%;
+    display: block;
+    
+    
+  
+  }
+  .mapHeading{
+    margin: auto;
+  }
+  .tableColumn{
+    width: 100%;
+  }
+  .kozhikodeMap{
+    width: 100%;
+    margin-top: 30px;
+    padding-right: 0;
+  }
+  
+  
+}

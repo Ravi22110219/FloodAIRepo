@@ -8,8 +8,10 @@ const MainPage = () => {
         <div>
           <h1>Welcome Into Flood AI</h1>
           <button>Coming Soon...</button>
+          
         </div>
       </div>
+     
     </section>
   );
 };

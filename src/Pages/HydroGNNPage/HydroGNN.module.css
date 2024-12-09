@@ -1,0 +1,93 @@
+.hydroGNNSection {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.hydroGNNDiv {
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.hydroGNNBanner {
+  height: 250px; 
+  background-image: url("https://images.alphacoders.com/639/6393.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hydroGNNBanner h1 {
+  font-size: 2rem;
+  color: #f3f3f3;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.dropdownContainer {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  
+
+}
+
+.dropdownItem {
+  margin-bottom: 10px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.dropdownHeader {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownHeader:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdownContent {
+  padding: 10px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.dropdownItem.active .dropdownContent {
+  max-height: 100%; /* Adjust based on content height */
+}
+
+.dropdownContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contentImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.graph {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}

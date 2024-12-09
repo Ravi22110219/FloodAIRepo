@@ -1,11 +1,13 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// Detect if the app is being deployed to GitHub Pages
+const isGitHubPages = process.env.DEPLOY_ENV === 'github';
+
 export default defineConfig({
   plugins: [react()],
-  base: 'https://Ravi22110219.github.io/FloodAIRepo/',  // Match with homepage in package.json
+  base: isGitHubPages ? '/FloodAIRepo/' : '/', // GitHub Pages vs. Vercel
   build: {
-    outDir: 'dist',  // Ensure the build output directory is correct
+    outDir: 'dist',
   },
 });

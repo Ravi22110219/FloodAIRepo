@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       {/* <HomePage /> */}
+      Hello
       <NavBar /> 
       <MainPage />
       <Map />

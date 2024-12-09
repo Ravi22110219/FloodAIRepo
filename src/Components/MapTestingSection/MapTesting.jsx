@@ -36,7 +36,7 @@ const MapTesting = () => {
               title="Kozhikode Flood Map"
               width="100%"
               height="500px"
-              style={{ border: "none" }}
+              style={{ border: "1px solid black" }}
             ></iframe>
           </div>
         </div>

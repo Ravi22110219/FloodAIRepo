@@ -24,8 +24,16 @@
   border: 2px solid black;
   padding: 20px;
 
+  background-size: 200%;
+  transition: .3s ease-out;
+
 
 }
+.mapHeading:hover{
+  background-position: left;
+  color: #000000;
+}
+
 .mapHeading h1{
   font-size: 20px;
   font-weight: 400;
@@ -55,7 +63,7 @@
 
 .impactedAreasTable th,
 .impactedAreasTable td {
-  border: 1px solid #dddddd;
+  border: 1px solid #515151;
   padding: 8px;
 }
 

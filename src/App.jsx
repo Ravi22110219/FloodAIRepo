@@ -28,10 +28,10 @@ function App() {
       <ReturnPeriodAnalysis />
       <UrbanFlood />*/}
       {/* <GondalSubSurfaceFlood />  */}
-      {/* <GondalSurfaceFlood /> */}
+      <GondalSurfaceFlood />
      
       {/* <HydroGNN /> */}
-      <MIRLabNewsHomePage />
+      {/* <MIRLabNewsHomePage /> */}
       {/*<MainPage />
       <Map />
      

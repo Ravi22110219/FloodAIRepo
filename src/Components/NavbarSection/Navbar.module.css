@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   max-width: 2500px;
-  min-width: 350px;
+  /* min-width: 350px; */
   height: 83px;
   display: flex;
   align-items: center;

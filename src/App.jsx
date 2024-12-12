@@ -10,7 +10,7 @@ import Footer from "./Components/FooterSection/Footer.jsx";
 import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood.jsx";
 import HydroGNN from "./Pages/HydroGNNPage/HydroGNN.jsx";
 import MapTesting from "./Components/MapTestingSection/MapTesting.jsx";
-import CatchmentClassification from "./Pages/CatchmentPage/catchmentClassification.jsx";
+import CatchmentClassification from "./Pages/CatchmentPage/CatchmentClassification.jsx";
 import ReturnPeriodAnalysis from "./Pages/ReturnPeriodAnalysisPage/ReturnPeriodAnalysis.jsx";
 import UrbanFlood from "./Pages/KozhikodeFloodPage/UrbanFlood.jsx";
 import GondalSubSurfaceFlood from "./Pages/GondalFloodPage/GondalSubSurfaceFlood.jsx";

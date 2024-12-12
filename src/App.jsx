@@ -10,6 +10,12 @@ import Footer from "./Components/FooterSection/Footer";
 import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood";
 import HydroGNN from "./Pages/HydroGNNPage/HydroGNN.jsx";
 import MapTesting from "./Components/MapTestingSection/MapTesting.jsx";
+import CatchmentClassification from "./Pages/CatchmentPage/catchmentClassification.jsx";
+import ReturnPeriodAnalysis from "./Pages/ReturnPeriodAnalysisPage/ReturnPeriodAnalysis.jsx";
+import UrbanFlood from "./Pages/KozhikodeFloodPage/UrbanFlood.jsx";
+import GondalSubSurfaceFlood from "./Pages/GondalFloodPage/GondalSubSurfaceFlood.jsx";
+import GondalSurfaceFlood from "./Pages/GondalFloodPage/GondalSurfaceFlood.jsx";
+import MIRLabNewsHomePage from "./Pages/MIRLabNewsPage/MIRLabNewsHomePage.jsx";
 
 // import HomePage from "./Pages/HomePage/HomePage";
 
@@ -17,17 +23,24 @@ function App() {
   return (
     <div className="App">
       {/* <HomePage /> */}
-      Hello
-      <NavBar /> 
-      <MainPage />
+       <NavBar /> 
+    {/*  <CatchmentClassification />
+      <ReturnPeriodAnalysis />
+      <UrbanFlood />*/}
+      {/* <GondalSubSurfaceFlood />  */}
+      {/* <GondalSurfaceFlood /> */}
+     
+      {/* <HydroGNN /> */}
+      <MIRLabNewsHomePage />
+      {/*<MainPage />
       <Map />
-      <HydroGNN />
-     <MapTesting />
+     
+      <MapTesting /> 
       <RiverineFlood />
       <ResearchShowcase />
       <Publication />
-      <MIRLab />
-      <Footer />
+      <MIRLab />*/}
+      <Footer /> 
     </div>
   );
 }

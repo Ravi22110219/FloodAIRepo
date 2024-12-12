@@ -1,16 +1,9 @@
-.hydroGNNSection {
+.catchmentClassificationSection {
   width: 100%;
-  padding-top: 20px;
-  background-color: #f9f9f9;
+  
 }
 
-.hydroGNNDiv {
-  max-width: 100%;
-  margin: 0 auto;
-
-}
-
-.hydroGNNBanner {
+.catchmentClassificationBanner {
   width: 100%;
   min-height: 100vh;
   background-image: url("https://t3.ftcdn.net/jpg/02/43/36/88/360_F_243368800_iYenQw8k85GTsJ39VHFxanBkj3MQxzKW.jpg");
@@ -25,7 +18,7 @@
   align-items: center;
 }
 
-.hydroGNNBannerLinks {
+.catchmentClassificationBannerLinks {
   position: absolute;
   top: 100px;
   left: 4%;
@@ -33,7 +26,7 @@
   color: #ddd;
 }
 
-.hydroGNNBannerLinks a {
+.catchmentClassificationBannerLinks a {
   position: relative;
   color: #fff;
   text-decoration: none;
@@ -42,7 +35,8 @@
   display: inline-block;
 }
 
-.hydroGNNBannerLinks a::after {
+/* Underline Effect */
+.catchmentClassificationBannerLinks a::after {
   content: "";
   position: absolute;
   display: block;
@@ -54,24 +48,26 @@
   transition: width 0.3s ease, background-color 0.3s ease;
 }
 
-.hydroGNNBannerLinks a:hover {
-  color: var(--hover-color);
+/* Hover Effect */
+.catchmentClassificationBannerLinks a:hover {
+  color: var(--hover-color); 
 }
 
-.hydroGNNBannerLinks a:hover::after {
+.catchmentClassificationBannerLinks a:hover::after {
   width: 100%;
   background-color: var(--hover-color);
 }
 
-.hydroGNNBannerLinks a:nth-child(1) {
-  --hover-color: #4aa4ff;
+/* Specific Link Colors */
+.catchmentClassificationBannerLinks a:nth-child(1) {
+  --hover-color: #4aa4ff; 
 }
 
-.hydroGNNBannerLinks a:nth-child(3) {
-  --hover-color: #ff6347;
+.catchmentClassificationBannerLinks a:nth-child(3) {
+  --hover-color: #ff6347; 
 }
 
-.hydroGNNBannerContentColumn {
+.catchmentClassificationBannerContentColumn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,26 +76,28 @@
   margin-top: 50px;
 }
 
-.hydroGNNBannerContentCol_1 {
+
+.catchmentClassificationBannerContentCol_1 {
+  /* min-width: 300px; */
   width: 96%;
   padding-left: 4%;
 }
 
-.hydroGNNBannerContentCol_1 h1 {
+.catchmentClassificationBannerContentCol_1 h1 {
   width: 100%;
   font-size: 2.5rem;
   margin-bottom: 10px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.hydroGNNBannerContentCol_1 p {
+.catchmentClassificationBannerContentCol_1 p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   line-height: 1.5;
   animation: fadeIn 2s ease-in-out;
 }
 
-.hydroGNNBannerContentCol_1 button {
+.catchmentClassificationBannerContentCol_1 button {
   color: #ffffff;
   border: 0.5px solid white;
   padding: 10px 20px;
@@ -107,27 +105,25 @@
   cursor: pointer;
   border-radius: 4px;
   align-self: flex-start;
-  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0); 
   background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
   background-size: 200%;
   transition: .3s ease-out;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
-.hydroGNNBannerContentCol_1 button:hover {
+.catchmentClassificationBannerContentCol_1 button:hover {
   background-position: left;
   color: #000000;
 }
 
-.hydroGNNBannerContentCol_2 {
+.catchmentClassificationBannerContentCol_2 {
+  /* Add your image/graphic here */
   width: 96%;
+  height: 300px;
   margin-right: 4%;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-}
-.hydroGNNBannerContentCol_2 img{
-  width: 92%;
-  height: fit-content;
-  padding: 0;
 }
 
 @keyframes fadeIn {
@@ -141,88 +137,46 @@
   }
 }
 
-@media (max-width: 800px) {
-  .hydroGNNBannerContentColumn {
+
+@media (max-width:800px) {
+  .catchmentClassificationBannerContentColumn {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 150px;
   }
-  .hydroGNNBannerContentCol_1 {
+  .catchmentClassificationBannerContentCol_1 {
+    /* min-width: 300px; */
     width: 100%;
-    padding-right: 4%;
+    padding-left: none;
+    padding-right:4% ;
+    
   }
-  .hydroGNNBannerContentCol_2 {
-    width: 100%;
-    padding-right: none;
+  .catchmentClassificationBannerContentCol_2 {
+    /* Add your image/graphic here */
+    width: 92%;
+    height: 300px;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     margin-bottom: 30px;
   }
-}
-
-
-.dropdownContainer {
-  width: 80%;
-  margin: auto;
-  padding-top: 20px;
   
-
+  
 }
 
-.dropdownItem {
-  margin-bottom: 10px;
-  border-radius: 0px;
-  background-color: #ffffff;
-  border-bottom: 1px solid black;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.dropdownHeader {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dropdownHeader:hover {
-  background-color: #e0e0e0;
-}
-
-.dropdownContent {
-  padding: 10px;
-  background-color: #fff;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.dropdownItem.active .dropdownContent {
-  max-height: 100%; /* Adjust based on content height */
-}
-
-.dropdownContentWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contentImage {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.graph {
+.catchmentClassificationContent{
   width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.catchmentClassificationContentImg{
+  width: 100%;
+  padding: 4%;
+
 }

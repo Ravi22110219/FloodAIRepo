@@ -79,7 +79,24 @@ const HydroGNN = () => {
     <section className={styles.hydroGNNSection}>
       <div className={styles.hydroGNNDiv}>
         <div className={styles.hydroGNNBanner}>
-          <h1>HydroGNN</h1>
+          <div className={styles.hydroGNNBannerLinks}>
+            <a href="#">Home</a> <span>/</span> <a href="#">HydroGNN</a>
+          </div>
+          <div className={styles.hydroGNNBannerContentColumn}>
+            <div className={styles.hydroGNNBannerContentCol_1}>
+              <h1>HydroGNN: Revolutionizing Hydrological Predictions</h1>
+              <p>
+                Dive into the power of Graph Neural Networks (GNNs) in
+                hydrological modeling. Understand how HydroGNN enhances flood
+                predictions and water resource management through advanced data
+                analytics.
+              </p>
+              <button>Learn More</button>
+            </div>
+            <div className={styles.hydroGNNBannerContentCol_2}>
+              <img src="https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif" alt="Img" />
+            </div>
+          </div>
         </div>
 
         <div className={styles.dropdownContainer}>

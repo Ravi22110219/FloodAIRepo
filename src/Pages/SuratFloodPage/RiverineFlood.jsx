@@ -1,8 +1,6 @@
 import React from "react";
 
 import styles from "./RiverineFlood.module.css";
-
-// import FVY250 from "../../assets/photos/Video_Sta_250.mp4";
 import FIY250 from "../../assets/photos/FIY250.jpg"
 
 

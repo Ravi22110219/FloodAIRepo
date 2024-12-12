@@ -79,6 +79,9 @@
 
 .mainNavbar .navList {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -306,4 +309,45 @@
     width: 150px;
    
   }
+}
+
+
+.floodAiButton {
+  cursor: pointer;
+  border: 1px solid #000000;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.floodAiButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background-color: #000000;
+  z-index: -1;
+  transition: 0.5s all ease;
+  opacity: 0;
+}
+
+.floodAiButton:hover, .floodAiButton:focus {
+  color: white;
+}
+
+.floodAiButton:hover:before, .floodAiButton:focus:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.floodAiButton:active {
+  transform: scale(0.9);
 }

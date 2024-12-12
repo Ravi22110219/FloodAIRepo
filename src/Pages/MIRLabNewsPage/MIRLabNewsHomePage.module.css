@@ -1,0 +1,162 @@
+/* MIRLabNewsHomePage.module.css */
+.mirLabNewsHomePageSection{
+  width: 100%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 83px;
+
+}
+
+.sectionHeader {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.sectionHeader h1 {
+  font-size: calc(18px + 1vw);
+  font-weight: 600;
+  color: #444;
+  
+  text-align: left;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.02);
+}
+
+.image {
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.box:hover .image img {
+  transform: scale(1.1);
+}
+
+.content h3 {
+  font-size: 20px;
+  color: #334;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+  padding: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: crimson;
+  border-color: crimson;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.icons span {
+  font-size: 14px;
+  color: #777;
+}
+
+.buttonsContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loadMore, .showLess {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 13px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loadMore:hover, .showLess:hover {
+  background-color: crimson;
+  border-color: crimson;
+  color: #fff;
+}
+
+@media (max-width: 450px) {
+  .sectionHeader h1 {
+    font-size: 20px;
+  }
+
+  .boxContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .icons span {
+    font-size: 12px;
+  }
+}

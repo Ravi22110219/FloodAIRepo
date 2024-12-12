@@ -95,7 +95,7 @@ const NavBar = () => {
             </li>
             <li>Catchment Classification</li>
             <li>Retrun Period Analysis</li>
-            <li>Flood Dashboard</li>
+            <li className={styles.floodAiButton}>Flood Dashboard</li>
           </ul>
           <div className={styles.menuBtn} onClick={handleMenuItemClick && handleMenuToggle}>
                     {menuActive ? (

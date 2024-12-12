@@ -1,7 +1,7 @@
 import React from "react";
 import MapTop from '../../assets/photos/MapTop.jpg'
 import MapImg from '../../assets/photos/Map.jpg'
-import Maptwo from '../../assets/photos/Maptwo.gif'
+import Maptwo from '../../assets/photos/MapTwo.gif'
 import styles from './Map.module.css'
 
 

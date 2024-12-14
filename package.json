@@ -1,5 +1,6 @@
 {
-  "homepage": "https://Ravi22110219.github.io/FloodAIRepo/",
+  "homepage": "./",
+  "main": "main.jsx",
   "name": "FloodAIRepo",
   "private": true,
   "version": "0.0.0",

@@ -94,7 +94,10 @@ const HydroGNN = () => {
               <button>Learn More</button>
             </div>
             <div className={styles.hydroGNNBannerContentCol_2}>
-              <img src="https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif" alt="Img" />
+              <img
+                src="https://i.pinimg.com/originals/bb/19/f6/bb19f656b76867d1a39d56c755495458.gif"
+                alt="Img"
+              />
             </div>
           </div>
         </div>
@@ -126,6 +129,19 @@ const HydroGNN = () => {
               )}
             </div>
           ))}
+        </div>
+        <div className={styles.hydroGNNVideoPart}>
+          <div className={styles.hydroGNNVideoPartHeading}>
+            <h1>Performance in Kantamal Catchment of Mahanadi Basin</h1>
+          </div>
+          <div className={styles.hydroGNNVideo}>
+            <div className={styles.responsiveIframeContainer}>
+              <iframe
+                src="https://drive.google.com/file/d/1ammit_dotcoU9f7tNnFFjBunQkNi2L0S/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>

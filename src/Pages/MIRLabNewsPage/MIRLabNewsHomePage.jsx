@@ -84,6 +84,24 @@ const MIRLabNewsHomePage = () => {
 
     return (
           <section className={styles.mirLabNewsHomePageSection}>
+              <div className={styles.mirLabBanner}>
+        <div className={styles.mirLabBannerLinks}>
+            <a href="#">Home</a> <span>/</span> <a href="#">MIRLabNews</a>
+        </div>
+        <div className={styles.mirLabBannerContentColumn}>
+            <div className={styles.mirLabBannerContentCol_1}>
+                <h1>MIRLab News: Pioneering Research in AI and Flooding</h1>
+                <p>
+                    Explore groundbreaking advancements in AI and Flooding. Learn how MIRLabNews highlights
+                    innovative research and cutting-edge technologies driving the future.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div className={styles.mirLabBannerContentCol_2}>
+                <img src="https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif" alt="AI Research" />
+            </div>
+        </div>
+    </div>
         <div className={styles.container}>
             <header className={styles.sectionHeader}>
                 <h1>Explore MIRLab News</h1>

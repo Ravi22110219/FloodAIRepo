@@ -16,6 +16,8 @@ import UrbanFlood from "./Pages/KozhikodeFloodPage/UrbanFlood.jsx";
 import GondalSubSurfaceFlood from "./Pages/GondalFloodPage/GondalSubSurfaceFlood.jsx";
 import GondalSurfaceFlood from "./Pages/GondalFloodPage/GondalSurfaceFlood.jsx";
 import MIRLabNewsHomePage from "./Pages/MIRLabNewsPage/MIRLabNewsHomePage.jsx";
+import ResearchShowCaseHomePage from "./Pages/ResearchShowCasePage/ResearchShowCaseHomePage.jsx";
+import Try from "./Try.jsx";
 
 // import HomePage from "./Pages/HomePage/HomePage";
 
@@ -25,21 +27,23 @@ function App() {
       {/* <HomePage /> */}
        <NavBar /> 
     {/*  <CatchmentClassification />
-      <ReturnPeriodAnalysis />
-      <UrbanFlood />*/}
+      <ReturnPeriodAnalysis />*/}
+      {/* <UrbanFlood /> */}
       {/* <GondalSubSurfaceFlood />  */}
-      <GondalSurfaceFlood />
+      {/* <GondalSurfaceFlood /> */}
+      {/* <Try /> */}
      
-      {/* <HydroGNN /> */}
+      <HydroGNN />
       {/* <MIRLabNewsHomePage /> */}
-      {/*<MainPage />
-      <Map />
+      {/* <MainPage />
+      <Map /> */}
+      {/* <ResearchShowCaseHomePage /> */}
      
-      <MapTesting /> 
+      {/* <MapTesting />  */}
       <RiverineFlood />
       <ResearchShowcase />
       <Publication />
-      <MIRLab />*/}
+      <MIRLab />{/**/}
       <Footer /> 
     </div>
   );

@@ -2,6 +2,157 @@
 .mirLabNewsHomePageSection{
   width: 100%;
 }
+.mirLabBanner {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://t3.ftcdn.net/jpg/03/78/67/89/360_F_378678986_F2V3TjO7tYQRdXkd5Kg5QowEqPGOe8lv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mirLabBannerLinks {
+  position: absolute;
+  top: 100px;
+  left: 4%;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.mirLabBannerLinks a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.mirLabBannerLinks a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.mirLabBannerLinks a:hover {
+  color: var(--hover-color);
+}
+
+.mirLabBannerLinks a:hover::after {
+  width: 100%;
+  background-color: var(--hover-color);
+}
+
+.mirLabBannerLinks a:nth-child(1) {
+  --hover-color: #4aa4ff;
+}
+
+.mirLabBannerLinks a:nth-child(3) {
+  --hover-color: #ff6347;
+}
+
+.mirLabBannerContentColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.mirLabBannerContentCol_1 {
+  width: 96%;
+  padding-left: 4%;
+}
+
+.mirLabBannerContentCol_1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.mirLabBannerContentCol_1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.mirLabBannerContentCol_1 button {
+  color: #ffffff;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.mirLabBannerContentCol_1 button:hover {
+  background-position: left;
+  color: #000000;
+}
+
+.mirLabBannerContentCol_2 {
+  width: 96%;
+  margin-right: 4%;
+  border-radius: 10px;
+}
+
+.mirLabBannerContentCol_2 img {
+  width: 92%;
+  height: fit-content;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .mirLabBannerContentColumn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 150px;
+  }
+  .mirLabBannerContentCol_1 {
+      width: 100%;
+      padding-right: 4%;
+  }
+  .mirLabBannerContentCol_2 {
+      width: 100%;
+      margin: auto;
+      border-radius: 10px;
+      margin-bottom: 30px;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;

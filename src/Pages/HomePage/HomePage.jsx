@@ -1,19 +1,22 @@
 import React from "react";
 import NavBar from "../../Components/NavbarSection/Navbar";
+import MainPage from "../../Components/FirstSection/MainPage";
+import Map from "../../Components/MapSection/Map";
+import ResearchShowcase from "../../Components/ResearchSection/ResearchShowcase";
+import Publication from "../../Components/PublicationSection/Publication";
+import MIRLab from "../../Components/MIRLabSection/MIRLab";
 
 const HomePage = () =>
   {
       return(
         <>
-        <NavBar />
-        <section className={styles.bannerSection}>
-      <div className={styles.bannerText}>
-        <div>
-          <h1>Welcome Into Flood AI</h1>
-          <button>Click For Demo</button>
-        </div>
-      </div>
-    </section>
+       <MainPage />
+       <Map />
+       <ResearchShowcase />
+       <Publication />
+       <MIRLab />
+       
+
 
 
         </>

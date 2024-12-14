@@ -61,11 +61,16 @@ const NavBar = () => {
             <li
               onMouseEnter={() => setShowCourseAndBatchDropdown(true)}
               onMouseLeave={() => setShowCourseAndBatchDropdown(false)}
-            >
-              Home
+              className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0"
+            ><a href="/">Home</a>
+              
             </li>
-            <li>HydroGNN</li>
-            <li>
+            <li
+            className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0"
+            ><a href="/HydroGNN">HydroGNN</a></li>
+            <li
+            className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0"
+            >
               {" "}
               <div className={styles.listDropDown}>
                 {" "}
@@ -75,7 +80,9 @@ const NavBar = () => {
                 />
               </div>
             </li>
-            <li>
+            <li 
+            className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0"
+            >
               <div className={styles.listDropDown}>
                 {" "}
                 Kozhikode Flood
@@ -84,7 +91,9 @@ const NavBar = () => {
                 />
               </div>
             </li>
-            <li>
+            <li
+            className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0" 
+            >
               <div className={styles.listDropDown}>
                 {" "}
                 Gondal Flood
@@ -93,8 +102,12 @@ const NavBar = () => {
                 />
               </div>
             </li>
-            <li>Catchment Classification</li>
-            <li>Retrun Period Analysis</li>
+            <li
+            className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0"
+            ><a href="/CatchmentClassification">Catchment Classification</a></li>
+            <li
+            className="block py-2 pr-4 pl-3 duration-200 text-gray-950 border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0"
+            >Retrun Period Analysis</li>
             <li className={styles.floodAiButton}>Flood Dashboard</li>
           </ul>
           <div className={styles.menuBtn} onClick={handleMenuItemClick && handleMenuToggle}>
@@ -113,7 +126,7 @@ const NavBar = () => {
                     href="#"
                     onClick={handleMenuItemClick && handleMenuToggle}
                     className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                     }
                 >
                     Admission
@@ -127,7 +140,7 @@ const NavBar = () => {
                     href={"#"}
                  
                     className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                     }
                 >
                     Fee & Scholarship
@@ -138,7 +151,7 @@ const NavBar = () => {
                             href="#"
                             onClick={handleMenuItemClick && handleMenuToggle}
                             className={({ isActive }) =>
-                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                             }
                         >
                             Fee Structure
@@ -147,7 +160,7 @@ const NavBar = () => {
                             href="#"
                             onClick={handleMenuItemClick && handleMenuToggle}
                             className={({ isActive }) =>
-                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                             }
                         >
                             Scholarship
@@ -156,7 +169,7 @@ const NavBar = () => {
                             href="#"
                             onClick={handleMenuItemClick && handleMenuToggle}
                             className={({ isActive }) =>
-                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                             }
                         >
                             Refund Rules
@@ -169,7 +182,7 @@ const NavBar = () => {
                     href="#"
                     onClick={handleMenuItemClick && handleMenuToggle}
                     className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                     }
                 >
                     Gallery
@@ -183,7 +196,7 @@ const NavBar = () => {
                     href="#"
                    
                     className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                     }
                 >
                     About Us
@@ -195,7 +208,7 @@ const NavBar = () => {
                             href="#"
                             onClick={handleMenuItemClick && handleMenuToggle}
                             className={({ isActive }) =>
-                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b text-gray-950 font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                             }
                         >
                             Infinite EduVerse
@@ -204,7 +217,7 @@ const NavBar = () => {
                             href="#"
                             onClick={handleMenuItemClick && handleMenuToggle}
                             className={({ isActive }) =>
-                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                             }
                         >
                             Director's
@@ -213,7 +226,7 @@ const NavBar = () => {
                             href="#"
                             onClick={handleMenuItemClick && handleMenuToggle}
                             className={({ isActive }) =>
-                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                                `block py-2 p-1 pr-4 pl-3 duration-200 ${isActive ? "text-gray-950" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                             }
                         >
                             Our Motivation
@@ -228,7 +241,7 @@ const NavBar = () => {
                     href="#"
                     onClick={handleMenuItemClick && handleMenuhrefggle}
                     className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                     }
                 >
                     Results
@@ -239,7 +252,7 @@ const NavBar = () => {
                     href="#"
                     onClick={handleMenuItemClick && handleMenuToggle}
                     className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-lg border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-950"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
                     }
                 >
                     Blogs

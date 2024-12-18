@@ -26,24 +26,26 @@ function App() {
     <div className="App">
       {/* <HomePage /> */}
        <NavBar /> 
-    {/*  <CatchmentClassification />
-      <ReturnPeriodAnalysis />*/}
+      {/* <CatchmentClassification /> */}
+     {/* <ReturnPeriodAnalysis /> */}
       {/* <UrbanFlood /> */}
       {/* <GondalSubSurfaceFlood />  */}
       {/* <GondalSurfaceFlood /> */}
       {/* <Try /> */}
      
-      <HydroGNN />
+      {/* <HydroGNN /> */}
       {/* <MIRLabNewsHomePage /> */}
-      {/* <MainPage />
+      {/* 
       <Map /> */}
       {/* <ResearchShowCaseHomePage /> */}
      
-      {/* <MapTesting />  */}
+      
+      <MainPage />
+      <MapTesting /> 
       <RiverineFlood />
       <ResearchShowcase />
       <Publication />
-      <MIRLab />{/**/}
+      <MIRLab />
       <Footer /> 
     </div>
   );

@@ -41,7 +41,7 @@
 
 .publicationPapers{
   width: 100%;
-  padding: 20px 10%;
+  padding: 20px 4%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -51,9 +51,10 @@
 
 .paper{
   width: 30%;
+  
   padding-top: 20px;
   padding-left: 30px;
-  min-width: 250px;
+  min-width: 350px;
   display: block;
  
 }

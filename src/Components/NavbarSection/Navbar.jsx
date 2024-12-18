@@ -4,6 +4,7 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const [homeActive, setHomeActive] = useState(false);
   const navbarRef = useRef(null);
 
   const handleMenuToggle = () => {
@@ -19,6 +20,20 @@ const Navbar = () => {
     setMenuActive(false);
     document.body.style.overflow = "auto";
   };
+  const handleScroll = () => {
+    if (window.scrollY > 120) {
+      setHomeActive(true);
+    } else {
+      setHomeActive(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleClickOutside = (event) => {
     if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -40,7 +55,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={`${styles.header} ${homeActive ? styles.scrolled : ''}`}>
         <div className={styles.logo}>
           <img
             src="https://practice-oz2i-git-main-ravi-kumawats-projects.vercel.app/assets/logonew-DHxoMsjw.png"

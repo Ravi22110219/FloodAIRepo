@@ -53,6 +53,7 @@
   color: #000000;
   display: flex;
   justify-content: right;
+  
 }
 
 .navbar ul {
@@ -96,7 +97,7 @@
 }
 
 .navbar li {
-  padding: 30px 20px;
+  padding: 30px 15px;
   display: inline-block;
   transition: 0.5s;
   position: relative;
@@ -255,7 +256,7 @@
     width: 300px;
     background-color: #ececec;
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: block;
     transition: 0.5s;
     transform: translate(-100%, 0);

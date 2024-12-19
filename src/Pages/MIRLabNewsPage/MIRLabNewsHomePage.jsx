@@ -1,6 +1,7 @@
 // MIRLabNewsHomePage.jsx
 import React, { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './MIRLabNewsHomePage.module.css';
 import { FaCalendar, FaUser } from 'react-icons/fa';
 import News1 from "../../assets/photos/MIRLab-News.jpg";
@@ -8,7 +9,7 @@ import News2 from "../../assets/photos/MIRLab-News2.jpg";
 import News3 from "../../assets/photos/MIRLab-News3.jpg";
 
 const MIRLabNewsHomePage = () => {
-    window.scrollTo(0, 0);
+   
     const [currentItem, setCurrentItem] = useState(4);
     const [searchQuery, setSearchQuery] = useState('');
     // const navigate = useNavigate();
@@ -85,9 +86,10 @@ const MIRLabNewsHomePage = () => {
     return (
           <section className={styles.mirLabNewsHomePageSection}>
               <div className={styles.mirLabBanner}>
-        <div className={styles.mirLabBannerLinks}>
-            <a href="#">Home</a> <span>/</span> <a href="#">MIRLabNews</a>
-        </div>
+              <div className={styles.mirLabBannerLinks}>
+    <Link to="/">Home</Link> <span>/</span> <Link to="#">MIRLabNews</Link>
+</div>
+
         <div className={styles.mirLabBannerContentColumn}>
             <div className={styles.mirLabBannerContentCol_1}>
                 <h1>MIRLab News: Pioneering Research in AI and Flooding</h1>

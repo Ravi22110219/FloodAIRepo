@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./GondalSubSurfaceFlood.module.css";
 import BannerGif from "../../assets/photos/BannerGif.gif";
-
+import { Link } from "react-router-dom";
 
 const GondalSubSurfaceFlood = () =>{
    
@@ -10,7 +10,7 @@ const GondalSubSurfaceFlood = () =>{
     <section className={styles.gondalSubSurfaceFloodSection}>
     <div className={styles.gondalSubSurfaceFloodBanner}>
   <div className={styles.gondalSubSurfaceFloodBannerLinks}>
-    <a href="#">Home</a> <span>/</span> <a href="#">Gondal Subsurface Flood</a>
+  <Link to="/">Home</Link><span>/</span> <Link to="#">Gondal Subsurface Flood</Link>
   </div>
   <div className={styles.gondalSubSurfaceFloodBannerContentColumn}>
     <div className={styles.gondalSubSurfaceFloodBannerContentCol_1}>

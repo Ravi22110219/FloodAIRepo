@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import styles from "./Navbar.module.css";
+import {Link, NavLink} from "react-router-dom"
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -78,16 +79,16 @@ const Navbar = () => {
             <span></span>
           </label>
           <ul className={styles.menu}>
-            <li>Home</li>
-            <li>HydroGNN</li>
+            <li><Link to="/" onClick={handleMenuItemClick}>Home</Link></li>
+            <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}><li>HydroGNN</li></NavLink>
             <li>
-              <a href="">Surat Flood</a>
+              Surat Flood
               <label>
                 <input type="checkbox" />
                 <RiArrowDropDownLine className={styles.dropdownIcon} />
               </label>
               <ul>
-                <li>Riverine Flood</li>
+                <Link to="/surat-riverine-flood" onClick={handleMenuItemClick}><li>Riverine Flood</li></Link>
                 <li>
                   Surat Flood 2006
                   <label>
@@ -95,11 +96,11 @@ const Navbar = () => {
                     <RiArrowDropDownLine className={styles.dropdownIcon} />
                   </label>
                   <ul>
-                    <li>Urban</li>
-                    <li>Rural</li>
+                   <Link to="/surat-flood-2006/urban" onClick={handleMenuItemClick}> <li>Urban</li></Link>
+                    <Link to="/surat-flood-2006/rural" onClick={handleMenuItemClick}><li>Rural</li></Link>
                   </ul>
                 </li>
-                <li>Surat Flood Articles</li>
+                <Link to="/research-papers-home" onClick={handleMenuItemClick}><li>Surat Flood Articles</li></Link>
               </ul>
             </li>
             <li>
@@ -109,9 +110,9 @@ const Navbar = () => {
                 <RiArrowDropDownLine className={styles.dropdownIcon} />
               </label>
               <ul>
-                <li>Urban</li>
-                <li>Rural</li>
-                <li>Kozhikode Flood Articles</li>
+                <Link to="/kozhikode-urban-flood" onClick={handleMenuItemClick}><li>Urban</li></Link>
+                <Link to="/kozhikode-urban-flood" onClick={handleMenuItemClick}><li>Rural</li></Link>
+                <Link to="/research-papers-home" onClick={handleMenuItemClick}><li>Kozhikode Flood Articles</li></Link>
               </ul>
             </li>
             <li>
@@ -121,13 +122,13 @@ const Navbar = () => {
                 <RiArrowDropDownLine className={styles.dropdownIcon} />
               </label>
               <ul>
-                <li>Surface</li>
-                <li>Subsurface</li>
-                <li>Gondal Flood Articles</li>
+                <Link to="/gondal-surface-flood" onClick={handleMenuItemClick}><li>Surface</li></Link>
+               <Link to="/gondal-sub-surface-flood" onClick={handleMenuItemClick}> <li>Subsurface</li></Link>
+               <Link to="/research-papers-home" onClick={handleMenuItemClick}> <li>Gondal Flood Articles</li></Link>
               </ul>
             </li>
-            <li>Catchment Classification</li>
-            <li>Return Period Analysis</li>
+            <li><Link to="/catchment-classification" onClick={handleMenuItemClick}> Catchment Classification</Link></li>
+            <li><Link to="/return-period-analysis" onClick={handleMenuItemClick}>Return Period Analysis</Link></li>
           </ul>
           <ul className={styles.otherOption}>
             <li>

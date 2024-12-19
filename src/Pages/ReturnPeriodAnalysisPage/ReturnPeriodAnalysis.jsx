@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './ReturnPeriodAnalysis.module.css';
 import Example1 from '../../assets/photos/DayOneRain.jpg';
 import Example2 from '../../assets/photos/DayOneRain.jpg';
@@ -92,7 +93,7 @@ const ReturnPeriodAnalysis = () => {
     <section className={styles.analysisSection}>
       <div className={styles.returnPeriodAnalysisBanner}>
       <div className={styles.returnPeriodAnalysisBannerLinks}>
-        <a href="#">Home</a> <span>/</span> <a href="#">ReturnPeriodAnalysis</a>
+        <Link to="/">Home</Link> <span>/</span> <Link to="#">ReturnPeriodAnalysis</Link>
       </div>
       <div className={styles.returnPeriodAnalysisBannerContentColumn}>
         <div className={styles.returnPeriodAnalysisBannerContentCol_1}>

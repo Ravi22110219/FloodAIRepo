@@ -47,15 +47,16 @@ const Footer = () => {
               className={styles.inputField}
               required
             />
-            <select className={styles.inputField} required>
-              <option value="" disabled selected>
-                Industry*
-              </option>
-              <option value="tech">Tech</option>
-              <option value="finance">Finance</option>
-              <option value="healthcare">Healthcare</option>
-              <option value="other">Other</option>
-            </select>
+       <select className={styles.inputField} required defaultValue="">
+  <option value="" disabled>
+    Industry*
+  </option>
+  <option value="tech">Tech</option>
+  <option value="finance">Finance</option>
+  <option value="healthcare">Healthcare</option>
+  <option value="other">Other</option>
+</select>
+
             <div className={styles.checkboxGroup}>
               <label>
                 <input type="checkbox" required /> I consent to receive

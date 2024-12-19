@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./GondalSurfaceFlood.module.css";
 import GondalSurfaceFloodImg from "../../assets/photos/GondalSurfaceImg.jpg"
+import { Link } from "react-router-dom";
 
 const GondalSurfaceFlood = () => {
   return (
     <section className={styles.gondalSurfaceFloodSection}>
       <div className={styles.gondalSurfaceFloodBanner}>
         <div className={styles.gondalSurfaceFloodBannerLinks}>
-          <a href="#">Home</a> <span>/</span>{" "}
-          <a href="#">Gondal Surface Flood</a>
+         <Link to="/">Home </Link> <span>/</span>{" "}
+          <Link to="#">Gondal Surface Flood</Link>
         </div>
         <div className={styles.gondalSurfaceFloodBannerContentColumn}>
           <div className={styles.gondalSurfaceFloodBannerContentCol_1}>

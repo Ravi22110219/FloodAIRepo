@@ -5,7 +5,7 @@
 .mirLabBanner {
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://t3.ftcdn.net/jpg/03/78/67/89/360_F_378678986_F2V3TjO7tYQRdXkd5Kg5QowEqPGOe8lv.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/29/22/47/ai-generated-8540915_640.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,13 +55,15 @@
   background-color: var(--hover-color);
 }
 
-.mirLabBannerLinks a:nth-child(1) {
+/* Use `nth-of-type` to target specific Link components */
+.mirLabBannerLinks a:nth-of-type(1) {
   --hover-color: #4aa4ff;
 }
 
-.mirLabBannerLinks a:nth-child(3) {
+.mirLabBannerLinks a:nth-of-type(2) {
   --hover-color: #ff6347;
 }
+
 
 .mirLabBannerContentColumn {
   display: flex;

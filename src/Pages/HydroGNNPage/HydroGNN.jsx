@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./HydroGNN.module.css";
 import IndianRiverBasinImg from "../../assets/photos/IndianRiverBasin.jpg";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -80,7 +81,7 @@ const HydroGNN = () => {
       <div className={styles.hydroGNNDiv}>
         <div className={styles.hydroGNNBanner}>
           <div className={styles.hydroGNNBannerLinks}>
-            <a href="#">Home</a> <span>/</span> <a href="#">HydroGNN</a>
+           <Link to="/">Home</Link> <span>/</span> <Link to="#">HydroGNN</Link>
           </div>
           <div className={styles.hydroGNNBannerContentColumn}>
             <div className={styles.hydroGNNBannerContentCol_1}>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./UrbanFlood.module.css";
+import { Link } from "react-router-dom";
 
 const UrbanFlood = () => {
 
@@ -28,7 +29,7 @@ const UrbanFlood = () => {
     <section>
       <div className={styles.urbanFloodBanner}>
         <div className={styles.urbanFloodBannerLinks}>
-          <a href="#">Home</a> <span>/</span> <a href="#">Urban Flood</a>
+          <Link to="/">Home</Link> <span>/</span> <Link to="#">Urban Flood</Link>
         </div>
         <div className={styles.urbanFloodBannerContentColumn}>
           <div className={styles.urbanFloodBannerContentCol_1}>

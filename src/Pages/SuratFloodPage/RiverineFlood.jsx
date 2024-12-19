@@ -18,8 +18,8 @@ const RiverineFlood = () => {
                 <h2>250 Year Flooding</h2>
               </div>
               <div className={styles.floodVideo}>
-              <img src={FIY250} alt="FIY250" />
-                {/* <video autoPlay muted src={FVY250}></video> */}
+             
+              <iframe src="https://drive.google.com/file/d/1eQzchSdVgUyA2vchjIrf8c8QwkJxTHRx/preview" width="100%" height="400" allow="autoplay"></iframe>
               </div>
             </div>
             <div className={styles.depthImg}>

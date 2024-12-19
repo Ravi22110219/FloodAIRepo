@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./CatchmentClassification.module.css";
 import CatchmentClassificationImg from "../../assets/photos/CatchmentClassificationImg.jpg"
+import { Link } from "react-router-dom";
 
 const CatchmentClassification = () => {
   return (
     <section className={styles.catchmentClassificationSection}>
       <div className={styles.catchmentClassificationBanner}>
         <div className={styles.catchmentClassificationBannerLinks}>
-          <a href="#">Home</a> <span>/</span> <a href="#">CatchmentClassification</a>
+          <Link to="/">Home </Link><span>/</span> <Link to="#">CatchmentClassification</Link>
         </div>
         <div className={styles.catchmentClassificationBannerContentColumn}>
           <div className={styles.catchmentClassificationBannerContentCol_1}>

@@ -1,7 +1,6 @@
 .hydroGNNSection {
   width: 100%;
-  padding-top: 20px;
-  background-color: #f9f9f9;
+  
 }
 
 .hydroGNNDiv {
@@ -55,6 +54,7 @@
 }
 
 .hydroGNNBannerLinks a:hover {
+ 
   color: var(--hover-color);
 }
 
@@ -63,11 +63,11 @@
   background-color: var(--hover-color);
 }
 
-.hydroGNNBannerLinks a:nth-child(1) {
+.hydroGNNBannerLinks a:nth-of-type(1) {
   --hover-color: #4aa4ff;
 }
 
-.hydroGNNBannerLinks a:nth-child(3) {
+.hydroGNNBannerLinks a:nth-of-type(2){
   --hover-color: #ff6347;
 }
 

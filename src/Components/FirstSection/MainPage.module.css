@@ -9,7 +9,7 @@
   width: 100%;
   height: 100vh; 
   position: relative;
-  background-image: url("https://i.gifer.com/YeCp.gif");
+  background-image: url("../../assets/photos/Home_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center; 
@@ -27,7 +27,7 @@
 }
 
 .bannerText h1 {
-  color: #cfe5ff;
+  color: #f3f9ff;
   font-size: calc(30px + .8vw); 
   font-weight: 600;
 }

@@ -32,6 +32,7 @@
 .logo {
   display: flex;
   align-items: center;
+  
   z-index: 2000;
 }
 
@@ -44,7 +45,7 @@
 .logo h1 {
   font-size: 30px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: rgb(49, 148, 148);
   z-index: 2000;
 }
 
@@ -130,8 +131,8 @@
 
 }
 .navbar .menu li ul li:hover{
-  
-  background:#91a9f0;
+  padding-left: 25px;
+  background:#e2e2e2;
 
 
 }
@@ -239,9 +240,11 @@
     left: 40px;
     top: 7px;
     
+    
+    
   }
   .logo h1 {
-    color: #000000;
+    color: #009C92;
     
   }
 
@@ -285,12 +288,13 @@
   }
   .navbar .menu li ul li:hover{
     
-    background:none;
+    background:rgb(221, 221, 221);
     width: none;
+    padding-left: 45px;
     
   
   }
-
+  
   .navbar .openNav {
     display: block;
     position: absolute;

@@ -19,7 +19,7 @@ const CatchmentClassification = () => {
             <button>Learn More</button>
           </div>
           <div className={styles.catchmentClassificationBannerContentCol_2}>
-            {/* You can add an illustration or an image */}
+          <img src="https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif" alt="Catchment Classification" />
           </div>
         </div>
       </div>

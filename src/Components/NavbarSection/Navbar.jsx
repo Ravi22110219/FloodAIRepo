@@ -162,14 +162,14 @@ const Navbar = () => {
               }> <li>Gondal Flood Articles</li></NavLink>
               </ul>
             </li>
-            <li><NavLink to="/catchment-classification" onClick={handleMenuItemClick}
+            <NavLink to="/catchment-classification" onClick={handleMenuItemClick}
                  className={({ isActive }) =>
                   `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }> Catchment Classification</NavLink></li>
-            <li><NavLink to="/return-period-analysis" onClick={handleMenuItemClick}
+              }><li> Catchment Classification</li></NavLink>
+           <NavLink to="/return-period-analysis" onClick={handleMenuItemClick}
                  className={({ isActive }) =>
                   `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }>Return Period Analysis</NavLink></li>
+              }> <li>Return Period Analysis</li></NavLink>
           </ul>
           <ul className={styles.otherOption}>
             <li>

@@ -6,7 +6,6 @@
     <title>NavBarWithRavi</title>
     <link rel="stylesheet" href="try.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
   </head>
   <body>
     <header>
@@ -26,62 +25,82 @@
           <li>Home</li>
           <li>HydroGNN</li>
           <li>
-            Surat Flood
             <label>
-              <input type="checkbox" />
+              Surat Flood
+              <input type="checkbox" class="dropdown-checkbox" />
               <i class="fa-solid fa-angle-down"></i>
             </label>
             <ul>
               <li>Riverine Flood</li>
               <li>
-                Surat Flood 2006
                 <label>
-                  <input type="checkbox" />
+                  Surat Flood 2006
+                  <input type="checkbox"  />
                   <i class="fa-solid fa-angle-down"></i>
                 </label>
                 <ul>
                   <li>Urban</li>
                   <li> Rural</li>
-                  
                 </ul>
               </li>
-              <li> Surat Flood Articles</li>
+              <li>Surat Flood Articles</li>
             </ul>
           </li>
           <li>
-            Kozhikode Flood
             <label>
-              <input type="checkbox" />
+              Kozhikode Flood
+              <input type="checkbox" class="dropdown-checkbox" />
               <i class="fa-solid fa-angle-down"></i>
             </label>
             <ul>
               <li>Urban</li>
               <li> Rural</li>
-              <li> Kozhikode Flood Articles</li>
+              <li>Kozhikode Flood Articles</li>
             </ul>
           </li>
           <li>
-            Gondal Flood
             <label>
-              <input type="checkbox" />
+              Gondal Flood
+              <input type="checkbox" class="dropdown-checkbox" />
               <i class="fa-solid fa-angle-down"></i>
             </label>
             <ul>
               <li>Surface</li>
-              <li> Subsurface</li>
-              <li> Gondal Flood Articles</li>
+              <li>Subsurface</li>
+              <li>Gondal Flood Articles</li>
             </ul>
           </li>
-          <li>Catchment Classification
-          </li>
-          <li>Retrun Period Analysis</li>
-         
+          <li>Catchment Classification</li>
+          <li>Return Period Analysis</li>
         </ul>
-        <!-- <ul class="otherOption">
-          <li>Flood AI Deshboard</li>
-          
-        </ul> -->
       </div>
     </header>
+
+    <script>
+      // Close all dropdowns when navbar closes
+      const openNavCheckbox = document.getElementById('openNav');
+      const dropdownCheckboxes = document.querySelectorAll('.dropdown-checkbox');
+
+      openNavCheckbox.addEventListener('change', () => {
+        if (!openNavCheckbox.checked) {
+          dropdownCheckboxes.forEach(checkbox => {
+            checkbox.checked = false;
+          });
+        }
+      });
+
+      // Close other dropdowns when one is opened
+      dropdownCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            dropdownCheckboxes.forEach(otherCheckbox => {
+              if (otherCheckbox !== checkbox) {
+                otherCheckbox.checked = false;
+              }
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

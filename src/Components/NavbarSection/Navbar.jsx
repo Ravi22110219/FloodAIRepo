@@ -87,9 +87,12 @@ const Navbar = () => {
               `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
           }><li>HydroGNN</li></NavLink>
             <li className="font-medium text-sm mt-1">
-              Surat Flood
-              <label>
-                <input type="checkbox" />
+             <label> Surat Flood
+              
+                <input type="checkbox" 
+                  
+                   
+                />
                 <RiArrowDropDownLine className={styles.dropdownIcon} />
               </label>
               <ul>
@@ -98,8 +101,8 @@ const Navbar = () => {
                   `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
               }><li>Riverine Flood</li></NavLink>
                 <li className="font-medium text-sm ">
-                  Surat Flood 2006
-                  <label>
+                 <label> Surat Flood 2006
+                  
                     <input type="checkbox" />
                     <RiArrowDropDownLine className={styles.dropdownIcon} />
                   </label>
@@ -121,8 +124,8 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="font-medium text-sm mt-1">
-              Kozhikode Flood
-              <label>
+             <label> Kozhikode Flood
+              
                 <input type="checkbox" />
                 <RiArrowDropDownLine className={styles.dropdownIcon} />
               </label>
@@ -142,8 +145,8 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="font-medium text-sm mt-1">
-              Gondal Flood
-              <label>
+             <label> Gondal Flood
+              
                 <input type="checkbox" />
                 <RiArrowDropDownLine className={styles.dropdownIcon} />
               </label>

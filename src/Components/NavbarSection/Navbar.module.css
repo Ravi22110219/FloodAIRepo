@@ -81,6 +81,13 @@
   
 
 }
+.navbar .menu li label{
+
+  display: flex;
+ 
+  
+
+}
 .navbar .otherOption{
  
   text-align: right;
@@ -261,6 +268,7 @@
     left: 0;
     min-height: 100vh;
     display: block;
+   
     transition: 0.5s;
     transform: translate(-100%, 0);
   }
@@ -268,6 +276,7 @@
   .navbar .menu{
   width: 100%;
   display: block;
+  overflow-y: auto;
  
   
 
@@ -360,9 +369,10 @@
   }
 
   .navbar .menu label{
-    display: block;
+     width:100%;
+    display: flex;
+    justify-content: space-between;
     float: right;
-
   }
 
   .navbar  .menu label .dropdownIcon {

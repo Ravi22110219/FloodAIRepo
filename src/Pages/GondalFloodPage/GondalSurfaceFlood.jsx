@@ -1,14 +1,37 @@
 import React from "react";
 import styles from "./GondalSurfaceFlood.module.css";
-import GondalSurfaceFloodImg from "../../assets/photos/GondalSurfaceImg.jpg"
+import GondalSurfaceFloodImg_1 from "../../assets/photos/GondalSurfaceImg1.jpg";
+import GondalSurfaceFloodImg_2 from "../../assets/photos/GondalSurfaceImg2.jpg"; // Example image
+import GondalSurfaceFloodImg_3 from "../../assets/photos/GondalSurfaceImg3.jpg"; // Example image
 import { Link } from "react-router-dom";
 
 const GondalSurfaceFlood = () => {
+  const floodData = [
+    {
+      imgSrc: GondalSurfaceFloodImg_1,
+      title: "Surface Flood",
+      description:
+        "Flooding Scenario in subway with precipitation intensity of 25 mm/hr and without usage of Pump.",
+    },
+    {
+      imgSrc: GondalSurfaceFloodImg_2,
+      title: "Surface Flood",
+      description:
+        "Flooding Scenario in subway with precipitation intensity of 25 mm/hr and with usage of Pump capacity of 0.05 cumecs.",
+    },
+    {
+      imgSrc: GondalSurfaceFloodImg_3,
+      title: "Surface Flood",
+      description:
+        "Flooding Scenario in subway with precipitation intensity of 25 mm/hr and with usage of Pump capacity of 0.3 cumecs.",
+    },
+  ];
+
   return (
     <section className={styles.gondalSurfaceFloodSection}>
       <div className={styles.gondalSurfaceFloodBanner}>
         <div className={styles.gondalSurfaceFloodBannerLinks}>
-         <Link to="/">Home </Link> <span>/</span>{" "}
+          <Link to="/">Home </Link> <span>/</span>{" "}
           <Link to="#">Gondal Surface Flood</Link>
         </div>
         <div className={styles.gondalSurfaceFloodBannerContentColumn}>
@@ -29,11 +52,22 @@ const GondalSurfaceFlood = () => {
           </div>
         </div>
       </div>
-      <div className={styles.gondalSurfaceFloodContent}>
-      <div className={styles.gondalSurfaceFloodContentImg}>
-         <img src={GondalSurfaceFloodImg} alt="" />
+
+      {floodData.map((data, index) => (
+        <div
+          key={index}
+          className={styles.gondalSurfaceFloodContent}
+          style={{ padding: "none" }}
+        >
+          <div className={styles.gondalSurfaceFloodContentImg}>
+            <img src={data.imgSrc} alt={`${data.title} Image`} />
+          </div>
+          <div className={styles.gondalSurfaceFloodContentText}>
+            <h1>{data.title}</h1>
+            <p>{data.description}</p>
+          </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 };

@@ -1,3 +1,8 @@
+.gondalSurfaceFloodSection{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 .gondalSurfaceFloodBanner {
   width: 100%;
   min-height: 100vh;
@@ -114,11 +119,97 @@
   
   border-radius: 10px;
 }
-.gondalSurfaceFloodBannerContentCol_2 img {
-  width: 92%;
-  height: fit-content;
-  padding: 0;
+
+.gondalSurfaceFloodSection .gondalSurfaceFloodContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0!important;
+  border-bottom: 1px solid black;
+  /* overflow: hidden; */
+  
 }
+
+.gondalSurfaceFloodContentImg {
+  width: 70%;
+  border-right:1px solid black ;
+  
+  
+  
+}
+
+.gondalSurfaceFloodContentImg img {
+  width: 100%;
+  height: auto;
+  padding: 4% 6%;
+  border-radius: 10px;
+  animation: slideInLeft 1s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+.gondalSurfaceFloodContentText {
+  width: 30%;
+  animation: slideInRight 1s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+  padding: 3%;
+}
+
+.gondalSurfaceFloodContentText h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gondalSurfaceFloodContentText p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .gondalSurfaceFloodContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gondalSurfaceFloodContentImg {
+    width: 100%;
+    border-right:none ;
+  }
+  
+
+  .gondalSurfaceFloodContentText {
+    width: 100%;
+   
+    
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -151,13 +242,4 @@
   }
 }
 
-.gondalSurfaceFloodContent{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gondalSurfaceFloodContent{
-  width: 100%;
-  padding: 4%;
-}
+

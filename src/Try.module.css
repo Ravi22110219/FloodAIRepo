@@ -1,168 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-.container {
-  min-height: 100vh;
+.publicationSection{
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: #1e1e1e;
-  background-color: #cdcdcd;
-  background-image:
-    repeating-linear-gradient(to right, transparent 0 150px, #0001 150px 151px),
-    repeating-linear-gradient(to bottom, transparent 0 150px, #0001 150px 151px),
-    linear-gradient(to right, #cdcdcdcc, #cdcdcdcc),
-    url(https://github.com/HoanghoDev/youtube_v2/blob/main/3d%20Rotate%20CSS%20Only/images/bg.jpg?raw=true);
+  padding: 0;
+  width: 100%;
+}
+.publicationDiv{
+  width: 100%;
+  display: block;
+  background-image: linear-gradient(black, rgb(97, 97, 97));
+}
+.publicationHeading{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.publicationHeading h1{
+ color: rgb(255, 255, 255);
+ font-size: calc(30px + 0.5vw);
+}
+.publicationButton{
+    width: 100%;
+    height: 50px;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header {
-  width: min(1200px, 90vw);
-  margin: auto;
+.prev,
+.next {
+  
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 3;
+  
+  
+}
+
+.prev {
+  left: 10px;
+ 
+  background: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 50%) left;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.next {
+  right: 10px;
+  background: linear-gradient(to left, transparent 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+.next:hover{
+  background-position: left;
+  color: #000000;
+  border: 1px solid black;
+}
+.prev:hover{
+  background-position: right;
+  
+  color: #000000;
+  border: 1px solid black;
+}
+.publicationBox{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  flex-wrap: wrap;
-}
-
-.left h1 {
-  font-family: "Karantina", sans-serif;
-  font-size: 16vw;
-  line-height: 0.8em;
-}
-
-.author {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.author h3 {
-  font-family: "Karantina", sans-serif;
-  font-size: 5vw;
-}
-
-.author div {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-
-.author div p:nth-child(2) {
-  font-weight: 500;
+.publicationImg{
+  width: 40%;
+  
 }
 
-.author img {
-  width: 250px;
+
+.publicationImg img{
+   width: 100%;
+   height: 100%;
+   padding: 4%;
 }
 
-.banner {
-  margin-top: -50px;
-  height: 100vh;
-  overflow: hidden;
+.publicationContent{
+  width: 60%;
+  padding: 10px;
+  overflow-y: auto;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-}
-
-.product {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 170px;
-  z-index: 2;
-  width: 500px;
-  transition: 0.7s;
-}
-
-.soda {
-  --left: 0px;
-  background: 
-    var(--url) var(--left),
-    url(https://github.com/HoanghoDev/youtube_v2/blob/main/3d%20Rotate%20CSS%20Only/images/mockup.png?raw=true) 0 0;
-  background-size: auto 100%;
-  width: 280px;
-  aspect-ratio: 2 / 1;
-  background-blend-mode: multiply;
-  transition: 0.8s;
-  mask-image: url(https://github.com/HoanghoDev/youtube_v2/blob/main/3d%20Rotate%20CSS%20Only/images/mockup.png?raw=true);
-  mask-size: auto 100%;
-}
-
-.soda:nth-child(2) {
-  opacity: 0;
-}
-
-.product:hover {
-  bottom: 300px;
-}
-
-.product:hover .soda:nth-child(2) {
-  opacity: 1;
-  --left: 500px;
-}
-
-.product:hover .soda:nth-child(1) {
-  opacity: 0;
-  --left: 500px;
-}
-
-.rock {
-  position: absolute;
-  inset: 0 0 0 0;
+  overflow: hidden;
   width: 100%;
-  pointer-events: none;
+  height: 400px;
+
 }
 
-.rock img:nth-child(1) {
+.slidesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  gap: 30px; /* Adjust gap between slides */
+}
+
+.slide {
+  width: 60%; /* Main slide width */
+  height: 100%;
   position: absolute;
-  height: 170px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 30px;
-  transition: 0.7s;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.prevSlide,
+.nextSlide {
+  width: 40%; /* Smaller width for side slides */
+  opacity: 0.5;
+  transform: scale(0.8) translateX(0); /* Shrink side slides */
   z-index: 1;
 }
 
-.rock img:nth-child(2) {
-  position: absolute;
-  height: 50%;
-  left: 0;
-  bottom: 0;
-  transition: 0.7s;
+.activeSlide {
+  opacity: 1;
+  transform: scale(1) translateZ(0); /* Full size for main slide */
+  z-index: 2;
 }
 
-.rock img:nth-child(3) {
-  position: absolute;
-  height: 100%;
-  right: 0;
-  bottom: -100px;
-  rotate: -25deg;
-  transition: 0.7s;
+.prevSlide {
+  transform: translateX(-120%) scale(0.8); /* Shift left */
 }
 
-.banner:has(.product:hover) .rock img:nth-child(1) {
-  transform: translateX(-50%) translateY(50px);
+.nextSlide {
+  transform: translateX(120%) scale(0.8); /* Shift right */
 }
 
-.banner:has(.product:hover) .rock img:nth-child(2) {
-  transform: translateX(-100px) translateY(100px);
+.publicationImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.banner:has(.product:hover) .rock img:nth-child(3) {
-  transform: translateX(100px) translateY(100px);
+.newSticker{
+  display: flex;
+  align-items: center;
+  top: 0;
+
+}
+.newBtn{
+  background-color: rgb(0, 60, 255);
+  color: #ffffff;
+  padding: 5px 15px;
+}
+.newSticker h3{
+  margin-left: 15px;
+  font-size: 20px;
 }
 
-@media screen and (max-width: 1023px) {
-  .soda {
-    width: 400px;
+.title {
+  font-size: clamp(1em, 2vw, 1.2em); 
+  text-align: left;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.author,
+.date {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+  
+}
+
+.goButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  width: 250px;
+  border: 1px solid black;
+  cursor: pointer;
+  background: linear-gradient(to left, black 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.goButton:hover {
+  background-position: left;
+  color: #000000;
+}
+
+
+
+.publicationHomePageButton{
+  width: 100%;
+  padding: 30px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.publicationHomePageButton button{
+  display: flex;
+  border: 1px solid white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: #ffffff;
+  background: linear-gradient(to left, transparent  50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+.publicationHomePageButton button:hover{
+  background-position: left;
+  color: #000000;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .slidesContainer {
+    flex-direction: column;
+  }
+
+  .slide {
+    width: 92%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .soda {
-    width: 250px;
-  }
-  .header img {
+@media (max-width: 500px) {
+  .publicationImg{
     display: none;
   }
-  .author {
+  .publicationImg img{
+    display: none;
+  }
+  .publicationContent{
     width: 100%;
   }
+  
 }

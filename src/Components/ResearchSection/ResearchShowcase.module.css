@@ -1,5 +1,7 @@
 .researchShowcaseSection {
   width: 100%;
+  text-align: center;
+  padding: 30px 4%;
 }
 
 @keyframes appear {
@@ -27,6 +29,7 @@
   color: black;
   font-size: 35px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .researchImgs {
@@ -34,7 +37,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding-left: 10%;
   gap: 5%;
@@ -44,8 +47,8 @@
 .Img {
   width: 30%;
   min-width: 300px;
-  margin-top: 20px;
   height: 300px; /* Fixed height for consistency */
+  margin-top: 20px;
   background-size: cover;
   background-position: center;
   border: 1px solid black;
@@ -58,5 +61,64 @@
 
 .Img:hover {
   background-size: 200%; /* Default zoom on hover */
-  scale: (1.2);
+  transform: scale(1.2); /* Added smooth zoom effect */
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.997);
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  align-items: center;
+  z-index: 2000;
+  animation: appear 0.3s ease-out;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  animation: appear 0.3s ease-out;
+}
+@media only screen and (max-width: 1067px){
+  .modalContent {
+    
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+}
+
+.modalContent img {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+
+ 
+}
+
+
+.closeButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 0%;
+  transition: background 0.3s;
+}
+
+.closeButton:hover {
+  background: rgb(198, 198, 198);
+  color: #fff;
 }

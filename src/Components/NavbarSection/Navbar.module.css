@@ -125,6 +125,7 @@
   margin: 0;
   padding: 0;
   background:#98989800;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: left;
   display: none;
 
@@ -241,7 +242,7 @@
 }
 
 
-@media only screen and (max-width: 1067px) {
+@media only screen and (max-width: 1300px) {
   .logo {
     position: absolute;
     left: 40px;
@@ -287,6 +288,10 @@
  
   
 
+}
+
+.navbar .menu li ul{
+  box-shadow: none;
 }
   .navbar .menu li ul li{
     display: inline-block;

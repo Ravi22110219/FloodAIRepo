@@ -136,7 +136,8 @@ header{
     position: fixed;
     width: 300px;
     background-color: #3D5060;
-    
+    overflow-y: auto;
+    overflow-x:hidden ;
     left: 0;
     height: 100vh;
     display: block;

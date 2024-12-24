@@ -1,135 +1,261 @@
 .publicationSection{
-  margin-top: 30px;
+  margin: 0;
   padding: 0;
   width: 100%;
-
 }
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
+.publicationDiv{
+  width: 100%;
+  display: block;
+  background-image: linear-gradient(black, rgb(97, 97, 97));
+}
+.publicationHeading{
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.publicationHeading h1{
+ color: rgb(255, 255, 255);
+ font-size: calc(30px + 0.5vw);
+}
+.publicationButton{
+    width: 100%;
+    height: 50px;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.prev,
+.next {
+  
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 3;
+  
+  
+}
+
+.prev {
+  left: 10px;
+ 
+  background: linear-gradient(to right, transparent 50%, rgb(255, 255, 255) 50%) left;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.next {
+  right: 10px;
+  background: linear-gradient(to left, transparent 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+.next:hover{
+  background-position: left;
+  color: #000000;
+  border: 1px solid black;
+}
+.prev:hover{
+  background-position: right;
+  
+  color: #000000;
+  border: 1px solid black;
+}
 .publicationBox{
   width: 100%;
-  background-color: rgb(227, 227, 255);
-  display: block;
-
-}
-
-
-
-
-
-
-
-.publicationHeading h1{
-  color: black;
-   font-size: 35px;
-   font-weight: 600;
-   text-align: center;
-   padding-top: 30px;
-   animation: appear linear;
-   animation-timeline: view();
-   animation-range: entry 0% cover 40%;
-}
-
-.publicationPapers{
-  width: 100%;
-  padding: 20px 4%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
+.publicationImg{
+  width: 40%;
+  
+}
+
+
+.publicationImg img{
+   width: 100%;
+   height: 100%;
+   padding: 4%;
+}
+
+.publicationContent{
+  width: 60%;
+  padding: 10px;
+  overflow-y: auto;
+}
+.slider {
+  display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
 
 }
 
-.paper{
-  width: 30%;
-  
-  padding-top: 20px;
-  padding-left: 30px;
-  min-width: 350px;
-  display: block;
- 
-}
-
-.paperImg{
+.slidesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  
+  gap: 30px; /* Adjust gap between slides */
 }
-.paperImg img{
-  display: block;
+
+.slide {
+  width: 60%; /* Main slide width */
+  height: 100%;
+  position: absolute;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.prevSlide,
+.nextSlide {
+  width: 40%; /* Smaller width for side slides */
+  opacity: 0.5;
+  transform: scale(0.8) translateX(0); /* Shrink side slides */
+  z-index: 1;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: scale(1) translateZ(0); /* Full size for main slide */
+  z-index: 2;
+}
+
+.prevSlide {
+  transform: translateX(-120%) scale(0.8); /* Shift left */
+}
+
+.nextSlide {
+  transform: translateX(120%) scale(0.8); /* Shift right */
+}
+
+.publicationImg img {
   width: 100%;
   height: auto;
-  border: 0.5 solid black;
+  border-radius: 8px;
+}
+
+.newSticker{
+  display: flex;
+  align-items: center;
+  top: 0;
+
+}
+.newBtn{
+  background-color: rgb(0, 60, 255);
+  color: #ffffff;
+  padding: 5px 15px;
+}
+.newSticker h3{
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.title {
+  font-size: clamp(1em, 2vw, 1.2em); 
+  text-align: left;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.author,
+.date {
+  text-align: left;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
   
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #6a6a6a;
-  overflow: hidden;
-  opacity: .8;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-.paperImg:hover .overlay {
-  height: 100%;
-}
-
-.text {
+.goButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
   color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 250px;
+  border: 1px solid black;
+  cursor: pointer;
+  background: linear-gradient(to left, black 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+.goButton:hover {
+  background-position: left;
+  color: #000000;
+}
+
+
+
+.publicationHomePageButton{
+  width: 100%;
+  padding: 30px 0px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.paperButton{
-   width: 100%;
-   padding: 20px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   color: #ffffff;
-   /* border: 0.5px solid white; */
-   font-size: 18px;
-   cursor: pointer;
-   border-bottom: 4px;
-   align-self: flex-start;
-   background: rgb(0, 0, 0); 
-   background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
-   background-size: 200%;
-   transition: .3s ease-out;
-   
+.publicationHomePageButton button{
+  display: flex;
+  border: 1px solid white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: #ffffff;
+  background: linear-gradient(to left, transparent  50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
 }
-
-.paperButton button{
-
- font-size: 25px;
+.publicationHomePageButton button:hover{
+  background-position: left;
+  color: #000000;
+  border: 1px solid black;
 }
 
-.paperButton:hover{
-  background-position:left;
-  color: rgb(0, 0, 0);
+
+
+
+
+
+@media (max-width: 1100px) {
+  .slidesContainer {
+    flex-direction: column;
+  }
+
+  .slide {
+    width: 92%;
+  }
 }
 
+@media (max-width: 500px) {
+  .publicationImg{
+    display: none;
+  }
+  .publicationImg img{
+    display: none;
+  }
+  .publicationContent{
+    width: 100%;
+  }
+  
+}

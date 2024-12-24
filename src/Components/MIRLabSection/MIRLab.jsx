@@ -5,6 +5,10 @@ import { FaCalendar, FaUser } from 'react-icons/fa';
 import News1 from "../../assets/photos/MIRLab-News.jpg";
 import News2 from "../../assets/photos/MIRLab-News2.jpg";
 import News3 from "../../assets/photos/MIRLab-News3.jpg";
+import { BsGlobeCentralSouthAsia } from "react-icons/bs";
+import { Link } from 'react-router-dom';
+
+
 
 const MIRLab = () => {
   useEffect(() => {
@@ -107,27 +111,39 @@ const MIRLab = () => {
   const newsItems = [
     {
       id: 1,
-      imgSrc: News1,
-      title: 'Inspiring Success: The Journey From A Small Village to IIT Roorkee',
-      description: 'The journey to IIT Roorkee begins with the dream of countless JEE aspirants across India...',
-      date: "28th July",
-      author: "Lakhveer Singh",
+      imgSrc: "https://images.indianexpress.com/2024/08/9_ec2e52.jpg?w=640",
+      title: 'Intense rainfall in Gujarat worsened by extensive urban development in flood-prone areas’: IITGN study',
+      description: 'Morbi, Dwarka, and Jamnagar recorded rainfall levels that surpassed their 50-year re...',
+      date: "Dec 24, 2024",
+      author: "The Indian Express",
+      link:"https://indianexpress.com/article/cities/ahmedabad/rainfall-floods-gujarat-urban-development-flood-prone-areas-iitgn-study-9547608/"
     },
     {
       id: 2,
-      imgSrc: News2,
-      title: 'The NEET Scam 2024: Uncovering the Truth Behind the Controversy',
-      description: 'The year 2024 has added a dire chapter to the annals of Indian education: the NEET Scam...',
-      date: "20th June",
-      author: "Bidsuk CEO",
+      imgSrc: "https://assets.telegraphindia.com/telegraph/2024/Sep/1725421463_gujarat-floods.jpg",
+      title: 'Flooding in Gujarat worsened by extensive urban development, altered elevations: IIT-GN study',
+      description: "The recurrence of 'unusual weather events along India's western coast', such as the on...",
+      date: "Sept 04, 2024",
+      author: "The Telegraph",
+      link:"https://www.telegraphindia.com/india/flooding-in-gujarat-worsened-by-extensive-urban-development-altered-elevations-indian-institute-of-technology-gandhinagar-study/cid/2045651"
     },
     { 
       id: 3,
-      imgSrc: News3,
-      title: 'Why Infinite EduVerse is the Best Choice for NEET and JEE Preparation',
-      description: 'Infinite EduVerse stands out as a premier institute for NEET and JEE preparation...',
-      date: '29th May, 2022',
-      author: 'Naushad Khan',
+      imgSrc: "https://img.etimg.com/thumb/msid-113049068,width-300,height-225,imgsize-154422,resizemode-75/gujarat-jul-23-ani-an-aerial-survey-is-being-conducted-by-gujarat-chief-mini-.jpg",
+      title: 'Flooding in Gujarat worsened by extensive urban development, altered elevations: IIT-GN study',
+      description: 'Recent flooding in Gujarat was caused by severe weather and worsened by urba...',
+      date: 'Sept 04, 2024',
+      author: 'The Economic Times',
+      link:"https://economictimes.indiatimes.com/news/india/flooding-in-gujarat-worsened-by-extensive-urban-development-altered-elevations-iit-gn-study/articleshow/113048882.cms?from=mdr"
+    },
+    { 
+      id: 4,
+      imgSrc: "https://img.republicworld.com/tr:w-800,h-450,q-75,f-auto/rimages/m5ybyh3tm6gfplbj_1618399351_16_9.jpeg",
+      title: 'IITGN’s model to accurately assess rainfall-induced damages in road networks',
+      description: 'New Delhi, Oct 22 (PTI) Scientists at the Indian Institute of Technology Gandhinag....',
+      date: 'Oct 22, 2021',
+      author: 'Republic',
+      link:"https://www.republicworld.com/education/iitgns-model-to-accurately-assess-rainfall-induced-damages-in-road-networks"
     }
   ];
 
@@ -141,7 +157,7 @@ const MIRLab = () => {
         <div className={styles.wrapper}>
           <ul className={styles.carousel}>
             {newsItems.map((news) => (
-              <li key={news.id} className={styles.card}>
+             <Link to={news.link} target='_main_'><li key={news.id} className={styles.card}>
                 <div className={styles.newsImg}>
                   <img src={news.imgSrc} alt="news" draggable="false" />
                 </div>
@@ -152,15 +168,16 @@ const MIRLab = () => {
                     <FaCalendar className='mr-2' color='crimson' /> <span className='text-black'>{news.date}</span>
                   </div>
                   <div className='flex align-middle px-3'>
-                    <FaUser className='mr-2' color='crimson' /> <span className='text-black'>{news.author}</span>
+                  <BsGlobeCentralSouthAsia  style={{marginTop:"2px", marginRight:"8px"}} color='crimson' />
+                    <span className='text-black'>{news.author}</span>
                   </div>
                 </div>
-              </li>
+              </li></Link> 
             ))}
           </ul>
         </div>
       </div>
-      <div><button>Click For More</button></div>
+      {/* <div className={styles.moreBtn}><button>Click For More</button></div> */}
     </section>
   );
 };

@@ -47,7 +47,7 @@
 .Img {
   width: 30%;
   min-width: 300px;
-  height: 300px; /* Fixed height for consistency */
+  height: 300px; 
   margin-top: 20px;
   background-size: cover;
   background-position: center;
@@ -60,11 +60,10 @@
 }
 
 .Img:hover {
-  background-size: 200%; /* Default zoom on hover */
-  transform: scale(1.2); /* Added smooth zoom effect */
+  background-size: 200%; 
+  transform: scale(1.1); 
 }
 
-/* Modal styles */
 .modal {
   position: fixed;
   top: 0;

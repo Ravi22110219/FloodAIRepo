@@ -6,9 +6,22 @@
   background-color: #f5f5f5;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 .sectionHeader {
   text-align: center;
   margin-bottom: 40px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .sectionHeader h3 {
@@ -78,6 +91,9 @@
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .carousel::-webkit-scrollbar {
@@ -98,23 +114,30 @@
   user-select: none;
 }
 
+
+
+
+
 .card {
   scroll-snap-align: start;
   min-width: 300px;
   max-width: 370px;
   list-style: none;
-  background: #eafdfe;
+  background-image: linear-gradient(rgb(130, 130, 130), rgb(255, 255, 255));
   padding: 15px;
   border-radius: 12px;
   border: 1.5px solid rgb(241, 254, 255);
   border-bottom-color: rgb(255, 84, 84);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* background: linear-gradient(360deg, #ff5b3a, #f09819), linear-gradient(0deg, #fffdea, #fffdea00); */
+  color: white;
 }
 
 .newsImg {
@@ -122,7 +145,7 @@
   height: 250px;
   width: 100%;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .newsImg img {

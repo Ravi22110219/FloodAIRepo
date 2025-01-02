@@ -1,64 +1,68 @@
-// React Component
 import React from "react";
 import styles from "./CardsSection.module.css";
 import { NavLink } from "react-router-dom";
+import Img3 from "../../assets/photos/palsar_inundation_gif.gif";
 
 const cardsData = [
-    {
-        id: 1,
-        title: "Product Card",
-        description: "This card showcases our main product, highlighting its features and benefits.",
-        link: "/product-details",
-        image: "https://via.placeholder.com/300x200.png?text=Product+Card"
-    },
-    {
-        id: 2,
-        title: "Flood Card 1",
-        description: "A detailed overview of flood-related statistics and resources.",
-        link: "/flood-details-1",
-        image: "https://via.placeholder.com/300x200.png?text=Flood+Card+1"
-    },
-    {
-        id: 3,
-        title: "Flood Card 2",
-        description: "Insights and information about flood management strategies.",
-        link: "/flood-details-2",
-        image: "https://via.placeholder.com/300x200.png?text=Flood+Card+2"
-    },
-    {
-        id: 4,
-        title: "Demo Card",
-        description: "A demonstration card providing an example of functionality.",
-        link: "/demo",
-        image: "https://via.placeholder.com/300x200.png?text=Demo+Card"
-    }
+  {
+    id: 1,
+    title: "Product Card",
+    description:
+      "Explore our innovative products designed to address real-world challenges with AI-powered solutions.",
+    link: "/product",
+    image: Img3
+  },
+  {
+    id: 2,
+    title: "Flood Card 1",
+    description:
+      "Gain insights into flood prediction technologies and how we are making communities more resilient.",
+    link: "/flood1",
+    image: Img3
+},
+  {
+    id: 3,
+    title: "Flood Card 2",
+    description:
+      "Learn more about our advanced flood modeling and simulation tools for effective disaster management.",
+    link: "/flood2",
+    image:  Img3
+  },
+  {
+    id: 4,
+    title: "Demo Card",
+    description:
+      "Experience our solutions in action. Check out live demos showcasing their real-world applications.",
+    link: "/demo",
+    image:  Img3
+  }
 ];
 
-const CardsSection = () => {
-    return (
-        <section className={styles.cardsSection} id="cards">
-            <header className={styles.sectionHeader}>
-                <h3>Explore Various Topics at Your Pace</h3>
-            </header>
-            <div className={styles.cardsContainer}>
-                {cardsData.map((card) => (
-                    <div key={card.id} className={styles.cardBox} style={{ backgroundImage: `url(${card.image})` }}>
-                       
-                        <div className={styles.cardContent}>
-                            <div className={styles.cardOverlay}>
-                            <h2 className={styles.cardTitle}>{card.title}</h2>
-                                <p>{card.description}</p>
-                                <NavLink to={card.link}>
-                                    <button className={styles.cardBtn}>Learn More</button>
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+const CardSection = () => {
+  return (
+    <section className={styles.cards} id="cards">
+      <header className={styles.sectionHeader}>
+        
+       
+      </header>
+      <div className={styles.cardsContents}>
+        {cardsData.map((card) => (
+          <div key={card.id} className={styles.cardBox}>
+            <div className={styles.cardBoxTop}>
+              <img src={card.image} alt={card.title} />
             </div>
-        </section>
-    );
+            <div className={styles.cardDesc}>
+              <h2>{card.title}</h2>
+              <p>{card.description}</p>
+              <NavLink to={card.link}>
+                <button className={styles.cardBtn}>Learn More</button>
+              </NavLink>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
-export default CardsSection;
-
+export default CardSection;

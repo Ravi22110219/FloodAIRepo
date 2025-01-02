@@ -60,11 +60,11 @@ const Footer = () => {
             <div className={styles.checkboxGroup}>
               <label>
                 <input type="checkbox" required /> I consent to receive
-                marketing communications from Fathom.*
+                marketing communications from FloodAi.*
               </label>
               <label>
                 <input type="checkbox" required /> I consent to my data being
-                stored and processed by Fathom, in line with their privacy
+                stored and processed by FloodAi, in line with their privacy
                 policy.*
               </label>
             </div>

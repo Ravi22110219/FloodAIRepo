@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import "./App.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 
 import RiverineFlood from "./Pages/SuratFloodPage/RiverineFlood.jsx";
@@ -20,12 +20,12 @@ import ScrollToTop from "./ScrollToTop.jsx";
 
 function App() {
   return (
-    <Router basename="/FloodAIRepo">
+    <Router basename="/">
       <ScrollToTop />
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="hydro-gnn" element={<HydroGNN />} />
+         <Route index element={<HomePage />} />
+       <Route path="hydro-gnn" element={<HydroGNN />} />
         <Route path="surat-flood" element={<RiverineFlood />} />
         <Route path="surat-riverine-flood" element={<RiverineFlood />} />
         <Route path="surat-flood-2006/urban" element={<RiverineFlood />} />

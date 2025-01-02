@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./CatchmentClassification.module.css";
 import CatchmentClassificationImg from "../../assets/photos/CatchmentClassificationImg.jpg"
 import { Link } from "react-router-dom";
+import ResearchShowcase from "../../Components/ResearchSection/ResearchShowcase";
 
 const CatchmentClassification = () => {
   return (
@@ -29,6 +30,7 @@ const CatchmentClassification = () => {
                   <img src={CatchmentClassificationImg} alt="CatchmentClassificationImg" />
         </div>
       </div>
+      <ResearchShowcase />
     </section>
   );
 };

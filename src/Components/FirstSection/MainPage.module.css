@@ -1,53 +1,111 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.bannerSection {
+.LandingPage {
   width: 100%;
-  height: 100vh; 
-  position: relative;
-  background-image: url("../../assets/photos/Home_banner.jpg");
+  min-height: 100vh;
+
+  background-image: url("../../assets/photos/LandingPageMain.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center; 
-  z-index: 1;
-}
-
-.bannerText {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  text-align: center; 
-  /* background-color: rgba(0, 0, 0, 0.5); Add a dark overlay for better readability */
+  align-items: center;
+
 }
 
-.bannerText h1 {
-  color: #f3f9ff;
-  font-size: calc(30px + .8vw); 
-  font-weight: 600;
+
+
+.LandingPageContentColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+  gap: 20px;
+ 
 }
 
-.bannerText button {
+.LandingPageContentCol_1 {
+  width: 66%;
+  padding-left: 4%;
+  
+
+}
+
+.LandingPageContentCol_1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.LandingPageContentCol_1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.LandingPageContentCol_1 button {
   color: #ffffff;
-  border: 1px solid white;
+  border: 0.5px solid white;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
   border-radius: 4px;
   align-self: flex-start;
-  background: rgb(0, 0, 0); 
+  background: rgb(0, 0, 0);
   background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
   background-size: 200%;
   transition: .3s ease-out;
+  animation: fadeIn 2s ease-in-out;
 }
 
-.bannerText button:hover {
+.LandingPageContentCol_1 button:hover {
   background-position: left;
   color: #000000;
-  border: 1px solid black;
+}
+
+.LandingPageContentCol_2 {
+  width: 96%;
+  margin-right: 4%;
+  border-radius: 10px;
+}
+
+.LandingPageContentCol_2 img {
+  width: 92%;
+  height: fit-content;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .LandingPageContentColumn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 150px;
+  }
+  .LandingPageContentCol_1 {
+      width: 100%;
+      padding-right: 4%;
+  }
+  .LandingPageContentCol_2 {
+      width: 100%;
+      margin: auto;
+      border-radius: 10px;
+      margin-bottom: 30px;
+  }
 }

@@ -85,8 +85,24 @@ const Navbar = () => {
             <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
              className={({ isActive }) =>
               `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-          }><li>HydroGNN</li></NavLink>
-            <li className="font-medium text-sm mt-1">
+          }><li>Product</li></NavLink>
+           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
+             className={({ isActive }) =>
+              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+          }><li>Demo</li></NavLink>
+           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
+             className={({ isActive }) =>
+              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+          }><li>Research</li></NavLink>
+           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
+             className={({ isActive }) =>
+              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+          }><li>About Us</li></NavLink>
+           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
+             className={({ isActive }) =>
+              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+          }><li>Contact Us</li></NavLink>
+            {/* <li className="font-medium text-sm mt-1">
              <label> Surat Flood
               
                 <input type="checkbox" 
@@ -164,15 +180,15 @@ const Navbar = () => {
                   `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
               }> <li>Gondal Flood Articles</li></NavLink>
               </ul>
-            </li>
-            <NavLink to="/catchment-classification" onClick={handleMenuItemClick}
+            </li> */}
+            {/* <NavLink to="/catchment-classification" onClick={handleMenuItemClick}
                  className={({ isActive }) =>
                   `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
               }><li> Catchment Classification</li></NavLink>
            <NavLink to="/return-period-analysis" onClick={handleMenuItemClick}
                  className={({ isActive }) =>
                   `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }> <li>Return Period Analysis</li></NavLink>
+              }> <li>Return Period Analysis</li></NavLink> */}
           </ul>
           <ul className={styles.otherOption}>
             <li>

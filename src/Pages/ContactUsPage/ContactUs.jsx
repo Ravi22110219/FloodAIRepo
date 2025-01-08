@@ -36,15 +36,15 @@ const ContactUs = () => {
   <div className={styles.contactDetails}>
       <div className={styles.contactCard}>
         <h2>Email</h2>
-        <p>support@AIResq.com</p>
+        <p>itsupport@airesqclimsols.com</p>
       </div>
-      <div className={styles.contactCard}>
+      {/* <div className={styles.contactCard}>
         <h2>Phone</h2>
-        <p>+1 123-456-7890</p>
-      </div>
+        <p>+91 - </p>
+      </div> */}
       <div className={styles.contactCard}>
         <h2>Address</h2>
-        <p>123 AIResq Street, Innovation City, Techland</p>
+        <p>Research Park, Indian Institute of Technology Gandhinagar</p>
       </div>
     </div>
   

@@ -21,6 +21,7 @@ import SidebarPage from "./Pages/DemoPage/Demo.jsx";
 import RealTimeChart from "./Pages/RealTimeChart/RealTimeChart.jsx";
 import AboutUsPage from "./Pages/AboutUsPage/AboutUs.jsx";
 
+
 function App() {
   return (
     <Router basename="/">
@@ -46,6 +47,7 @@ function App() {
         <Route path="research-page" element={<ResearchPage />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="about-us" element={<AboutUsPage />} />
+        <Route path="flood-ai-dashboard" element={<DashBoard />} />
 
      
       </Route>
@@ -53,5 +55,6 @@ function App() {
   </Router>
   );
 }
+import DashBoard from "./Pages/FloodAiDashBoard/DashBoard.jsx";
 
 export default App;

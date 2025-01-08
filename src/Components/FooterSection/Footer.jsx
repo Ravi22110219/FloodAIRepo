@@ -86,7 +86,7 @@ const Footer = () => {
             <li><a href="#">Legal</a></li>
             <li><a href="#">Customize consent preferences</a></li>
           </ul>
-          <div className={styles.socialMediaSection}> <h2>Visit Our Social Media</h2>
+          {/* <div className={styles.socialMediaSection}> <h2>Visit Our Social Media</h2>
           <div className={styles.footerLogo}>
             <div className={styles.socialMediaAccounts}>
               <ul className={styles.socialUl}>
@@ -101,7 +101,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          </div>
+          </div> */}
         </div>
 
         {/* HQ Section */}

@@ -58,9 +58,15 @@ const CardSection = () => {
               <p>{card.description}</p>
              </div>
              <div className={styles.btnDiv}> 
-              <NavLink to={card.link} >
-                <button className={styles.cardBtn}>Learn More</button>
-              </NavLink></div>
+             <NavLink to={card.id === 4 ? "#" : card.link}>
+  <button 
+    className={styles.cardBtn} 
+    disabled={card.id === 4}
+  >
+    {card.id === 4 ? "Coming Soon" : "Learn More"}
+  </button>
+</NavLink>
+</div>
             </div>
           
         ))}

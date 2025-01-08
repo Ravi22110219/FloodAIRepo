@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import styles from "./Navbar.module.css";
 import {Link, NavLink} from "react-router-dom";
-import logo from "../../assets/photos/MIRLOGO.png";
+import logo from "../../assets/photos/logo1.png";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -63,7 +63,7 @@ const Navbar = () => {
             src={logo}
             className={styles.logoImg}
           />
-          <h1>Flood AI</h1>
+          <h1>AIResQ</h1>
         </div>
         <div ref={navbarRef} className={`${styles.navbar} ${menuActive ? styles.active : ""}`}>
           <input
@@ -79,117 +79,178 @@ const Navbar = () => {
             <span></span>
           </label>
           <ul className={styles.menu}>
-            <NavLink to="/" onClick={handleMenuItemClick}  className={({ isActive }) =>
-                        `block duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-                    }><li>Home</li></NavLink>
-            <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
-             className={({ isActive }) =>
-              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-          }><li>Product</li></NavLink>
-           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
-             className={({ isActive }) =>
-              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-          }><li>Demo</li></NavLink>
-           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
-             className={({ isActive }) =>
-              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-          }><li>Research</li></NavLink>
-           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
-             className={({ isActive }) =>
-              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-          }><li>About Us</li></NavLink>
-           <NavLink to="/hydro-gnn" onClick={handleMenuItemClick}
-             className={({ isActive }) =>
-              `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-          }><li>Contact Us</li></NavLink>
-            {/* <li className="font-medium text-sm mt-1">
-             <label> Surat Flood
-              
-                <input type="checkbox" 
-                  
-                   
-                />
-                <RiArrowDropDownLine className={styles.dropdownIcon} />
-              </label>
-              <ul>
-                <NavLink to="/surat-riverine-flood" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Riverine Flood</li></NavLink>
-                <li className="font-medium text-sm ">
-                 <label> Surat Flood 2006
-                  
-                    <input type="checkbox" />
-                    <RiArrowDropDownLine className={styles.dropdownIcon} />
-                  </label>
-                  <ul>
-                   <NavLink to="/surat-flood-2006/urban" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }> <li>Urban</li></NavLink>
-                    <NavLink to="/surat-flood-2006/rural" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Rural</li></NavLink>
-                  </ul>
-                </li>
-                <NavLink to="/research-papers-home" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Surat Flood Articles</li></NavLink>
-              </ul>
-            </li>
-            <li className="font-medium text-sm mt-1">
-             <label> Kozhikode Flood
-              
-                <input type="checkbox" />
-                <RiArrowDropDownLine className={styles.dropdownIcon} />
-              </label>
-              <ul>
-                <NavLink to="/kozhikode-urban-flood" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Urban</li></NavLink>
-                <NavLink to="/kozhikode-urban-flood" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Rural</li></NavLink>
-                <NavLink to="/research-papers-home" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Kozhikode Flood Articles</li></NavLink>
-              </ul>
-            </li>
-            <li className="font-medium text-sm mt-1">
-             <label> Gondal Flood
-              
-                <input type="checkbox" />
-                <RiArrowDropDownLine className={styles.dropdownIcon} />
-              </label>
-              <ul>
-                <NavLink to="/gondal-surface-flood" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li>Surface</li></NavLink>
-               <NavLink to="/gondal-sub-surface-flood" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }> <li>Subsurface</li></NavLink>
-               <NavLink to="/research-papers-home" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }> <li>Gondal Flood Articles</li></NavLink>
-              </ul>
-            </li> */}
-            {/* <NavLink to="/catchment-classification" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }><li> Catchment Classification</li></NavLink>
-           <NavLink to="/return-period-analysis" onClick={handleMenuItemClick}
-                 className={({ isActive }) =>
-                  `block  duration-100 ${isActive ? "text-orange-600" : "text-black-900"} border-b font-medium text-sm border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
-              }> <li>Return Period Analysis</li></NavLink> */}
-          </ul>
+  <NavLink 
+    to="/" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Home</li>
+  </NavLink>
+  <NavLink 
+    to="/hydro-pinn" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Product</li>
+  </NavLink>
+  {/* <NavLink 
+    to="/kozhikode-urban-flood" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Demo</li>
+  </NavLink> */}
+  <NavLink 
+    to="/urban-flood" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Services</li>
+  </NavLink>
+  <NavLink 
+    to="/research-page" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Research</li>
+  </NavLink>
+
+  <NavLink 
+    to="/about-us" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Company</li>
+  </NavLink>
+  <NavLink 
+    to="/contact-us" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Contact Us</li>
+  </NavLink>
+  {/* <li className={styles.menuItem}>
+    <label>
+      Surat Flood
+      <input type="checkbox" />
+      <RiArrowDropDownLine className={styles.dropdownIcon} />
+    </label>
+    <ul>
+      <NavLink 
+        to="/surat-riverine-flood" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Riverine Flood</li>
+      </NavLink>
+      <li className={styles.menuItem}>
+        <label>
+          Surat Flood 2006
+          <input type="checkbox" />
+          <RiArrowDropDownLine className={styles.dropdownIcon} />
+        </label>
+        <ul>
+          <NavLink 
+            to="/surat-flood-2006/urban" 
+            onClick={handleMenuItemClick} 
+            className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+          >
+            <li>Urban</li>
+          </NavLink>
+          <NavLink 
+            to="/surat-flood-2006/rural" 
+            onClick={handleMenuItemClick} 
+            className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+          >
+            <li>Rural</li>
+          </NavLink>
+        </ul>
+      </li>
+      <NavLink 
+        to="/research-papers-home" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Surat Flood Articles</li>
+      </NavLink>
+    </ul>
+  </li>
+  <li className={styles.menuItem}>
+    <label>
+      Kozhikode Flood
+      <input type="checkbox" />
+      <RiArrowDropDownLine className={styles.dropdownIcon} />
+    </label>
+    <ul>
+      <NavLink 
+        to="/kozhikode-urban-flood" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Urban</li>
+      </NavLink>
+      <NavLink 
+        to="/kozhikode-urban-flood" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Rural</li>
+      </NavLink>
+      <NavLink 
+        to="/research-papers-home" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Kozhikode Flood Articles</li>
+      </NavLink>
+    </ul>
+  </li>
+  <li className={styles.menuItem}>
+    <label>
+      Gondal Flood
+      <input type="checkbox" />
+      <RiArrowDropDownLine className={styles.dropdownIcon} />
+    </label>
+    <ul>
+      <NavLink 
+        to="/gondal-surface-flood" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Surface</li>
+      </NavLink>
+      <NavLink 
+        to="/gondal-sub-surface-flood" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Subsurface</li>
+      </NavLink>
+      <NavLink 
+        to="/research-papers-home" 
+        onClick={handleMenuItemClick} 
+        className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+      >
+        <li>Gondal Flood Articles</li>
+      </NavLink>
+    </ul>
+  </li> */}
+  {/* <NavLink 
+    to="/catchment-classification" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Catchment Classification</li>
+  </NavLink>
+  <NavLink 
+    to="/return-period-analysis" 
+    onClick={handleMenuItemClick} 
+    className={({ isActive }) => (isActive ? styles.activeLink : styles.inactiveLink)}
+  >
+    <li>Return Period Analysis</li>
+  </NavLink> */}
+</ul>
+
           <ul className={styles.otherOption}>
             <li>
               <button className={styles.floodAiButton}>Flood Dashboard</button>

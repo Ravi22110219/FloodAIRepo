@@ -60,11 +60,11 @@ const Footer = () => {
             <div className={styles.checkboxGroup}>
               <label>
                 <input type="checkbox" required /> I consent to receive
-                marketing communications from FloodAi.*
+                marketing communications from AIResQ.*
               </label>
               <label>
                 <input type="checkbox" required /> I consent to my data being
-                stored and processed by FloodAi, in line with their privacy
+                stored and processed by AIResQ, in line with their privacy
                 policy.*
               </label>
             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
       <div className={styles.rightSection}>
       <div className={styles.copyRights}>
           <p><a href="#">Terms of Use | Privacy Policy </a></p>
-          <p><span className="far fa-copyright"><FaRegCopyright /></span> Flood AI 2024, All Rights Reserved<span className="far fa-copyright" style={{marginLeft:"5px"}}><GoArrowUpRight  /></span> </p>
+          <p><span className="far fa-copyright"><FaRegCopyright /></span> AIResQ 2024, All Rights Reserved<span className="far fa-copyright" style={{marginLeft:"5px"}}><GoArrowUpRight  /></span> </p>
         </div>
 
       </div>

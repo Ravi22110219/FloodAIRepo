@@ -123,7 +123,7 @@
   border-radius: 10px;
 }
 .catchmentClassificationBannerContentCol_2 img {
-  width: 92%;
+  width: 100%;
   height: fit-content;
   padding: 0;
 }
@@ -171,6 +171,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
 }
 
 

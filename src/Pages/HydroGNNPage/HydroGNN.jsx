@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const data = [
   {
-    title: "Indian River Basins",
+    title: " Flood Modeling Suite",
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
@@ -15,54 +15,172 @@ const data = [
           loading="lazy"
           onError={(e) => (e.target.src = "path/to/fallback-image.jpg")}
         />
-        <p>
-          Indian River Basins are categorized based on various geographical and
-          hydrological factors. Below is a graph illustrating the distribution.
-        </p>
-        <div className={styles.graph}>
-          <p>Graph Component Placeholder for Indian River Basins</p>
+        <div>
+          <p>
+            <strong style={{ fontSize: "25px" }}>
+              Precision at Every Scale
+            </strong>
+            <br />
+            Flooding doesn’t happen in isolation—it’s dynamic, and so are our
+            models. Our Flood Modeling Suite uses AI, physics-based simulations,
+            and real-time data to predict flooding with stunning accuracy.
+            Whether it’s urban stormwater or large river basins, we deliver
+            insights you can trust to plan, prepare, and protect.
+          </p>
+          <div className={styles.graph}>
+            <p>
+              <strong style={{ fontSize: "25px" }}>What It Offers:</strong>{" "}
+              <br /> Pinpoint predictions validated by real-world data.
+              <br />
+              Tailored assessments for communities, businesses, and
+              infrastructure. <br />
+              Easy integration with smart city platforms for real-time
+              decision-making.
+            </p>
+          </div>
         </div>
       </div>
     ),
   },
   {
-    title: "Indian Rivers as a Graph",
+    title: " Resilience Recovery Algorithms",
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
-          src="path/to/indian-rivers-graph-image.jpg"
+          src={IndianRiverBasinImg}
           alt="Indian Rivers Graph"
           className={styles.contentImage}
           loading="lazy"
           onError={(e) => (e.target.src = "path/to/fallback-image.jpg")}
         />
+        <div>
         <p>
-          Indian rivers can be represented as a network graph. This helps in
-          understanding the flow paths and connections.
+          <strong style={{ fontSize: "25px" }}>
+            Faster Recovery, Smarter Planning
+          </strong>{" "}
+          <br /> Disasters don’t wait, and neither should recovery. Our
+          proprietary algorithms streamline recovery efforts by prioritizing
+          what matters most—critical infrastructure, safe evacuation, and
+          efficient resource allocation. By focusing on what’s urgent, we help
+          you bounce back quicker and stronger. .
         </p>
         <div className={styles.graph}>
-          <p>Graph Component Placeholder for Indian Rivers</p>
+          <p>
+            <strong style={{ fontSize: "25px" }}> What It Offers:</strong>
+            <br /> Smart recovery pathways for complex infrastructure systems.{" "}
+            <br />
+            Integration with mobility networks for seamless evacuations. <br />
+            Custom strategies for governments, cities, and private enterprises.
+          </p>
+        </div>
         </div>
       </div>
     ),
   },
   {
-    title: "Mahanadi River Basin as a Graph",
+    title: "Hyperlocal Flood Remediation Solutions",
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
-          src="path/to/mahanadi-river-basin-image.jpg"
+          src={IndianRiverBasinImg}
           alt="Mahanadi River Basin"
           className={styles.contentImage}
           loading="lazy"
           onError={(e) => (e.target.src = "path/to/fallback-image.jpg")}
         />
+        <div>
         <p>
-          The Mahanadi River Basin is one of the major basins in India. Below is
-          a graph representing its hydrological data.
+          <strong style={{ fontSize: "25px" }}>
+            {" "}
+            Big Ideas for Small-Scale Challenges
+          </strong>{" "}
+          <br />
+          Urban neighborhoods and peri-urban areas often bear the brunt of
+          localized flooding. Our tailored solutions are designed for these
+          hyperlocal challenges, combining advanced drainage systems with
+          automated operation to ensure efficiency and energy savings. Whether
+          it’s keeping subways dry or streets safe, we’re ready to help..
         </p>
         <div className={styles.graph}>
-          <p>Graph Component Placeholder for Mahanadi River Basin</p>
+          <p>
+            <strong style={{ fontSize: "25px" }}> What It Offers:</strong>
+            <br /> Block-by-block flood models for targeted solutions. <br />
+            Vertical and horizontal drainage systems that adapt in real time.{" "}
+            <br />
+            Reliable designs tested and validated on the ground.
+          </p>
+        </div>
+        </div>
+      </div>
+    ),
+  },
+  ,
+  {
+    title: "Compound Risk Assessment Toolkit",
+    content: (
+      <div className={styles.dropdownContentWrapper}>
+        <img
+          src={IndianRiverBasinImg}
+          alt="Mahanadi River Basin"
+          className={styles.contentImage}
+          loading="lazy"
+          onError={(e) => (e.target.src = "path/to/fallback-image.jpg")}
+        />
+        <div>
+        <p>
+          <strong style={{ fontSize: "25px" }}>
+            When Risks Collide, Be Prepared
+          </strong>{" "}
+          <br />
+          In today’s world, risks rarely come one at a time. Our toolkit helps
+          you understand and manage the cascading impacts of multihazard
+          scenarios—like floods, storms, and infrastructure failures happening
+          all at once. We make it easier to plan for the unexpected and stay
+          ahead of the curve.
+        </p>
+        <div className={styles.graph}>
+          <p>
+            <strong style={{ fontSize: "25px" }}>What It Offers:</strong> <br />
+            Tools to predict and mitigate interconnected risks. <br />
+            Clear insights into cascading failures and their consequences.{" "}
+            <br />
+            Cost-benefit analysis to ensure every strategy adds value.
+          </p>
+        </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Watershed Resilience Planner",
+    content: (
+      <div className={styles.dropdownContentWrapper}>
+        <img
+          src={IndianRiverBasinImg}
+          alt="Mahanadi River Basin"
+          className={styles.contentImage}
+          loading="lazy"
+          onError={(e) => (e.target.src = "path/to/fallback-image.jpg")}
+        />
+        <div>
+        <p>
+          <strong style={{ fontSize: "25px" }}>
+            Water Management for a Sustainable Future
+          </strong>{" "}
+          <br />
+          Balancing development with sustainability isn’t easy, but our
+          Watershed Resilience Planner makes it possible. From urban areas to
+          peri-urban and rural interfaces, this tool provides data-driven
+          strategies to optimize water use while preserving ecosystems.
+        </p>
+        <div className={styles.graph}>
+          <p>
+            <strong style={{ fontSize: "25px" }}>What It Offers:</strong> <br />
+            Sophisticated hydrological modeling for better planning. <br />
+            Solutions that bridge urban needs with ecological priorities. <br />
+            Strategies for long-term sustainability and water security.
+          </p>
+        </div>
         </div>
       </div>
     ),
@@ -81,14 +199,14 @@ const HydroGNN = () => {
       <div className={styles.hydroGNNDiv}>
         <div className={styles.hydroGNNBanner}>
           <div className={styles.hydroGNNBannerLinks}>
-           <Link to="/">Home</Link> <span>/</span> <Link to="#">HydroGNN</Link>
+            <Link to="/">Home</Link> <span>/</span> <Link to="#">HydroPinn</Link>
           </div>
           <div className={styles.hydroGNNBannerContentColumn}>
             <div className={styles.hydroGNNBannerContentCol_1}>
-              <h1>HydroGNN: Revolutionizing Hydrological Predictions</h1>
+              <h1>HydroPinn: Revolutionizing Hydrological Predictions</h1>
               <p>
                 Dive into the power of Graph Neural Networks (GNNs) in
-                hydrological modeling. Understand how HydroGNN enhances flood
+                hydrological modeling. Understand how HydroPinn enhances flood
                 predictions and water resource management through advanced data
                 analytics.
               </p>
@@ -135,6 +253,57 @@ const HydroGNN = () => {
           <div className={styles.hydroGNNVideoPartHeading}>
             <h1>Performance in Kantamal Catchment of Mahanadi Basin</h1>
           </div>
+          {/* <div>Our Products
+At AIRESQ ClimSol Pvt. Ltd., we create smart, scalable solutions designed to tackle real-world challenges. Our products are more than tools—they’re enablers of resilience, offering actionable insights and practical strategies to safeguard communities, infrastructure, and economies. With cutting-edge technology and a deep understanding of complex systems, we help you turn risks into opportunities for sustainable growth.
+
+1. Flood Modeling Suite
+Precision at Every Scale
+Flooding doesn’t happen in isolation—it’s dynamic, and so are our models. Our Flood Modeling Suite uses AI, physics-based simulations, and real-time data to predict flooding with stunning accuracy. Whether it’s urban stormwater or large river basins, we deliver insights you can trust to plan, prepare, and protect.
+What It Offers:
+Pinpoint predictions validated by real-world data.
+Tailored assessments for communities, businesses, and infrastructure.
+Easy integration with smart city platforms for real-time decision-making.
+
+2. Resilience Recovery Algorithms
+Faster Recovery, Smarter Planning
+Disasters don’t wait, and neither should recovery. Our proprietary algorithms streamline recovery efforts by prioritizing what matters most—critical infrastructure, safe evacuation, and efficient resource allocation. By focusing on what’s urgent, we help you bounce back quicker and stronger.
+What It Offers:
+Smart recovery pathways for complex infrastructure systems.
+Integration with mobility networks for seamless evacuations.
+Custom strategies for governments, cities, and private enterprises.
+
+3. Hyperlocal Flood Remediation Solutions
+Big Ideas for Small-Scale Challenges
+Urban neighborhoods and peri-urban areas often bear the brunt of localized flooding. Our tailored solutions are designed for these hyperlocal challenges, combining advanced drainage systems with automated operation to ensure efficiency and energy savings. Whether it’s keeping subways dry or streets safe, we’re ready to help.
+What It Offers:
+Block-by-block flood models for targeted solutions.
+Vertical and horizontal drainage systems that adapt in real time.
+Reliable designs tested and validated on the ground.
+
+4. Compound Risk Assessment Toolkit
+When Risks Collide, Be Prepared
+In today’s world, risks rarely come one at a time. Our toolkit helps you understand and manage the cascading impacts of multihazard scenarios—like floods, storms, and infrastructure failures happening all at once. We make it easier to plan for the unexpected and stay ahead of the curve.
+What It Offers:
+Tools to predict and mitigate interconnected risks.
+Clear insights into cascading failures and their consequences.
+Cost-benefit analysis to ensure every strategy adds value.
+
+5. Watershed Resilience Planner
+Water Management for a Sustainable Future
+Balancing development with sustainability isn’t easy, but our Watershed Resilience Planner makes it possible. From urban areas to peri-urban and rural interfaces, this tool provides data-driven strategies to optimize water use while preserving ecosystems.
+What It Offers:
+Sophisticated hydrological modeling for better planning.
+Solutions that bridge urban needs with ecological priorities.
+Strategies for long-term sustainability and water security.
+
+Why AIRESQ Products Stand Out
+Smarter Technology: We combine AI, machine learning, and real-world expertise to deliver solutions that work.
+Trusted Expertise: Our products are backed by years of research, rigorous testing, and collaboration with global leaders.
+Tailored for You: Every solution is customized to meet your unique challenges and goals.
+Proven Impact: We measure success by the lives we protect, the resources we save, and the resilience we build.
+Our products are here to help you not just manage risks but thrive in the face of them. Let us show you how innovation can transform your approach to resilience.
+Explore what’s possible with AIRESQ.
+</div> */}
           <div className={styles.hydroGNNVideo}>
             <div className={styles.responsiveIframeContainer}>
               <iframe

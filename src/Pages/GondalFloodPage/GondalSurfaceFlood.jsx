@@ -42,7 +42,7 @@ const GondalSurfaceFlood = () => {
               Gain insights into hydrological patterns, causes, and innovative
               solutions to mitigate the risks.
             </p>
-            <button>Learn More</button>
+           <Link to="/gondal-surface-flood"> <button>Learn More</button></Link>
           </div>
           <div className={styles.gondalSurfaceFloodBannerContentCol_2}>
             <img

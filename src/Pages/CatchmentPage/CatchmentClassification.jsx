@@ -2,12 +2,11 @@ import React from "react";
 import styles from "./CatchmentClassification.module.css";
 import CatchmentClassificationImg from "../../assets/photos/CatchmentClassificationImg.jpg"
 import { Link } from "react-router-dom";
-import ResearchShowcase from "../../Components/ResearchSection/ResearchShowcase";
 
 const CatchmentClassification = () => {
   return (
     <section className={styles.catchmentClassificationSection}>
-      <div className={styles.catchmentClassificationBanner}>
+      {/* <div className={styles.catchmentClassificationBanner}>
         <div className={styles.catchmentClassificationBannerLinks}>
           <Link to="/">Home </Link><span>/</span> <Link to="#">CatchmentClassification</Link>
         </div>
@@ -23,14 +22,13 @@ const CatchmentClassification = () => {
           <img src="https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif" alt="Catchment Classification" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.catchmentClassificationContent}>
       <div className={styles.catchmentClassificationContentImg}>
                   <img src={CatchmentClassificationImg} alt="CatchmentClassificationImg" />
         </div>
       </div>
-      <ResearchShowcase />
     </section>
   );
 };

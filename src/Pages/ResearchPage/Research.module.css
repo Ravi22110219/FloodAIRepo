@@ -1,0 +1,182 @@
+.researchPageBanner {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #394b57;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.researchPageLinks {
+  position: absolute;
+  top: 20px;
+  left: 4%;
+  font-size: 1rem;
+  color: #ddd;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.researchPageLinks a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.researchPageLinks a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.researchPageLinks a:hover {
+  color: var(--hover-color);
+}
+
+.researchPageLinks a:hover::after {
+  width: 100%;
+  background-color: var(--hover-color);
+}
+
+.researchPageLinks a:nth-of-type(1) {
+  --hover-color: #4aa4ff;
+}
+
+.researchPageLinks a:nth-of-type(2) {
+  --hover-color: #ff6347;
+}
+
+.researchPageContentColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.researchPageContentCol_1 {
+  width: 100%;
+  padding-left: 4%;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.researchPageContentCol_1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.researchPageContentCol_1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.researchPageContentCol_1 ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.researchPageContentCol_1 button {
+  display: none;
+  margin-top: 20px;
+  color: #000;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(to left, rgb(253, 180, 84) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.researchPageContentCol_1 button:hover {
+  background-position: left;
+  color: #000;
+}
+
+.researchPageContentCol_2 {
+  width: 96%;
+  margin-right: 4%;
+  animation: slideInRight 1.5s ease-out;
+}
+
+.researchPageContentCol_2 img {
+  width: 92%;
+  height: auto;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .researchPageContentColumn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 150px;
+  }
+  .researchPageContentCol_1,
+  .researchPageContentCol_2 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .researchPageContentCol_2 img {
+    width: 100%;
+  }
+}

@@ -1,40 +1,42 @@
 import React from "react";
 import styles from "./CardsSection.module.css";
 import { NavLink } from "react-router-dom";
-import Img3 from "../../assets/photos/palsar_inundation_gif.gif";
-
+import Img1 from "../../assets/photos/Card-1.jpg";
+import Img2 from "../../assets/photos/Card-2.jpg";
+import Img3 from "../../assets/photos/Card-3.jpg";
+import Img4 from "../../assets/photos/Card-4.jpg";
 const cardsData = [
   {
     id: 1,
-    title: "Product Card",
+    title: "River Flooding",
     description:
       "Explore our innovative products designed to address real-world challenges with AI-powered solutions.",
-    link: "/product",
-    image: Img3
+    link: "/riverine-flood",
+    image: Img1
   },
   {
     id: 2,
-    title: "Flood Card 1",
+    title: "Compound Flooding",
     description:
       "Gain insights into flood prediction technologies and how we are making communities more resilient.",
-    link: "/flood1",
-    image: Img3
+    link: "/urban-flood",
+    image: Img2
 },
   {
     id: 3,
-    title: "Flood Card 2",
+    title: "Hyperlocal Flood Remediation",
     description:
       "Learn more about our advanced flood modeling and simulation tools for effective disaster management.",
-    link: "/flood2",
+    link: "/surface-flood",
     image:  Img3
   },
   {
     id: 4,
-    title: "Demo Card",
+    title: "Integrated Recovery and Resilience Design",
     description:
       "Experience our solutions in action. Check out live demos showcasing their real-world applications.",
     link: "/demo",
-    image:  Img3
+    image:  Img4
   }
 ];
 
@@ -54,11 +56,13 @@ const CardSection = () => {
             <div className={styles.cardDesc}>
               <h2>{card.title}</h2>
               <p>{card.description}</p>
-              <NavLink to={card.link}>
+             </div>
+             <div className={styles.btnDiv}> 
+              <NavLink to={card.link} >
                 <button className={styles.cardBtn}>Learn More</button>
-              </NavLink>
+              </NavLink></div>
             </div>
-          </div>
+          
         ))}
       </div>
     </section>

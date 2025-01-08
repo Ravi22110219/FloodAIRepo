@@ -1,0 +1,129 @@
+import React from "react";
+import styles from "./ContactUs.module.css";
+import { Link } from "react-router-dom";
+
+
+const ContactUs = () => {
+  return (
+    <section>
+    <div className={styles.contactUsBanner}>
+    <div className={styles.contactUsBannerLinks}>
+      <Link to="/">Home</Link> <span>/</span>{" "}
+      <Link to="#">Contact Us</Link>
+    </div>
+    <div className={styles.contactUsBannerContentColumn}>
+      <div className={styles.contactUsBannerContentCol_1}>
+        <h1>Get in Touch with Us</h1>
+        <p>
+          Have questions or need assistance? Reach out to our team for support,
+          inquiries, or feedback. We’re here to help!
+        </p>
+        <Link to="/contact-us">
+          <button>Contact Now</button>
+        </Link>
+      </div>
+      <div className={styles.contactUsBannerContentCol_2}>
+        <img
+          src=" https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif
+"
+          alt="Contact Us Image"
+        />
+      </div>
+    </div>
+  
+  </div>
+  
+  <div className={styles.contactDetails}>
+      <div className={styles.contactCard}>
+        <h2>Email</h2>
+        <p>support@AIResq.com</p>
+      </div>
+      <div className={styles.contactCard}>
+        <h2>Phone</h2>
+        <p>+1 123-456-7890</p>
+      </div>
+      <div className={styles.contactCard}>
+        <h2>Address</h2>
+        <p>123 AIResq Street, Innovation City, Techland</p>
+      </div>
+    </div>
+  
+    <div className={styles.newsletterSection}>
+    <div className={styles.imageContainer}>
+          <img
+            src="https://www.freeiconspng.com/uploads/help-desk-png-31.png"
+            alt="Help Desk"
+            className={styles.helpDeskImage}
+          />
+        </div>
+      <div className={styles.formContainer}>
+        
+        <form className={styles.newsletterForm}>
+          <div className={styles.row}>
+            <input
+              type="text"
+              placeholder="First name *"
+              className={styles.inputField}
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last name *"
+              className={styles.inputField}
+              required
+            />
+          </div>
+          <input
+            type="email"
+            placeholder="Email *"
+            className={styles.inputField}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Job title *"
+            className={styles.inputField}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Company name *"
+            className={styles.inputField}
+            required
+          />
+          <select className={styles.inputField} required defaultValue="">
+            <option value="" disabled>
+              Industry *
+            </option>
+            <option value="tech">Tech</option>
+            <option value="finance">Finance</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="other">Other</option>
+          </select>
+  
+          <div className={styles.checkboxGroup}><div>
+            <label>
+              <input type="checkbox" required /> I consent to receive marketing
+              communications from AIResq.*
+            </label></div><div>
+            <label>
+              <input type="checkbox" required /> I consent to my data being
+              stored and processed by AIResq, in line with their privacy
+              policy.*
+            </label></div>
+          </div>
+          <p className={styles.privacyPolicy}>
+            For more information, please review our Privacy Policy.
+          </p>
+          <button type="submit" className={styles.submitButton}>
+            Sign up
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  );
+};
+
+export default ContactUs;

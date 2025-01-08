@@ -6,7 +6,7 @@
 .publicationDiv{
   width: 100%;
   display: block;
-  background-image: linear-gradient(black, rgb(97, 97, 97));
+  
 }
 .publicationHeading{
   width: 100%;
@@ -14,7 +14,7 @@
   text-align: center;
 }
 .publicationHeading h1{
- color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
  font-size: calc(30px + 0.5vw);
  animation: appear linear;
   animation-timeline: view();
@@ -34,8 +34,8 @@
   
   transform: translateY(-50%);
   background: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 1.5em;
   cursor: pointer;
   padding: 10px;
@@ -239,16 +239,14 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+
 }
 .publicationHomePageButton button{
   display: flex;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px 50px;
   border-radius: 20px;
-  color: #ffffff;
+  color: #000000;
   background: linear-gradient(to left, transparent  50%, rgb(255, 255, 255) 50%) right;
   background-size: 200%;
   transition: .3s ease-out;

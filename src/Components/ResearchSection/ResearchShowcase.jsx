@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Styles from "./ResearchShowcase.module.css";
+import styles from "./ResearchShowcase.module.css";
 import Img1 from "../../assets/photos/research_showcase_aug_2024_Pravin _page-0001.jpg";
 import Img2 from "../../assets/photos/research_showcase_aug_2024_Raviraj _page-0001.jpg";
-import Img3 from "../../assets/photos/palsar_inundation_gif.gif";
+import Img3 from "../../assets/photos/ADRIJA_RESEARCH_POSTER.jpg";
 
 const ResearchShowcase = () => {
   const [zoomStyle, setZoomStyle] = useState({});
@@ -47,15 +47,15 @@ const ResearchShowcase = () => {
   }, [modalImg]);
 
   return (
-    <section className={Styles.researchShowcaseSection}>
-      <div className={Styles.researchHeading}>
+    <section className={styles.researchShowcaseSection}>
+      <div className={styles.researchHeading}>
         <h1>Research Showcase</h1>
       </div>
-      <div className={Styles.researchImgs}>
+      <div className={styles.researchImgs}>
         {[Img1, Img2, Img3].map((img, index) => (
           <div
             key={index}
-            className={Styles.Img}
+            className={styles.Img}
             style={zoomStyle.backgroundImage === `url(${img})` ? zoomStyle : { backgroundImage: `url(${img})` }}
             onMouseMove={(e) => handleMouseMove(e, img)}
             onMouseLeave={handleMouseLeave}
@@ -65,10 +65,10 @@ const ResearchShowcase = () => {
       </div>
 
       {modalImg && (
-        <div className={Styles.modal} onClick={closeModal}>
-          <div className={Styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        <div className={styles.modal} onClick={closeModal}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <img src={modalImg} alt="Research" />
-            <button className={Styles.closeButton} onClick={closeModal}>
+            <button className={styles.closeButton} onClick={closeModal}>
               &times;
             </button>
           </div>

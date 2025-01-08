@@ -28,7 +28,7 @@
 .researchHeading h1 {
   color: black;
   font-size: 35px;
-  font-weight: 600;
+
   margin-bottom: 20px;
 }
 
@@ -61,8 +61,9 @@
 
 .Img:hover {
   background-size: 200%; 
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
+
 
 .modal {
   position: fixed;

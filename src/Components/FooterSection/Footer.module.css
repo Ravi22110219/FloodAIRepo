@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000;
+  background-color: #0b1820;
   color: #fff;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -45,7 +45,7 @@
   padding: 10px;
   border: 1px solid #333;
   border-radius: 4px;
-  background-color: #111;
+  background-color: #e3e3e3;
   color: #fff;
 }
 
@@ -71,15 +71,15 @@
 }
 
 .submitButton {
-  color: #ffffff;
-  border: 0.5px solid white;
+  color: #000000;
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
   border-radius: 4px;
   align-self: flex-start;
   background: rgb(0, 0, 0); 
-  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+  background: linear-gradient(to left, rgb(253, 180, 84) 50%, rgb(255, 255, 255) 50%) right;
   background-size: 200%;
   transition: .3s ease-out;
 }
@@ -134,8 +134,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #000000;
-  border-top: 1px solid #000000;
+  /* border-bottom: 1px solid #fdfdfd;
+  border-top: 1px solid #f6f6f6; */
 }
 
 .footerLogo img {
@@ -250,7 +250,7 @@
   padding-bottom: 10px;
   border-top: 1px solid #ebebec;
   text-align: center;
-  background-color: #000000;
+  background-color: #081924;
   width: 100%;
   justify-content: center;
 }

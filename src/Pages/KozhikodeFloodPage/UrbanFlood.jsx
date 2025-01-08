@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./UrbanFlood.module.css";
 import { Link } from "react-router-dom";
+import RealTimeChart from "../RealTimeChart/RealTimeChart";
 
 const UrbanFlood = () => {
 
@@ -27,7 +28,7 @@ const UrbanFlood = () => {
 
   return (
     <section>
-      <div className={styles.urbanFloodBanner}>
+      {/* <div className={styles.urbanFloodBanner}>
         <div className={styles.urbanFloodBannerLinks}>
           <Link to="/">Home</Link> <span>/</span> <Link to="#">Urban Flood</Link>
         </div>
@@ -42,15 +43,15 @@ const UrbanFlood = () => {
             <button>Learn More</button>
           </div>
           <div className={styles.urbanFloodBannerContentCol_2}>
-            {/* Add your custom illustration or image */}
+           
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.kozhikodeMapBox}>
         <div className={styles.mapColumn}>
           <div className={styles.mapHeading}>
-            <h1>Kozhikode - Aug 14 - Aug 16</h1>
+            <h1>3 Days Flood Map </h1>
           </div>
           <div className={styles.kozhikodeMap}>
             <iframe
@@ -64,7 +65,8 @@ const UrbanFlood = () => {
         </div>
 
         <div className={styles.tableColumn}>
-          <table className={styles.impactedAreasTable}>
+          <RealTimeChart />
+          {/* <table className={styles.impactedAreasTable}>
             <thead>
               <tr>
                 <th colSpan="4">Impacted Areas</th>
@@ -86,7 +88,7 @@ const UrbanFlood = () => {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table> */}
         </div>
       </div>
     </section>

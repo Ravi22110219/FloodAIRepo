@@ -62,9 +62,9 @@ const MainPage = () => {
                
                 <div className={styles.gondalSurfaceFloodBannerContentColumn}>
                   <div className={styles.gondalSurfaceFloodBannerContentCol_1}>
-                    <h1>Understanding Gondal Surface Floods</h1>
+                    <h1>Understanding Surface Floods</h1>
                     <p>
-                      Explore the challenges and impacts of surface flooding in Gondal.
+                      Explore the challenges and impacts of surface flooding .
                       Gain insights into hydrological patterns, causes, and innovative
                       solutions to mitigate the risks.
                     </p>

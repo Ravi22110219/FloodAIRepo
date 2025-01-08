@@ -10,10 +10,10 @@ const HomePage = () =>
       return(
         <>
        <MainPage />
-       <Map />
+       {/* <Map />
        <ResearchShowcase />
        <Publication />
-       <MIRLab />
+       <MIRLab /> */}
       
 
 

@@ -6,7 +6,7 @@
 .gondalSurfaceFloodBanner {
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://t3.ftcdn.net/jpg/02/43/36/88/360_F_243368800_iYenQw8k85GTsJ39VHFxanBkj3MQxzKW.jpg");
+  background-color: #394b57;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,7 +20,7 @@
 
 .gondalSurfaceFloodBannerLinks {
   position: absolute;
-  top: 100px;
+  top: 20px;
   left: 4%;
   font-size: 1rem;
   color: #ddd;
@@ -93,6 +93,7 @@
 }
 
 .gondalSurfaceFloodBannerContentCol_1 button {
+  display: none;
   color: #ffffff;
   border: 0.5px solid white;
   padding: 10px 20px;

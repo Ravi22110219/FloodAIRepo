@@ -1,0 +1,136 @@
+/* General Header Styles */
+.header {
+  width: 100%;
+  background-color: #0a2534;
+  color: #FFFFFF;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 83px;
+  z-index: 1000;
+  position: fixed;
+}
+
+.header.scrolled {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  animation: showMenu 0.6s ease-in;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 10001;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.logo h1 {
+  padding-left: 15px;
+  font-size: calc(25px + .4vw);
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Links li {
+  padding: 15px 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Links li:hover {
+  color: rgb(255, 181, 117);
+}
+
+/* Flood Dashboard Button */
+.menuFooter {
+  margin-left: auto;
+}
+
+.floodAiButton {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  padding: 8px 15px;
+  color: white;
+  background-color: rgb(29, 120, 159);
+  transition: background-color 0.3s ease;
+}
+
+.floodAiButton:hover {
+  background-color: rgb(255, 181, 117);
+  color: black;
+}
+
+/* Menu Button */
+.menuButton {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1000px) {
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    
+    background-color: #0a2534;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+
+  .navLinks.showMenu {
+    transform: translateX(0);
+  }
+
+  .Links {
+    flex-direction: column;
+    
+  }
+  .Links li {
+    border-bottom: .5px solid white;
+  }
+
+  .menuFooter {
+    margin-top: auto;
+    padding: 20px;
+  }
+
+  .header .navLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

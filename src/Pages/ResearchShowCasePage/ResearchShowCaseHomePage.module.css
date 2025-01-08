@@ -1,235 +1,124 @@
-.blogBanner{
+.researchShowcaseSection {
   width: 100%;
-  background-color: rgb(38, 38, 38);
-  height: 120px;
- 
+  text-align: center;
+  padding: 30px 4%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.researchHeading {
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-}
-.headingBanner {
-  width: 84%;
-  margin: auto;
-  
-  
-  
- 
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
-.headingBanner h1 {
-  text-align: center;
-  color: #ffffff;
-  
-}
-.bannerIcon{
-  margin-right: 10px;
-  
-}
-.lightGreyBackground {
-  background-color: #f0f0f0;
+.researchHeading h1 {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.contentContainer {
+.researchImgs {
+  margin-top: 30px;
   width: 100%;
-  padding-left: 4%;
-  padding-right: 4%;
-}
-
-.photoGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.photoColumn {
-  position: relative;
-}
-
-.photo {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-
-.photo:hover {
-  transform: scale(1.05);
-}
-
-.gridButtons {
-  display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  align-items: center;
+  padding-left: 10%;
+  gap: 5%;
+  padding-right: 10%;
 }
 
-.form-label {
-  margin-right: 10px;
+.Img {
+  width: 30%;
+  min-width: 300px;
+  height: 300px; /* Fixed height for consistency */
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  cursor: pointer;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  transition: background-size 0.3s ease, background-position 0.3s ease;
 }
 
-.form-range {
-  width: 200px;
+.Img:hover {
+  background-size: 200%; /* Default zoom on hover */
+  transform: scale(1.2); /* Added smooth zoom effect */
 }
 
+/* Modal styles */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
+  
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.997);
   display: flex;
   justify-content: center;
+  overflow-y: auto;
   align-items: center;
-  z-index: 1000;
-  overflow: hidden;
+  z-index: 2000;
+  animation: appear 0.3s ease-out;
 }
 
 .modalContent {
   position: relative;
-  padding: 1rem;
+  max-width: 80%;
+  max-height: 80%;
+  animation: appear 0.3s ease-out;
+}
+@media only screen and (max-width: 1067px){
+  .modalContent {
+    
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
 }
 
-.modalImage {
- width: 100%;
- height: 100%;
- overflow: hidden;
- object-fit: cover;
- padding: 4% ;
-  border-radius: 5px;
+.modalContent img {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+
+ 
 }
 
-.downloadButton {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1.5rem;
-}
 
-.downloadButton:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.likeButton {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: none;
-  color: #fff;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.likeButton.liked {
-  color: red;
-}
-
-.iconButtons {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.5rem;
-  margin: 0 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.iconButton:hover {
-  color: #f00;
-}
-
-.liked {
-  color: red;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.photoColumn:hover .overlay {
-  opacity: 1;
-}
 .closeButton {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  cursor: pointer;
-  color: white;
-  font-size: 2rem;
-}
-.navButton {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
   border: none;
-  padding: 1rem;
+  font-size: 24px;
   cursor: pointer;
-  z-index: 1001;
+  padding: 5px 10px;
+  border-radius: 0%;
+  transition: background 0.3s;
 }
 
-.navButton.left {
-  left: 0;
-}
-
-.navButton.right {
-  right: 0;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.paginationBar {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.paginationButton {
-  background: none;
-  border: 1px solid #007bff;
-  color: #007bff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.paginationButton:hover {
-  background-color: #0056b3;
-  color: #fff;
-}
-
-.paginationButton.disabled {
-  background-color: #e0e0e0;
-  color: #a0a0a0;
-  cursor: not-allowed;
-}
-
-.paginationButton.active {
-  background-color: #007bff;
+.closeButton:hover {
+  background: rgb(198, 198, 198);
   color: #fff;
 }

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const CatchmentClassification = () => {
   return (
     <section className={styles.catchmentClassificationSection}>
-      <div className={styles.catchmentClassificationBanner}>
+      {/* <div className={styles.catchmentClassificationBanner}>
         <div className={styles.catchmentClassificationBannerLinks}>
           <Link to="/">Home </Link><span>/</span> <Link to="#">CatchmentClassification</Link>
         </div>
@@ -22,7 +22,7 @@ const CatchmentClassification = () => {
           <img src="https://i.pinimg.com/originals/a5/2b/23/a52b232810587be914eab7c004e9fb08.gif" alt="Catchment Classification" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.catchmentClassificationContent}>
       <div className={styles.catchmentClassificationContentImg}>

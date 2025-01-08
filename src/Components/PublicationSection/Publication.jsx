@@ -58,7 +58,7 @@ const Publication = () => {
 
   useEffect(() => {
     if (!isPaused) {
-      const interval = setInterval(nextSlide, 3000); // Auto-scroll every 4 seconds
+      const interval = setInterval(nextSlide, 4000); // Auto-scroll every 4 seconds
       return () => clearInterval(interval);
     }
   }, [isPaused]);
@@ -67,7 +67,7 @@ const Publication = () => {
     <section className={styles.publicationSection}>
       <div className={styles.publicationDiv}>
         <div className={styles.publicationHeading}>
-          <h1>Publication</h1>
+          <h1>Publications</h1>
         </div>
         <div className={styles.publicationButton}>
           <button className={styles.prev} onClick={prevSlide}>
@@ -120,7 +120,7 @@ const Publication = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                      <button className={styles.goButton}>Read the case study</button>
+                      <button className={styles.goButton}>Read the Paper</button>
                       </a>
                     </div>
                   </div>

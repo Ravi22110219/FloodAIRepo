@@ -7,6 +7,9 @@ import { FaCalendar, FaUser } from 'react-icons/fa';
 import News1 from "../../assets/photos/MIRLab-News.jpg";
 import News2 from "../../assets/photos/MIRLab-News2.jpg";
 import News3 from "../../assets/photos/MIRLab-News3.jpg";
+import CatchmentClassification from '../CatchmentPage/CatchmentClassification';
+import UrbanFlood from '../KozhikodeFloodPage/UrbanFlood';
+import GondalSurfaceFlood from '../GondalFloodPage/GondalSurfaceFlood';
 
 const MIRLabNewsHomePage = () => {
    
@@ -87,12 +90,13 @@ const MIRLabNewsHomePage = () => {
           <section className={styles.mirLabNewsHomePageSection}>
               <div className={styles.mirLabBanner}>
               <div className={styles.mirLabBannerLinks}>
-    <Link to="/">Home</Link> <span>/</span> <Link to="#">MIRLabNews</Link>
+    <Link to="/">Home</Link> <span>/</span> <Link to="#">Research papers</Link>
 </div>
 
         <div className={styles.mirLabBannerContentColumn}>
+            
             <div className={styles.mirLabBannerContentCol_1}>
-                <h1>MIRLab News: Pioneering Research in AI and Flooding</h1>
+                <h1>MIRLab Research: Pioneering Research in AI and Flooding</h1>
                 <p>
                     Explore groundbreaking advancements in AI and Flooding. Learn how MIRLabNews highlights
                     innovative research and cutting-edge technologies driving the future.
@@ -104,11 +108,13 @@ const MIRLabNewsHomePage = () => {
             </div>
         </div>
     </div>
-        <div className={styles.container}>
-            <header className={styles.sectionHeader}>
-                <h1>Explore MIRLab News</h1>
-            </header>
+    {/* <CatchmentClassification />
+    <GondalSurfaceFlood /> */}
 
+        <div className={styles.container}>
+           <header className={styles.sectionHeader}>
+                <h1>Explore MIRLab Research Paper</h1>
+            </header>
             <input
                 type="text"
                 placeholder="Search news posts..."
@@ -148,7 +154,7 @@ const MIRLabNewsHomePage = () => {
                     <div id="show-less" className={styles.showLess} onClick={showLess}>show less</div>
                 )}
             </div>
-        </div>
+        </div> 
         </section>
     );
 };

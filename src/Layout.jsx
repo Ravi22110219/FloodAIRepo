@@ -11,7 +11,7 @@ function Layout() {
     <NavBar />
     <HeaderBg />
     <Outlet />
-    <Footer /> 
+    {/* <Footer />  */}
 
     </>
   )

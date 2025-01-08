@@ -32,17 +32,17 @@ const GondalSurfaceFlood = () => {
       <div className={styles.gondalSurfaceFloodBanner}>
         <div className={styles.gondalSurfaceFloodBannerLinks}>
           <Link to="/">Home </Link> <span>/</span>{" "}
-          <Link to="#">Gondal Surface Flood</Link>
+          <Link to="#"> Surface Flood</Link>
         </div>
         <div className={styles.gondalSurfaceFloodBannerContentColumn}>
           <div className={styles.gondalSurfaceFloodBannerContentCol_1}>
-            <h1>Understanding Gondal Surface Floods</h1>
+            <h1>Understanding Surface Floods</h1>
             <p>
-              Explore the challenges and impacts of surface flooding in Gondal.
+              Explore the challenges and impacts of surface flooding.
               Gain insights into hydrological patterns, causes, and innovative
               solutions to mitigate the risks.
             </p>
-           <Link to="/gondal-surface-flood"> <button>Learn More</button></Link>
+           <Link to="/surface-flood"> <button>Learn More</button></Link>
           </div>
           <div className={styles.gondalSurfaceFloodBannerContentCol_2}>
             <img

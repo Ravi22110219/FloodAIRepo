@@ -253,7 +253,7 @@ const Navbar = () => {
 
           <ul className={styles.otherOption}>
             <li>
-              <button className={styles.floodAiButton}>Flood Dashboard</button>
+             <NavLink to="/Flood-ai-DashBoard"><button className={styles.floodAiButton}>Flood Dashboard</button></NavLink> 
             </li>
           </ul>
         </div>

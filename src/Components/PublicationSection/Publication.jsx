@@ -67,7 +67,7 @@ const Publication = () => {
     <section className={styles.publicationSection}>
       <div className={styles.publicationDiv}>
         <div className={styles.publicationHeading}>
-          <h1>Publication</h1>
+          <h1>Publications</h1>
         </div>
         <div className={styles.publicationButton}>
           <button className={styles.prev} onClick={prevSlide}>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./CardsSection.module.css";
 import { NavLink } from "react-router-dom";
-import Img1 from "../../assets/photos/Card-1.jpg";
+import Img1 from "../../assets/photos/logo6.png";
 import Img2 from "../../assets/photos/Card-2.jpg";
 import Img3 from "../../assets/photos/Card-3.jpg";
 import Img4 from "../../assets/photos/Card-4.jpg";
@@ -20,7 +20,7 @@ const cardsData = [
     description:
       "Gain insights into flood prediction technologies and how we are making communities more resilient.",
     link: "/urban-flood",
-    image: Img2
+    image: Img1
 },
   {
     id: 3,
@@ -28,15 +28,15 @@ const cardsData = [
     description:
       "Learn more about our advanced flood modeling and simulation tools for effective disaster management.",
     link: "/surface-flood",
-    image:  Img3
+    image:  Img1
   },
   {
     id: 4,
     title: "Integrated Recovery and Resilience Design",
     description:
       "Experience our solutions in action. Check out live demos showcasing their real-world applications.",
-    link: "/demo",
-    image:  Img4
+    link: "/",
+    image:  Img1
   }
 ];
 

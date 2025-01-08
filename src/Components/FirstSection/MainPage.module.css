@@ -189,6 +189,7 @@
 }
 
 .gondalSurfaceFloodBannerContentCol_1 button {
+  display: none;
   color: #000000;
   border: 1px solid rgb(0, 0, 0);
   padding: 10px 20px;

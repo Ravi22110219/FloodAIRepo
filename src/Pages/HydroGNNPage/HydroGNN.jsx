@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import styles from "./HydroGNN.module.css";
 import IndianRiverBasinImg from "../../assets/photos/IndianRiverBasin.jpg";
+import Compound_Flood_100 from "../../assets/photos/Compound_Flood_100_with_nodes_modified.png"
+import Resiience from "../../assets/photos/resiience.JPG"
+import ResilienceRecovery from "../../assets/photos/ResilienceRecovery.png"
+import GondalSurfaceImg from "../../assets/photos/GondalSurfaceImg1.jpg"
 import { Link } from "react-router-dom";
 
 const data = [
@@ -8,13 +12,13 @@ const data = [
     title: " Flood Modeling Suite",
     content: (
       <div className={styles.dropdownContentWrapper}>
-        <img
-          src={IndianRiverBasinImg}
-          alt="Indian River Basins"
-          className={styles.contentImage}
-          loading="lazy"
-          onError={(e) => (e.target.src = "path/to/fallback-image.jpg")}
-        />
+         <iframe
+              src="https://ravi22110219.github.io/KozhikodeFloodMap/"
+              title="Kozhikode Flood Map"
+              width="100%"
+              height="500px"
+              style={{ border: "1px solid black" }}
+            ></iframe>
         <div>
           <p>
             <strong style={{ fontSize: "25px" }}>
@@ -30,12 +34,12 @@ const data = [
           <div className={styles.graph}>
             <p>
               <strong style={{ fontSize: "25px" }}>What It Offers:</strong>{" "}
-              <br /> Pinpoint predictions validated by real-world data.
-              <br />
-              Tailored assessments for communities, businesses, and
-              infrastructure. <br />
-              Easy integration with smart city platforms for real-time
-              decision-making.
+              <br /><li> Pinpoint predictions validated by real-world data.</li>
+               
+             <li>Tailored assessments for communities, businesses, and
+              infrastructure. </li>  
+             <li> Easy integration with smart city platforms for real-time
+              decision-making.</li>
             </p>
           </div>
         </div>
@@ -47,7 +51,7 @@ const data = [
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
-          src={IndianRiverBasinImg}
+          src={ResilienceRecovery}
           alt="Indian Rivers Graph"
           className={styles.contentImage}
           loading="lazy"
@@ -67,10 +71,10 @@ const data = [
         <div className={styles.graph}>
           <p>
             <strong style={{ fontSize: "25px" }}> What It Offers:</strong>
-            <br /> Smart recovery pathways for complex infrastructure systems.{" "}
-            <br />
-            Integration with mobility networks for seamless evacuations. <br />
-            Custom strategies for governments, cities, and private enterprises.
+            <br /><li>Smart recovery pathways for complex infrastructure systems.</li> {" "}
+             <li>
+            Integration with mobility networks for seamless evacuations.</li>  
+            <li>Custom strategies for governments, cities, and private enterprises.</li>
           </p>
         </div>
         </div>
@@ -82,7 +86,7 @@ const data = [
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
-          src={IndianRiverBasinImg}
+          src={GondalSurfaceImg}
           alt="Mahanadi River Basin"
           className={styles.contentImage}
           loading="lazy"
@@ -99,15 +103,15 @@ const data = [
           localized flooding. Our tailored solutions are designed for these
           hyperlocal challenges, combining advanced drainage systems with
           automated operation to ensure efficiency and energy savings. Whether
-          it’s keeping subways dry or streets safe, we’re ready to help..
+          it’s keeping subways dry or streets safe, we’re ready to help.
         </p>
         <div className={styles.graph}>
           <p>
             <strong style={{ fontSize: "25px" }}> What It Offers:</strong>
-            <br /> Block-by-block flood models for targeted solutions. <br />
-            Vertical and horizontal drainage systems that adapt in real time.{" "}
-            <br />
-            Reliable designs tested and validated on the ground.
+            <br /> <li>Block-by-block flood models for targeted solutions. </li> 
+           <li> Vertical and horizontal drainage systems that adapt in real time.</li>{" "}
+             
+           <li> Reliable designs tested and validated on the ground.</li>
           </p>
         </div>
         </div>
@@ -120,7 +124,7 @@ const data = [
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
-          src={IndianRiverBasinImg}
+          src={Compound_Flood_100}
           alt="Mahanadi River Basin"
           className={styles.contentImage}
           loading="lazy"
@@ -141,10 +145,10 @@ const data = [
         <div className={styles.graph}>
           <p>
             <strong style={{ fontSize: "25px" }}>What It Offers:</strong> <br />
-            Tools to predict and mitigate interconnected risks. <br />
-            Clear insights into cascading failures and their consequences.{" "}
-            <br />
-            Cost-benefit analysis to ensure every strategy adds value.
+          <li> Tools to predict and mitigate interconnected risks.</li>   
+            <li>Clear insights into cascading failures and their consequences.</li>{" "}
+             
+           <li>Cost-benefit analysis to ensure every strategy adds value.</li> 
           </p>
         </div>
         </div>
@@ -156,7 +160,7 @@ const data = [
     content: (
       <div className={styles.dropdownContentWrapper}>
         <img
-          src={IndianRiverBasinImg}
+          src={Resiience}
           alt="Mahanadi River Basin"
           className={styles.contentImage}
           loading="lazy"
@@ -176,9 +180,9 @@ const data = [
         <div className={styles.graph}>
           <p>
             <strong style={{ fontSize: "25px" }}>What It Offers:</strong> <br />
-            Sophisticated hydrological modeling for better planning. <br />
-            Solutions that bridge urban needs with ecological priorities. <br />
-            Strategies for long-term sustainability and water security.
+           <li> Sophisticated hydrological modeling for better planning. </li> 
+            <li>Solutions that bridge urban needs with ecological priorities.</li>  
+            <li>Strategies for long-term sustainability and water security.</li>
           </p>
         </div>
         </div>

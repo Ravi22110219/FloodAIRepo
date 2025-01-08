@@ -216,6 +216,10 @@
     text-align: justify;
     padding: 20px 30px;
 }
+.dropdownContentWrapper li{
+  text-align: left;
+ 
+}
 .dropdownContentHeading{
   display: block;
 }

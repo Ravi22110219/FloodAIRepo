@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styles from "./ContactUs.module.css";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-
+import Location from "../../Components/LocationSection/Location"
 const ContactUs = () => {
   const form = useRef();
 
@@ -159,6 +159,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+       <Location />
     </section>
   );
 };

@@ -3,6 +3,7 @@ import styles from "./Research.module.css";
 import { Link } from "react-router-dom";
 import Publication from "../../Components/PublicationSection/Publication";
 import ResearchShowcase from "../../Components/ResearchSection/ResearchShowcase";
+import MIRLab from "../../Components/MIRLabSection/MIRLab";
 
 const ResearchPage = () => {
   return (
@@ -47,6 +48,7 @@ const ResearchPage = () => {
 
       <Publication />
       <ResearchShowcase />
+      <MIRLab />
     </section>
   );
 };

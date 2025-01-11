@@ -121,13 +121,14 @@
 .card {
   scroll-snap-align: start;
   min-width: 300px;
-  max-width: 370px;
+  max-width: 380px;
+  height: 520px;
   list-style: none;
-  background-image: linear-gradient(rgb(130, 130, 130), rgb(255, 255, 255));
+  background-image: linear-gradient(rgb(126, 146, 163), rgb(255, 255, 255));
   padding: 15px;
   border-radius: 12px;
   border: 1.5px solid rgb(241, 254, 255);
-  border-bottom-color: rgb(255, 84, 84);
+  border-bottom-color: rgb(255, 192, 44);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   
@@ -179,6 +180,7 @@
   justify-content: space-between;
   padding-top: 10px;
   border-top: 1px solid #ddd;
+  bottom: 0;
 }
 
 .icons span {
@@ -193,26 +195,6 @@
   color: crimson;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.button button {
-  padding: 10px 20px;
-  background-color: crimson;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button button:hover {
-  background-color: #e63939;
-}
 
 @media screen and (max-width: 1500px) {
   .carousel {

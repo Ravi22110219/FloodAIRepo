@@ -1,0 +1,49 @@
+.sectionHeader {
+  max-width: 400px;
+  margin-bottom: 35px;
+}
+
+.sectionHeader h3 {
+  position: relative;
+  display: inline-block;
+  color: rgb(248, 116, 1);
+  font-size: calc(18px + 1vw);
+  
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sectionHeader h3::before {
+  position: relative;
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: black;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  transition: width 0.5s;
+}
+
+.sectionHeader h3:hover::before {
+  width: 45px;
+}
+
+.sectionHeader h1 {
+  
+  font-size: calc(18px + 0.5vw);
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+
+.locContainer {
+  width: 100%;
+  padding: 30px 4%;
+}
+
+
+
+.locImg {
+  height: 400px;
+}

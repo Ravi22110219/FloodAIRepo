@@ -113,7 +113,7 @@ const MIRLab = () => {
       id: 1,
       imgSrc: "https://images.indianexpress.com/2024/08/9_ec2e52.jpg?w=640",
       title: 'Intense rainfall in Gujarat worsened by extensive urban development in flood-prone areas’: IITGN study',
-      description: 'Morbi, Dwarka, and Jamnagar recorded rainfall levels that surpassed their 50-year re...',
+      description: 'Morbi, Dwarka, and Jamnagar recorded rainfall levels that surpassed their 50-ye...',
       date: "Dec 24, 2024",
       author: "The Indian Express",
       link:"https://indianexpress.com/article/cities/ahmedabad/rainfall-floods-gujarat-urban-development-flood-prone-areas-iitgn-study-9547608/"
@@ -164,11 +164,11 @@ const MIRLab = () => {
                 <h4>{news.title}</h4>
                 <p>{news.description}</p>
                 <div className={styles.icons}>
-                  <div className='flex align-middle px-3'>
-                    <FaCalendar className='mr-2' color='crimson' /> <span className='text-black'>{news.date}</span>
+                  <div className='flex align-left px-3'>
+                    <FaCalendar className='mr-2' color='orange' /> <span className='text-black'>{news.date}</span>
                   </div>
-                  <div className='flex align-middle px-3'>
-                  <BsGlobeCentralSouthAsia  style={{marginTop:"2px", marginRight:"8px"}} color='crimson' />
+                  <div className='flex align-right px-3'>
+                  <BsGlobeCentralSouthAsia  style={{marginTop:"2px", marginRight:"8px"}} color='orange' />
                     <span className='text-black'>{news.author}</span>
                   </div>
                 </div>

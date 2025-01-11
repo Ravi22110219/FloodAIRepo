@@ -1,110 +1,270 @@
-.riverineSection{
-   width: 100%;
+/* Main Section */
+.riverineSection {
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-
-
-.headingBanner{
+/* Banner Section */
+.riverineFloodBanner {
   width: 100%;
-  height: 30vh;
-  position: relative;
-  background-color: gray;
+  min-height: 100vh;
+  background-color: #394b57;
   background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center; 
-}
-
-.headingBanner h1{
-  color: #ffffff;
-  font-size: calc(60px + .5vw);
-  text-align: center;
-  padding-top: 8vh;
-
-}
-
-
-
-.floodMapSection{
-  width: 100%;
-  background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
+  align-items: center;
 }
 
+.riverineFloodBannerLinks {
+  position: absolute;
+  top: 20px;
+  left: 4%;
+  font-size: 1rem;
+  color: #ddd;
+}
 
+.riverineFloodBannerLinks a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
 
-.floodMapPart{
-  width: 60%;
+.riverineFloodBannerLinks a::after {
+  content: "";
+  position: absolute;
   display: block;
-  align-items: center;
-  padding: 20px 0 ;
-  border-right: 1px solid black;
-}
-.depthImg{
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
 }
 
-
-
-.depthImg img{
-  width: 200px;
-  height: 100%;
-
+.riverineFloodBannerLinks a:hover {
+  color: var(--hover-color);
 }
 
-
-.mapHeading{
+.riverineFloodBannerLinks a:hover::after {
   width: 100%;
-  padding: 10px;
+  background-color: var(--hover-color);
+}
+
+.riverineFloodBannerLinks a:nth-of-type(1) {
+  --hover-color: #4aa4ff;
+}
+
+.riverineFloodBannerLinks a:nth-of-type(2) {
+  --hover-color: #ff6347;
+}
+
+.riverineFloodBannerContentColumn {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.riverineFloodBannerContentCol_1 {
+  width: 96%;
+  padding-left: 4%;
+}
+
+.riverineFloodBannerContentCol_1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.riverineFloodBannerContentCol_1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.riverineFloodBannerContentCol_1 button {
+  display: none;
+ 
+  color: #ffffff;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  animation: fadeIn 2s ease-in-out;
+  transition: 0.3s ease-out;
+}
+
+.riverineFloodBannerContentCol_1 button:hover {
+  background-position: left;
+  color: #000000;
+}
+
+.riverineFloodBannerContentCol_2 {
+  width: 96%;
+  margin-right: 4%;
+  border-radius: 10px;
+}
+
+.riverineFloodBannerContentCol_2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Flood Map Section */
+.floodMapSection {
+  display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+ 
+  background-color: #f4f4f4;
+  border: .5px solid rgba(58, 57, 57, 0.438);
+ 
+  animation: slideInUp 1s ease-out;
+  align-items: center;
+}
 
+.floodMapPart {
+  flex: 1 1 60%;
+  border-right: .5px solid black;
+}
+
+.mapHeading h2 {
+  padding-left: 4% ;
+  padding-top:20px ;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  animation: slideInRight 1s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+.floodVideo iframe {
+  width: 92%;
+  padding:0px 4% 40px;
+  height:500px;
+  animation: slideInRight 1s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
 
 }
 
-.mapHeading h2{
-  font-size: calc(18px + .5vw);
-
-
+.description {
+  display: none;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  line-height: 1.5;
 }
 
-.floodVideo{
+.depthImg {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  width: 100%;
-  padding: 0 10%;
+  
 }
 
+.depthImg img {
+  width: 250px;
+  height: 100%;
+  animation: slideInLeft 1s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
 
-@media screen and (max-width: 700px) {
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 950px) {
+  .riverineFloodBannerContentColumn {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+  .riverineFloodBannerContentCol_1,
+  .riverineFloodBannerContentCol_2 {
+    width: 100%;
+  }
+  
   .floodMapSection{
-    width: 100%;
-    background-color: #f4f4f4;
     display: block;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-  }
-
-  .floodMapPart{
-    width: 100%;
-    display: block;
     align-items: center;
-    padding: 20px 0 ;
+  }
+  .floodMapPart {
+    flex: 96%;
     border-right: none;
-    border-bottom: 1px solid black;
   }
-  .depthImg{
+  
+  .mapHeading h2 {
+    padding-left: 4% ;
+    padding-top:20px ;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .floodVideo iframe {
+    
     width: 100%;
+    height: 400px;
+   
+  
+  }
+  
+  .description {
+    display: none;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
+  .depthImg {
+    padding-bottom: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+    
+    
   }
 }

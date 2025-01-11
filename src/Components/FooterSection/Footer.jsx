@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* Newsletter Section */}
-        <div className={styles.newsletterSection}>
+      {/* Newsletter Section 
+          <div className={styles.newsletterSection}>
           <h2>Newsletter</h2>
           <p>Sign up for periodic updates from our team</p>
           <form className={styles.newsletterForm}>
@@ -75,10 +75,10 @@ const Footer = () => {
               Sign up
             </button>
           </form>
-        </div>
+        </div>*/}
 
         {/* More Section */}
-        <div className={styles.moreSection}>
+       {/* <div className={styles.moreSection}>
           <h2>More</h2>
           <ul>
             <li><a href="#">Contact us</a></li>
@@ -86,7 +86,7 @@ const Footer = () => {
             <li><a href="#">Legal</a></li>
             <li><a href="#">Customize consent preferences</a></li>
           </ul>
-          {/* <div className={styles.socialMediaSection}> <h2>Visit Our Social Media</h2>
+           <div className={styles.socialMediaSection}> <h2>Visit Our Social Media</h2>
           <div className={styles.footerLogo}>
             <div className={styles.socialMediaAccounts}>
               <ul className={styles.socialUl}>
@@ -101,22 +101,22 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          </div> */}
-        </div>
+          </div> 
+        </div>*/}
 
         {/* HQ Section */}
-        <div className={styles.hqSection}>
+        {/* <div className={styles.hqSection}>
           <h2>Address</h2>
           <p>IIT Gandhinagar</p>
           <p>Palaj, Gandhinagar</p>
           <p>Gujarat</p>
           <p>India</p>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
       <div className={styles.rightSection}>
       <div className={styles.copyRights}>
           <p><a href="#">Terms of Use | Privacy Policy </a></p>
-          <p><span className="far fa-copyright"><FaRegCopyright /></span> AIResQ 2024, All Rights Reserved<span className="far fa-copyright" style={{marginLeft:"5px"}}><GoArrowUpRight  /></span> </p>
+          <p><span className="far fa-copyright"><FaRegCopyright /></span> AIResQ CLIMSOLS PRIVATE LIMITED, All Rights Reserved<span className="far fa-copyright" style={{marginLeft:"5px"}}><GoArrowUpRight  /></span> </p>
         </div>
 
       </div>

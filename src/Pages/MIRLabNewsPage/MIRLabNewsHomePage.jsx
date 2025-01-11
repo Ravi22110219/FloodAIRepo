@@ -4,12 +4,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './MIRLabNewsHomePage.module.css';
 import { FaCalendar, FaUser } from 'react-icons/fa';
-import News1 from "../../assets/photos/MIRLab-News.jpg";
-import News2 from "../../assets/photos/MIRLab-News2.jpg";
-import News3 from "../../assets/photos/MIRLab-News3.jpg";
-import CatchmentClassification from '../CatchmentPage/CatchmentClassification';
-import UrbanFlood from '../KozhikodeFloodPage/UrbanFlood';
-import GondalSurfaceFlood from '../GondalFloodPage/GondalSurfaceFlood';
+
+
+
 
 const MIRLabNewsHomePage = () => {
    
@@ -20,49 +17,46 @@ const MIRLabNewsHomePage = () => {
     const newsPosts = [
         {     
             id: 1,
-            image: News1,
-            title: 'Breakthrough in AI: MIRLab Develops New Algorithm',
-            description: 'The MIRLab team has developed a novel algorithm that enhances image recognition accuracy...',
-            date: '10th December, 2024',
-            author: 'Dr. John Doe',
-            content: 'The MIRLab team has developed...'
+            image: "https://ars.els-cdn.com/content/image/1-s2.0-S002216942201188X-ga1_lrg.jpg",
+            title: 'Enhancing predictive skills in physically-consistent way: Physics Informed Machine Learning for hydrological processes',
+           
+            author: "Pravin Bhasme, Jenil Vagadiya, Udit Bhatia",
+            date: "15 December 2022",
+            link: "https://www.sciencedirect.com/science/article/pii/S002216942201188X?via%3Dihub",
         },
         {
             id: 2,
-            image: News2,
-            title: 'Upcoming Workshop on Machine Learning Basics',
-            description: 'MIRLab is hosting a workshop to introduce students to the basics of machine learning.',
-            date: '15th November, 2024',
-            author: 'Jane Smith',
-            content: 'Full content of the news post...'
+            image:"https://ars.els-cdn.com/content/image/1-s2.0-S002216942301363X-ga1_lrg.jpg",
+            title: 'Improving the interpretability and predictive power of hydrological models: Applications for daily streamflow in managed and unmanaged catchments',
+            author: "Pravin Bhasme, Udit Bhatia",
+            date: "11 January 2024",
+            link: "https://www.sciencedirect.com/science/article/pii/S002216942301363X?via%3Dihub",
         },
         {
             id: 3,
-            image: News3,
-            title: 'MIRLab Welcomes New Research Scholars',
-            description: 'This semester, MIRLab is proud to welcome six new research scholars to the team...',
-            date: '1st November, 2024',
-            author: 'Prof. Emily Brown',
-            content: 'Full content of the news post...'
+            image: "https://content.cld.iop.org/journals/1748-9326/16/10/104050/revision3/erlac2d67f1_hr.jpg",
+            title: "Extreme precipitation induced concurrent events trigger prolonged disruptions in regional road networks",
+            author: "Raviraj Dave, Srikrishnan Siva Subramanian, Udit Bhatia",
+            date: "19 October 2021",
+            link: "https://iopscience.iop.org/article/10.1088/1748-9326/ac2d67",
         },
         {
             id: 4,
-            image: News3,
-            title: 'MIRLab Welcomes New Research Scholars',
-            description: 'This semester, MIRLab is proud to welcome six new research scholars to the team...',
-            date: '1st November, 2024',
-            author: 'Prof. Emily Brown',
-            content: 'Full content of the news post...'
+            image:"https://ars.els-cdn.com/content/image/1-s2.0-S2212420923005551-gr1.jpg",
+            title: "Protecting heritage: Insights into effective flood management using green infrastructure in a highly urbanized environment",
+            author: "Angana Borah, Ronita Bardhan, Udit Bhatia",
+            date: "15 November 2023",
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S2212420923005551?via%3Dihub"
         },
+    
         {
             id: 5,
-            image: News3,
-            title: 'MIRLab Welcomes New Research Scholars',
-            description: 'This semester, MIRLab is proud to welcome six new research scholars to the team...',
-            date: '1st November, 2024',
-            author: 'Prof. Emily Brown',
-            content: 'Full content of the news post...'
-        }
+            image:"https://ars.els-cdn.com/content/image/1-s2.0-S2212420923005551-gr1.jpg",
+            title: "Protecting heritage: Insights into effective flood management using green infrastructure in a highly urbanized environment",
+            author: "Angana Borah, Ronita Bardhan, Udit Bhatia",
+            date: "15 November 2023",
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S2212420923005551?via%3Dihub"
+        },
     ];
 
     const filteredPosts = newsPosts.filter(post => 
@@ -108,8 +102,7 @@ const MIRLabNewsHomePage = () => {
             </div>
         </div>
     </div>
-    {/* <CatchmentClassification />
-    <GondalSurfaceFlood /> */}
+ 
 
         <div className={styles.container}>
            <header className={styles.sectionHeader}>
@@ -132,13 +125,13 @@ const MIRLabNewsHomePage = () => {
                         <div className={styles.content}>
                             <h3>{post.title}</h3>
                             <p>{post.description}</p>
-                            <a href="#" className={styles.btn}>read more</a>
+                            <Link to={post.link} className={styles.btn} target='__main__'>Read More</Link>
                             <div className={styles.icons}>
                                 <div className='flex align-middle'>
-                                    <FaCalendar className='mr-2' color='crimson' /> <span className='text-black'>{post.date} </span>
+                                    <FaCalendar className='mr-2' color='orange' /> <span className='text-black'>{post.date} </span>
                                 </div>
-                                <div className='flex align-middle'>
-                                    <FaUser className='mr-2' color='crimson' /> <span className='text-black'>{post.author} </span>
+                                <div className='flex align-left'>
+                                    <FaUser className='mr-2 mt-2' color='orange' /> <span className='text-black mt-2 '>{post.author} </span>
                                 </div>
                             </div>
                         </div>
@@ -148,13 +141,13 @@ const MIRLabNewsHomePage = () => {
 
             <div className={styles.buttonsContainer}>
                 {currentItem < filteredPosts.length && (
-                    <div id="load-more" className={styles.loadMore} onClick={loadMore}>load more</div>
+                    <div id="load-more" className={styles.loadMore} onClick={loadMore}>Load More</div>
                 )}
-                {currentItem > 4 && (
-                    <div id="show-less" className={styles.showLess} onClick={showLess}>show less</div>
+                {currentItem > 4 && ( 
+                    <div id="show-less" className={styles.showLess} onClick={showLess}>Show Less</div>
                 )}
             </div>
-        </div> 
+        </div>
         </section>
     );
 };

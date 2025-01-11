@@ -1,7 +1,10 @@
+.researchPageSection{
+  width: 100%;
+}
 .researchPageBanner {
   width: 100%;
   min-height: 100vh;
-  background-color: #394b57;
+  background-color:#394b57;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,7 +73,7 @@
 }
 
 .researchPageContentCol_1 {
-  width: 100%;
+  width: 96%;
   padding-left: 4%;
   animation: slideInLeft 1.5s ease-out;
 }
@@ -83,8 +86,8 @@
 }
 
 .researchPageContentCol_1 ul {
-  list-style: none;
-  padding: 0;
+  list-style: square;
+  padding-left: 20px;
 }
 
 .researchPageContentCol_1 ul li {
@@ -172,7 +175,7 @@
   }
   .researchPageContentCol_1,
   .researchPageContentCol_2 {
-    width: 100%;
+    width: 92%;
     padding: 0;
     margin-bottom: 20px;
   }

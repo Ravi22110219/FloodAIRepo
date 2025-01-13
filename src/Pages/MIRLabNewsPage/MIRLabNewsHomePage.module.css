@@ -23,6 +23,7 @@
   left: 4%;
   font-size: 1rem;
   color: #ddd;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .mirLabBannerLinks a {
@@ -55,7 +56,6 @@
   background-color: var(--hover-color);
 }
 
-/* Use `nth-of-type` to target specific Link components */
 .mirLabBannerLinks a:nth-of-type(1) {
   --hover-color: #4aa4ff;
 }
@@ -63,6 +63,11 @@
 .mirLabBannerLinks a:nth-of-type(2) {
   --hover-color: #ff6347;
 }
+
+.mirLabBannerLinks a:nth-of-type(3) {
+  --hover-color: #32cd32; 
+}
+
 
 
 .mirLabBannerContentColumn {
@@ -77,6 +82,7 @@
 .mirLabBannerContentCol_1 {
   width: 96%;
   padding-left: 4%;
+  animation: slideInLeft 1.5s ease-out;
 }
 
 .mirLabBannerContentCol_1 h1 {
@@ -117,6 +123,7 @@
   width: 96%;
   margin-right: 4%;
   border-radius: 10px;
+  animation: slideInRight 1.5s ease-in-out;
 }
 
 .mirLabBannerContentCol_2 img {
@@ -127,12 +134,34 @@
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -274,7 +303,7 @@
 .buttonsContainer {
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .loadMore, .showLess {

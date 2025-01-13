@@ -130,7 +130,7 @@ const Publication = () => {
           </div>
         </div>
         <div className={styles.publicationHomePageButton}>
-          <Link to="/research-papers-home"><button>Show More Research Paper<FaRightLong style={{marginLeft:"10px",marginTop:"7px"}} /></button></Link>
+          <Link to="/research-page/research-papers-home"><button>Show More Research Paper<FaRightLong style={{marginLeft:"10px",marginTop:"6px"}} /></button></Link>
         </div>
       </div>
     </section>

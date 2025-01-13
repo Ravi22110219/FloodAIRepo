@@ -27,6 +27,7 @@
   left: 4%;
   font-size: 1rem;
   color: #ddd;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .riverineFloodBannerLinks a {
@@ -79,6 +80,7 @@
 .riverineFloodBannerContentCol_1 {
   width: 96%;
   padding-left: 4%;
+  animation: slideInLeft 1.5s ease-out;
 }
 
 .riverineFloodBannerContentCol_1 h1 {
@@ -119,11 +121,45 @@
   width: 96%;
   margin-right: 4%;
   border-radius: 10px;
+  animation: slideInRight 1.5s ease-in-out;
 }
 
 .riverineFloodBannerContentCol_2 img {
   width: 100%;
   border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Flood Map Section */

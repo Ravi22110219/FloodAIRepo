@@ -81,20 +81,23 @@
 }
 
 .cardBtn {
-  border: none;
-  padding: 6px 12px;
+ 
+  padding: 10px 15px;
   margin-top: 20px;
   color: white;
-  background-color: rgb(248, 116, 1);
   border-radius: 4px;
   font-size: 14px;
   letter-spacing: 1px;
+  border: 1px solid black;
   cursor: pointer;
-  transition: background 0.3s;
+  background: linear-gradient(to left, rgb(248, 116, 1) 50%, rgb(255, 255, 255) 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
 }
 
 .cardBtn:hover {
-  background-color: #1d1d1d;
+  background-position: left;
+  color: #000000;
 }
 
 @media (max-width: 1100px) {

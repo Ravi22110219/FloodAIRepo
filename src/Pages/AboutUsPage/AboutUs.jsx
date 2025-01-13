@@ -49,10 +49,10 @@ const AboutUsPage = () => {
       title: 'Founder and Director',
       image: Udit_Bhatia,
       description: [
-        'Dr. Udit Bhatia is the Co-founder and Director of AIRESQ ClimSol Pvt. Ltd. and an Assistant Professor at the Indian Institute of Technology Gandhinagar, with joint appointments in Civil Engineering and Computer Science & Engineering. His research bridges theoretical modeling and practical applications, focusing on critical infrastructure resilience, physics-guided machine learning for hydrology and urban flooding, and climate variability. Dr. Bhatia has published extensively in top-tier journals, including prestigious Nature Portfolio publications and Environmental Research Letters, shaping both academic discourse and practical policymaking.'
+        'Dr. Udit Bhatia is the Co-founder and Director of AIRESQ ClimSol Pvt. Ltd. and an Assistant Professor at the Indian Institute of Technology Gandhinagar, with joint appointments in Civil Engineering and Computer Science & Engineering. His research bridges theoretical modeling and practical applications, focusing on critical infrastructure resilience, physics-guided machine learning for hydrology and urban flooding, and climate variability. Dr. Bhatia has published extensively in top-tier journals, including prestigious Nature Portfolio publications and Environmental Research Letters, shaping both academic discourse and practical policymaking. He is the author of the widely used textbook Critical Infrastructures Resilience: Policy and Engineering Perspectives and holds a U.S. patent for a geospatial networking and analysis system. His work has informed policymakers, influenced sustainable urban design, and garnered national and international media attention, reinforcing his role as a thought leader in resilience and climate risk mitigation.'
       ],
       more: [
-        ' He is the author of the widely used textbook Critical Infrastructures Resilience: Policy and Engineering Perspectives and holds a U.S. patent for a geospatial networking and analysis system. His work has informed policymakers, influenced sustainable urban design, and garnered national and international media attention, reinforcing his role as a thought leader in resilience and climate risk mitigation.'
+        'LinkedIn'
       ]
     },
     {
@@ -156,7 +156,7 @@ const AboutUsPage = () => {
               ))}
               {expandedIndex === index && (
                 <div className={styles.expandedContent}>
-                  <p> {member.more} can go here.</p>
+                  <p> </p>
                 </div>
               )}
               <div className={styles.buttonsContainer}>

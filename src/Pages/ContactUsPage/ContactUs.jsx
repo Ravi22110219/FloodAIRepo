@@ -64,7 +64,7 @@ const ContactUs = () => {
         </div>
         <div className={styles.contactCard}>
           <h2>Address</h2>
-          <p>Research Park, Indian Institute of Technology Gandhinagar</p>
+          <p>Research Park, Indian Institute of Technology, Gandhinagar, Gujarat, India. 382355 </p>
         </div>
       </div>
 
@@ -137,22 +137,22 @@ const ContactUs = () => {
 
             <div className={styles.checkboxGroup}>
               <div>
-                <label>
+                {/* <label>
                   <input type="checkbox" required /> I consent to receive
                   marketing communications from AIResq.*
-                </label>
+                </label> */}
               </div>
               <div>
-                <label>
+                {/* <label>
                   <input type="checkbox" required /> I consent to my data being
                   stored and processed by AIResq, in line with their privacy
                   policy.*
-                </label>
+                </label> */}
               </div>
             </div>
-            <p className={styles.privacyPolicy}>
+            {/* <p className={styles.privacyPolicy}>
               For more information, please review our Privacy Policy.
-            </p>
+            </p> */}
             <button type="submit" className={styles.submitButton}>
               Sign up
             </button>

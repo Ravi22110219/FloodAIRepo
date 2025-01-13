@@ -20,6 +20,8 @@ import ResearchPage from "./Pages/ResearchPage/Research.jsx";
 import SidebarPage from "./Pages/DemoPage/Demo.jsx";
 import RealTimeChart from "./Pages/RealTimeChart/RealTimeChart.jsx";
 import AboutUsPage from "./Pages/AboutUsPage/AboutUs.jsx";
+import DashBoard from "./Pages/FloodAiDashBoard/DashBoard.jsx";
+import TermAndCondition from "./Pages/TermsAndConditionPage/TermsAndCondition.jsx";
 
 
 function App() {
@@ -39,7 +41,7 @@ function App() {
         <Route path="urban-flood" element={<UrbanFlood/>} />
 
         
-        <Route path="research-papers-home" element={<MIRLabNewsHomePage/>} />
+        <Route path="research-page/research-papers-home" element={<MIRLabNewsHomePage/>} />
         <Route path="surface-flood" element={<GondalSurfaceFlood/>} />
         <Route path="gondal-sub-surface-flood" element={<GondalSubSurfaceFlood/>} />
         <Route path="catchment-classification" element={<CatchmentClassification />} />
@@ -48,6 +50,7 @@ function App() {
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="about-us" element={<AboutUsPage />} />
         <Route path="flood-ai-dashboard" element={<DashBoard />} />
+        <Route path="terms-and-condition" element={<TermAndCondition />} />
 
      
       </Route>
@@ -55,6 +58,6 @@ function App() {
   </Router>
   );
 }
-import DashBoard from "./Pages/FloodAiDashBoard/DashBoard.jsx";
+
 
 export default App;

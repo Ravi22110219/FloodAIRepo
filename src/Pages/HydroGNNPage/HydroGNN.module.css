@@ -12,7 +12,7 @@
 .hydroGNNBanner {
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://t3.ftcdn.net/jpg/02/43/36/88/360_F_243368800_iYenQw8k85GTsJ39VHFxanBkj3MQxzKW.jpg");
+  background-color: #394b57;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,6 +30,8 @@
   left: 4%;
   font-size: 1rem;
   color: #ddd;
+  olor: #ddd;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .hydroGNNBannerLinks a {
@@ -76,13 +78,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   margin-top: 50px;
 }
 
 .hydroGNNBannerContentCol_1 {
   width: 96%;
   padding-left: 4%;
+  animation: slideInLeft 1.5s ease-out;
+ 
 }
 
 .hydroGNNBannerContentCol_1 h1 {
@@ -96,7 +100,8 @@
   font-size: 1.2rem;
   margin-bottom: 20px;
   line-height: 1.5;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out; 
+  text-align: justify;
 }
 
 .hydroGNNBannerContentCol_1 button {
@@ -124,13 +129,16 @@
   width: 96%;
   margin-right: 4%;
   border-radius: 10px;
+  animation: slideInRight 1.5s ease-in-out;
+ 
 }
-.hydroGNNBannerContentCol_2 img{
-  width: 75%;
+.hydroGNNBannerContentCol_2 img {
+  width: 55%;
   height: fit-content;
-  padding-left: 20%;
+  margin-left: 4%;
+  border-radius: 50%;
+  box-shadow: 0px 4px 15px rgb(255, 255, 255);
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -142,6 +150,28 @@
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 800px) {
   .hydroGNNBannerContentColumn {
     flex-direction: column;
@@ -149,6 +179,7 @@
     align-items: center;
     gap: 20px;
     margin-top: 150px;
+    
   }
   .hydroGNNBannerContentCol_1 {
     width: 100%;
@@ -156,16 +187,19 @@
   }
   .hydroGNNBannerContentCol_2 {
     width: 100%;
+    display: flex;
     padding-right: none;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin: 30px 0;
+    
   }
 }
 
 
 .dropdownContainer {
-  width: 80%;
+  width: 92%;
   margin: auto;
   padding-top: 20px;
   
@@ -294,7 +328,12 @@
 .contentImage {
   max-width: 100%;
   height: auto;
+  margin: auto;
   border-radius: 5px;
+}
+.contentImage img{
+  max-width: 100%;
+  
 }
 .responsiveIframeContainer iframe {
   position: absolute;

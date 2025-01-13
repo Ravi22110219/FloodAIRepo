@@ -24,6 +24,7 @@
   left: 4%;
   font-size: 1rem;
   color: #ddd;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .gondalSurfaceFloodBannerLinks a {
@@ -76,6 +77,7 @@
 .gondalSurfaceFloodBannerContentCol_1 {
   width: 96%;
   padding-left: 4%;
+  animation: slideInLeft 1.5s ease-out;
 }
 
 .gondalSurfaceFloodBannerContentCol_1 h1 {
@@ -117,7 +119,7 @@
   width: 96%;
   
   margin-right: 4%;
-  
+  animation: slideInRight 1.5s ease-in-out;
   border-radius: 10px;
 }
 
@@ -167,6 +169,17 @@
 .gondalSurfaceFloodContentText p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideInLeft {

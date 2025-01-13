@@ -6,6 +6,7 @@
   color: #FFFFFF;
   z-index: 1000;
   position: fixed;
+  padding: 0px 4%;
 
 }
 /* Add this for scroll effect */
@@ -33,7 +34,7 @@
 .logo {
   display: flex;
   align-items: center;
-  padding-left: 4%;
+
   z-index: 2000;
   width: 200px;
 }
@@ -52,7 +53,7 @@
 }
 
 .navbar {
-  width: 85%;
+  width: 100%;
   color: #ffffff;
   display: flex;
   justify-content: right;
@@ -93,11 +94,11 @@
 }
 .navbar .otherOption{
  
-  text-align: right;
+ 
   display: flex;
   align-items: center;
-  justify-content:right;
-  right: 0;
+
+
 }
 .navbar .otherOption li{
   padding: 0;
@@ -196,7 +197,7 @@
   color: white;
   background-color: rgb(29, 120, 159);
   position: relative;
-  overflow: hidden;
+ 
   transition: 0.3s ease all;
   z-index: 1;
 }

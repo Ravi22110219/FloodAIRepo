@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./HydroGNN.module.css";
 import IndianRiverBasinImg from "../../assets/photos/IndianRiverBasin.jpg";
-import Compound_Flood_100 from "../../assets/photos/Compound_Flood_100_with_nodes_modified.png"
+import Compound_Flood_100 from "../../assets/photos/Compound_Flood_100.jpg"
 import Resiience from "../../assets/photos/resiience.JPG"
 import ResilienceRecovery from "../../assets/photos/ResilienceRecovery.png"
 import GondalSurfaceImg from "../../assets/photos/GondalSurfaceImg1.jpg"
@@ -203,14 +203,14 @@ const HydroGNN = () => {
       <div className={styles.hydroGNNDiv}>
         <div className={styles.hydroGNNBanner}>
           <div className={styles.hydroGNNBannerLinks}>
-            <Link to="/">Home</Link> <span>/</span> <Link to="#">HydroPinn</Link>
+            <Link to="/">Home</Link> <span>/</span> <Link to="#">HydroPINN</Link>
           </div>
           <div className={styles.hydroGNNBannerContentColumn}>
             <div className={styles.hydroGNNBannerContentCol_1}>
-              <h1>HydroPinn: Revolutionizing Hydrological Predictions</h1>
+              <h1>HydroPINN: Revolutionizing Hydrological Predictions</h1>
               <p>
                 Dive into the power of Graph Neural Networks (GNNs) in
-                hydrological modeling. Understand how HydroPinn enhances flood
+                hydrological modeling. Understand how HydroPINN enhances flood
                 predictions and water resource management through advanced data
                 analytics.
               </p>

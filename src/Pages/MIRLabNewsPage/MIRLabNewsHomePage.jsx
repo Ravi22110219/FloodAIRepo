@@ -84,8 +84,11 @@ const MIRLabNewsHomePage = () => {
           <section className={styles.mirLabNewsHomePageSection}>
               <div className={styles.mirLabBanner}>
               <div className={styles.mirLabBannerLinks}>
-    <Link to="/">Home</Link> <span>/</span> <Link to="#">Research papers</Link>
+  <Link to="/">Home</Link> <span>/</span> 
+  <Link to="/research-page">Research</Link> <span>/</span> 
+  <Link to="#">Research Paper Home</Link>
 </div>
+
 
         <div className={styles.mirLabBannerContentColumn}>
             
@@ -141,7 +144,7 @@ const MIRLabNewsHomePage = () => {
 
             <div className={styles.buttonsContainer}>
                 {currentItem < filteredPosts.length && (
-                    <div id="load-more" className={styles.loadMore} onClick={loadMore}>Load More</div>
+                    <div id="load-more" className={styles.loadMore} onClick={loadMore}>Show More</div>
                 )}
                 {currentItem > 4 && ( 
                     <div id="show-less" className={styles.showLess} onClick={showLess}>Show Less</div>

@@ -5,6 +5,8 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaRegCopyright } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -115,7 +117,7 @@ const Footer = () => {
       </div> 
       <div className={styles.rightSection}>
       <div className={styles.copyRights}>
-          <p><a href="#">Terms of Use | Privacy Policy </a></p>
+          <p><Link to="/terms-and-condition">Terms of Use | Privacy Policy </Link></p>
           <p><span className="far fa-copyright"><FaRegCopyright /></span> AIResQ CLIMSOLS PRIVATE LIMITED, All Rights Reserved<span className="far fa-copyright" style={{marginLeft:"5px"}}><GoArrowUpRight  /></span> </p>
         </div>
 

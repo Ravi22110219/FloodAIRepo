@@ -27,6 +27,7 @@
   left: 4%;
   font-size: 1rem;
   color: #ddd;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .bannerLinks a {
@@ -83,6 +84,7 @@
 
 .bannerContentCol_1 {
   width: 100%;
+  animation: slideInLeft 1.5s ease-out;
 }
 
 .bannerContentCol_1 h1 {
@@ -102,6 +104,7 @@
 
 .bannerContentCol_2 {
   width: 100%;
+  animation: slideInRight 1.5s ease-in-out;
 }
 
 .bannerContentCol_2 img {
@@ -110,6 +113,40 @@
   border-radius: 10px;
   animation: fadeIn 2s ease-in-out;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 .missionSection {
   text-align: center;
@@ -130,6 +167,7 @@
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .directorsSection {

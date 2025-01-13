@@ -70,11 +70,12 @@
   align-items: center;
   gap: 20px;
   margin-top: 50px;
+  padding: 4%;
 }
 
 .researchPageContentCol_1 {
-  width: 96%;
-  padding-left: 4%;
+  width: 100%;
+
   animation: slideInLeft 1.5s ease-out;
 }
 
@@ -120,8 +121,7 @@
 }
 
 .researchPageContentCol_2 {
-  width: 96%;
-  margin-right: 4%;
+  width: 100%;
   animation: slideInRight 1.5s ease-out;
 }
 
@@ -181,5 +181,11 @@
   }
   .researchPageContentCol_2 img {
     width: 100%;
+  }
+  .researchPageContentCol_1 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
   }
 }

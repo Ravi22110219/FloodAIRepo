@@ -1,0 +1,67 @@
+.myLoader {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 100px auto;
+}
+
+.rubiksCube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: my-rotateCube 5s infinite linear;
+}
+
+.face {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  background-image: url('https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882850/EducationHub/photos/yellow-river.jpg');
+  background-size: cover;
+  transform: translateZ(100px);
+}
+
+.back {
+  background-image: url('https://mammothmemory.net/images/user/base/geography/River%20landscapes/flood-plain-normal-conditions-river-landscapes-geography.5f3aef0.jpg');
+  background-size: cover;
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+  background-image: url('https://motthavenherald.com/wp-content/uploads/2023/03/flood-risk-map.png');
+  background-size: cover;
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+  background-image: url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iUM87hW9S7rI/v1/-1x-1.webp');
+  background-size: cover;
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+  background-image: url('https://www.researchgate.net/publication/259871331/figure/fig1/AS:614061234466819@1523415015418/Observed-flood-inundation-map-in-Assam-State-of-India-based-on-satellite-data-analysis.png://example.com/flood-image-top.jpg');
+  background-size: cover;
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  background-image: url('https://www.researchgate.net/publication/364470747/figure/fig4/AS:11431281121917059@1677123065853/Maximum-flood-depth-map-of-2006-flood-event-for-Surat-city.png');
+  background-size: cover;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes my-rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

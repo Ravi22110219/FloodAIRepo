@@ -1,0 +1,147 @@
+/* Hiring Banner Styles */
+.hiringBanner {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #2d3e50;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiringBannerContentColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.hiringBannerContentCol_1 {
+  width: 96%;
+  padding-left: 4%;
+}
+
+.hiringBannerContentCol_1 h1 {
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hiringBannerContentCol_1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  animation: fadeIn 2s ease-in-out;
+}
+.hiringBannerContentCol_1 p ul {
+  list-style: square;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hiringBannerContentCol_1 button {
+  color: #000000;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin: 20px 0px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start;
+  background: linear-gradient(to left, #ff6347 50%, #ffffff 50%) right;
+  background-size: 200%;
+  animation: fadeIn 2s ease-in-out;
+  transition: 0.3s ease-out;
+}
+
+.hiringBannerContentCol_1 button:hover {
+  background-position: left;
+  color: #000000;
+}
+
+.hiringBannerContentCol_2 {
+  width: 96%;
+  margin-right: 4%;
+  text-align: center;
+  color: white;
+}
+
+.hiringBannerContentCol_2 h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.timer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.timer div span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timer div p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.hiringBanner.animate .hiringBannerContentCol_1 h1,
+.hiringBanner.animate .hiringBannerContentCol_1 p,
+.hiringBanner.animate .hiringBannerContentCol_1 ul,
+.hiringBanner.animate .hiringBannerContentCol_1 ul li,
+.hiringBanner.animate .hiringBannerContentCol_1 ul li strong {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .hiringBannerContentColumn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 150px;
+  }
+  .hiringBannerContentCol_1 {
+    width: 100%;
+    padding-right: 4%;
+  }
+  .hiringBannerContentCol_2 {
+    width: 100%;
+    padding-right: none;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+}

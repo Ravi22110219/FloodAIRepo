@@ -67,11 +67,12 @@ const MainPage = () => {
         <div className={styles.gondalSurfaceFloodBanner}>
           <div className={styles.gondalSurfaceFloodBannerContentColumn}>
             <div className={styles.gondalSurfaceFloodBannerContentCol_1}>
-              <h1>Understanding Surface Floods</h1>
+              <h1>Data-driven Decision Support System</h1>
               <p>
-                Explore the challenges and impacts of surface flooding . Gain
-                insights into hydrological patterns, causes, and innovative
-                solutions to mitigate the risks.
+                Understand the impact of every flood mitigation measure before
+                you act. Our decision support system models real-world
+                scenarios, helping you compare options, anticipate outcomes, and
+                move forward with clarity and confidence.
               </p>
               <Link to="/surface-flood">
                 {' '}

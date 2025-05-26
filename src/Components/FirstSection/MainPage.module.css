@@ -100,11 +100,17 @@
   .LandingPageContentCol_1 {
     width: 92%;
     padding: 4%;
-    margin-bottom: 60px;
+  }
+  .LandingPageContentCol_2 {
+    width: 92%;
+    padding: 20px 8%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .LandingPageContentColumn {
     flex-direction: column;
     justify-content: center;
@@ -113,17 +119,16 @@
     margin-top: 150px;
   }
   .LandingPageContentCol_1 {
-    width: 92%;
+    width: 100%;
     padding-right: 4%;
   }
   .LandingPageContentCol_2 {
-    width: 92%;
+    width: 100%;
     margin: auto;
-    padding: 10%;
     border-radius: 10px;
     margin-bottom: 30px;
   }
-}
+} */
 
 /* Gondal Css*/
 .gondalSurfaceFloodBanner {
@@ -226,10 +231,9 @@
     padding-right: 4%;
   }
   .gondalSurfaceFloodBannerContentCol_2 {
-    width: 92%;
-    margin-top: 50px;
+    width: 100%;
     padding-right: none;
-
+    margin: auto;
     border-radius: 10px;
     margin-bottom: 30px;
   }

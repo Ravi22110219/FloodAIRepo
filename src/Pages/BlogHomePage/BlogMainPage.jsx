@@ -83,7 +83,7 @@ const BlogMainPage = () => {
     <div className={styles.container}>
       {/* Breadcrumb */}
       <nav className={styles.breadcrumb}>
-        <Link to="/">home</Link> / <Link to="/blog">Blog Home Page</Link>
+        <Link to="/">home</Link> / <Link to="/blog/1">Blog Home Page</Link>
       </nav>
 
       <div className={styles.contentWrapper}>
@@ -93,10 +93,7 @@ const BlogMainPage = () => {
           {blog.description && (
             <p className={styles.blogDescription}>{blog.description}</p>
           )}
-          <p className={styles.publishDate}>
-            Published on:{' '}
-            {blog.date ? new Date(blog.date).toLocaleDateString() : 'N/A'}
-          </p>
+          <p className={styles.publishDate}>Published on: {blog.date}</p>
 
           {blog.image && (
             <img
@@ -105,6 +102,10 @@ const BlogMainPage = () => {
               className={styles.blogImage}
             />
           )}
+          <div className={styles.creditDiv}>
+            <b>Photo Credit:</b>{' '}
+            <a href={blog.creditImageLink}>{blog.imageCredits}</a>
+          </div>
 
           <div
             className={styles.blogText}

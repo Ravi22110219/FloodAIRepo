@@ -9,6 +9,7 @@ import WeAreHiring from '../WeAreHiring/WeAreHiring'
 import mainPageSidePhoto from '../../assets/photos/mainside.png'
 
 import TowerLoader from '../RubiksCube/TowerLoader'
+import Loader from '../RubiksCube/Loader'
 
 const MainPage = () => {
   useEffect(() => {
@@ -51,6 +52,7 @@ const MainPage = () => {
           <div className={styles.LandingPageContentCol_2}>
             <div className="LandingPageContentCol_2 img">
               {/* <TowerLoader /> */}
+              {/* <Loader /> */}
               <img src={mainPageSidePhoto} alt="" />
             </div>
           </div>

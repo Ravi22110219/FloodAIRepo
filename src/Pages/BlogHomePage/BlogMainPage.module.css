@@ -1,0 +1,434 @@
+/* BlogMainPage.module.css */
+
+/* General Styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 4%;
+  font-family: Arial, sans-serif; /* Example font */
+  color: #333;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 25px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #333;
+  margin-left: 5px;
+}
+
+/* Main layout: Content and Sidebar */
+.contentWrapper {
+  display: flex;
+  flex-direction: column; /* Default for mobile */
+  gap: 30px; /* Space between main content and sidebar when stacked */
+  margin-bottom: 40px;
+}
+
+.mainContent {
+  flex: 1; /* Takes full width on mobile */
+  min-width: 0; /* Fix for flex items overflowing */
+}
+
+.sidebar {
+  flex: 1; /* Takes full width on mobile */
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Space between sidebar sections */
+}
+
+/* Desktop layout for content and sidebar */
+@media (min-width: 992px) {
+  .contentWrapper {
+    flex-direction: row; /* Side-by-side on desktop */
+    gap: 40px; /* Increased gap for desktop */
+  }
+  .mainContent {
+    flex: 3; /* Main content takes more space */
+  }
+  .sidebar {
+    flex: 1; /* Sidebar takes less space */
+    max-width: 420px; /* Max width for sidebar */
+    min-width: 380px; /* Min width for sidebar */
+  }
+}
+
+/* Blog Post Styling */
+.blogTitle {
+  font-size: 2.2em; /* Slightly adjusted */
+  margin-bottom: 10px;
+  color: #111; /* Darker title */
+  line-height: 1.3;
+}
+
+.blogDescription {
+  font-size: 1.1em; /* Slightly adjusted */
+  color: #444;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.publishDate {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.blogImage {
+  width: 100%;
+  max-height: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blogText {
+  line-height: 1.7; /* Adjusted for readability */
+  font-size: 1em; /* Standard text size */
+  color: #333;
+}
+
+.blogText p {
+  margin-bottom: 1.2em;
+}
+
+.blogText h1,
+.blogText h2,
+.blogText h3,
+.blogText h4,
+.blogText h5,
+.blogText h6 {
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  color: #222;
+  line-height: 1.4;
+}
+.blogText ul,
+.blogText ol {
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+.blogText li {
+  margin-bottom: 0.5em;
+}
+.blogText a {
+  color: #007bff;
+  text-decoration: underline;
+}
+.blogText a:hover {
+  color: #0056b3;
+}
+.blogText blockquote {
+  border-left: 4px solid #007bff;
+  padding-left: 15px;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #555;
+}
+.blogText pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+.blogText code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.blogText pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Sidebar Sections */
+.sidebarSection {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.sidebarTitle {
+  font-size: 1.3em; /* Adjusted */
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #222;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* Author Section (in sidebar) */
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+
+  gap: 15px;
+}
+.authorSection {
+  display: flex;
+  min-width: 100px;
+  flex-direction: column;
+}
+
+.authorImage {
+  width: 90px; /* Adjusted */
+  height: 90px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 5px; /* Space when stacked */
+}
+.authorIconDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/* LinkedInIcon.module.css */
+.linkedInIcon {
+  color: #0d2430; /* LinkedIn's brand color */
+  font-size: 25px; /* Adjust as per design */
+  transition: transform 0.3s ease, color 0.3s ease; /* For smooth hover effects */
+}
+
+.linkedInIcon:hover {
+  color: #0d0e0f; /* Slightly darker shade on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.mailIcon {
+  font-size: 35px; /* Adjust as per design */
+  transition: transform 0.3s ease, color 0.3s ease; /* For smooth hover effects */
+}
+.mailIcon:hover {
+  color: #2e2f30; /* Slightly darker shade on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 1em; /* Adjusted */
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.authorBio {
+  font-size: 0.9em; /* Adjusted */
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Optional: side-by-side author image and text if sidebar has enough width (e.g., on desktop view) */
+@media (min-width: 992px) {
+  /* Matches desktop sidebar activation */
+  .authorInfo {
+    flex-direction: row;
+    align-items: center;
+  }
+  .authorImage {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 400px) {
+  /* For wider stacked sidebar */
+  .authorInfo {
+    flex-direction: row;
+    align-items: center;
+  }
+  .authorImage {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+/* Social Links Section (in sidebar) */
+.socialLinks {
+  display: flex;
+  gap: 12px; /* Space between icons */
+  margin-top: 10px;
+  flex-wrap: wrap; /* Allow wrapping if many icons */
+}
+
+.socialIcon {
+  width: 26px; /* Adjusted size */
+  height: 26px;
+  opacity: 0.75;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.socialIcon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Related Blogs Section */
+.relatedBlogs {
+  margin-top: 50px; /* Increased space */
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+}
+
+.relatedBlogs h2 {
+  font-size: 1.7em; /* Adjusted */
+  margin-bottom: 30px;
+  color: #222;
+  text-align: left;
+}
+
+.relatedBlogsGrid {
+  display: grid;
+  grid-template-columns: 2fr; /* Single column for mobile */
+  gap: 25px;
+}
+
+@media (min-width: 668px) {
+  .relatedBlogsGrid {
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
+  }
+}
+
+.relatedBlogCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07); /* Slightly softer shadow */
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; /* Default to block for mobile */
+  transition: box-shadow 0.3s ease;
+}
+.relatedBlogCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 988px) {
+  .relatedBlogCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    transition: box-shadow 0.3s ease;
+  }
+  .relatedBlogImage {
+    min-width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+.relatedBlogInfo {
+  padding: 15px 20px; /* More horizontal padding */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.relatedBlogTitleLink {
+  text-decoration: none;
+}
+
+.relatedBlogTitle {
+  font-size: 1.15em; /* Adjusted */
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 8px 0;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+.relatedBlogTitleLink:hover .relatedBlogTitle {
+  color: #007bff;
+}
+
+.relatedBlogMeta {
+  font-size: 0.8em; /* Adjusted */
+  color: #555;
+  margin-bottom: 15px; /* More space before button */
+}
+
+.readMoreButton {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 9px 18px; /* Slightly larger */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.readMoreButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments for related blog card layout (image left, text right) */
+@media (min-width: 306px) {
+  .relatedBlogCard {
+    flex-direction: row;
+  }
+  .relatedBlogImage {
+    /* Fixed width for image */
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+  }
+  .relatedBlogInfo {
+    padding: 20px; /* Consistent padding */
+  }
+}
+/* If on smaller screens, but still two columns for related blogs grid, we might want them stacked internally */
+/* @media (max-width: 988.98px) {
+  .relatedBlogImage {
+    width: 100%;
+    height: 180px;
+    /* Revert to stacked height */
+/* }
+} */
+
+/* Loading and Error States */
+.loading,
+.error {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.2em;
+  color: #555;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: #d9534f;
+  background-color: #fdd;
+  border: 1px solid #d9534f;
+  border-radius: 5px;
+}

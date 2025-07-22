@@ -61,7 +61,7 @@ const JobRoles = () => {
       company: 'AIResQ ClimSols Pvt. Ltd.',
       type: 'Full-Time',
       duration: '0.5–5 years of experience',
-      location: 'IIT Gandhinagar / Remote / Hybrid',
+      location: 'IIT Gandhinagar / Hybrid',
       experience:
         '[0.5-5 years] of experience in ML engineering, software engineering, or a related role',
       description:
